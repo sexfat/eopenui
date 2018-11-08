@@ -3,6 +3,11 @@ var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+<<<<<<< HEAD
+=======
+var gulp = require('gulp');
+var fileinclude = require('gulp-file-include');
+>>>>>>> new
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var fileinclude = require('gulp-file-include');
@@ -77,10 +82,18 @@ gulp.task('concat', function() {
 
 
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> new
 
    
 gulp.task('fileinclude', function () {
+<<<<<<< HEAD
     return gulp.src(['dev/layout/*.html'])
+=======
+    return gulp.src(['dev/*.html'])
+>>>>>>> new
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -118,15 +131,25 @@ gulp.task('browser', ['sass'], function () {
         }
     });
 
+<<<<<<< HEAD
     gulp.watch(web.sass, ['sass']).on('change', reload);
     gulp.watch(web.js).on('change', reload);
     gulp.watch(web.html, ['fileinclude']).on('change', reload); 
+=======
+    gulp.watch(["scss/*.scss", "scss/**/*.scss", "scss/**/**/*.scss"], ['sass']).on('change', reload);
+    gulp.watch("*.html").on('change', reload);
+    gulp.watch("js/*.js").on('change', reload);
+    // gulp.watch(['css/*.css'], ['minify-css']).on('change', reload);
+    gulp.watch(['dev/*.html','dev/**/*.html'], ['fileinclude']).on('change', reload); 
+>>>>>>> new
     // gulp.watch("images/*").on('change', reload);
 });
 
 
 gulp.task('default', ['browser','fileinclude']);
 
+// gulp.task('default', ['browser','fileinclude','minify-css']);
+gulp.task('minicss', ['minify-css']);
 
 
 
