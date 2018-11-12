@@ -18,16 +18,16 @@ var web = {
         
     ],
     html: [
-        'dev/layout/*.html',
-        'dev/layout/**/*.html'
+        'dev/*.html',
+        'dev/**/*.html'
     ],
     pug: [
         'dev/app/pug/*.pug',
         'dev/app/pug/**/*.pug'
     ],
     js: [
-        'dev/js/*.js',
-        'dev/js/**/*.js'
+        'js/*.js',
+        'js/**/*.js'
     ],
     assets: [
         'assets/fonts/*',
