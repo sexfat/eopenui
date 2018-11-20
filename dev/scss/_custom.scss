@@ -1,6 +1,43 @@
 // Here you can add other styles
-
 .navbar-brand {
     font-size: .9rem;
     font-weight: bold;
+}
+
+@include margin(top, 200);
+@include margin(bottom, 200);
+@include margin(left, 200);
+.btn-xl {
+    width: 150px;
+    max-width: 150px;
+    margin-top: 0 !important;
+    margin-right: 10px; 
+}
+.btn-xxl {
+    width: 200px;
+    max-width: 200px;
+
+    @include margin-auto();
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.none {
+    display: none;
+}
+.on {
+   display: block;
+}
+.inlineBlock {
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    .col-12 {
+        margin-top:10px;
+    }
 }

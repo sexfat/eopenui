@@ -16,15 +16,17 @@
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     @@include('layout/header.html')
     <div class="app-body">
-        @@include('layout/sidebar.html')
+        @@include('layout/sidebar.html', {
+            "class01": "active"
+        });
         <div class="main">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">
-                    <a href="#">Admin</a>
+                    <a href="#">管理者</a>
                 </li>
-                <li class="breadcrumb-item active">Dashboard</li>
+                <li class="breadcrumb-item active">身份科目</li>
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
                     <div class="btn-group" role="group" aria-label="Button group">
@@ -45,8 +47,10 @@
                           <!-- 內部結構 -->
                             @@include('body/index.html')
                           <!-- end -->
+                         
                     </div>            
                 </div>
+               
             </div>
         </div>
         <!-- @@include('layout/aside.html') -->

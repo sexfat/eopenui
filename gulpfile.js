@@ -35,9 +35,8 @@ var web = {
         'assets/js/*',
         'assets/css/*',
     ],
-    css: [
-        'dest/css/*.css',
-        'dest/css/autoprefixer/*.css'
+    json: [
+        'dev/body/*.json'
     ],
     tmp: 'resources/assets/tmp/css/*.css'
 };
@@ -77,7 +76,7 @@ gulp.task('concat', function() {
 
  // html module  
 gulp.task('fileinclude', function () {
-    return gulp.src(['dev/*.html'])
+    return gulp.src(['dev/*.html' ,'dev/**/*.html'])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -111,12 +110,13 @@ gulp.task('browser', ['sass'], function () {
     browserSync.init({
         server: {
             baseDir: "./",
-            index: "index.html"
+            index: "id.html"
         }
     });
 
     gulp.watch(web.sass, ['sass']).on('change', reload);
     gulp.watch(web.js).on('change', reload);
+    gulp.watch(web.html, ['fileinclude']).on('change', reload); 
     gulp.watch(web.html, ['fileinclude']).on('change', reload); 
     // gulp.watch("images/*").on('change', reload);
 });
