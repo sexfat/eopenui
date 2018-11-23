@@ -7,6 +7,12 @@
 @include margin(top, 200);
 @include margin(bottom, 200);
 @include margin(left, 200);
+.btn-l {
+    width: 100px;
+    max-width: 150px;
+    margin-top: 0 !important;
+    margin-right: 10px; 
+}
 .btn-xl {
     width: 150px;
     max-width: 150px;
@@ -41,8 +47,6 @@
         margin-top:10px;
     }
 }
-
-
 .table {
    th  {
        border-top: none;

@@ -17,7 +17,7 @@
     @@include('layout/header.html')
     <div class="app-body">
         @@include('layout/main_sidebar.html' , {
-            "class01": "active"
+            "class02": "active"
         });
         
         <div class="main">
@@ -47,7 +47,9 @@
                     <!-- inner-content  -->
                     <!-- 內部結構 -->
                     <div class="row">
-                            @@include('body/main.html')
+                        @@include('body/main.html'  ,  {
+                           "titles" : "退件"
+                        })
                     </div>
                     <!-- end -->
                 </div>
