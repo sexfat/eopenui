@@ -3,10 +3,13 @@ var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var gulp = require('gulp');
+var clean = require('gulp-clean');
 var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
-// var concat = require('gulp-concat');
+var concat = require('gulp-concat');
+var cssmin = require('gulp-cssmin');
+var gutil = require( 'gulp-util' );
+var ftp = require( 'vinyl-ftp' );
 var reload = browserSync.reload;
 
 // path
@@ -40,11 +43,6 @@ var web = {
     ],
     tmp: 'resources/assets/tmp/css/*.css'
 };
-
-
-
-
-
 
 
 
@@ -122,10 +120,94 @@ gulp.task('browser', ['sass'], function () {
 });
 
 
+//打包用
+gulp.task('clean', function () {
+    return gulp.src(['dist/*'], {
+            read: false
+        })
+        .pipe(clean());
+});
+
+
+
+
+
+gulp.task('dist' ,['clean'],function () {
+
+    //html
+    return gulp.src('*.html')
+           .pipe(gulp.dest('./dist'))
+
+        //css
+        &&
+        gulp.src('css/*.css')
+        .pipe(cssmin({
+            keepSpecialComments: '*'
+        }))
+        .pipe(gulp.dest('./dist/css/'))
+
+        // js
+        &&
+        gulp.src('js/*.js')
+        .pipe(gulp.dest('./dist/js/'))
+        //img      
+        &&
+        gulp.src('img/*')
+        .pipe(gulp.dest('./dist/img/'))
+        &&
+        gulp.src(['vendor/*' , 'vendor/**/*'])
+        .pipe(gulp.dest('./dist/vendor/'))
+});
+
+
+
+//ftp用
+
+
+gulp.task( 'deploy', function () {
+ 
+    var conn = ftp.create( {
+        host:     'ftp.officalssuhuiho.com',
+        user:     'aresuns@aresuns.com',
+        password: 'Iloveyou6831',
+        parallel: 20,
+        log:      gutil.log
+    } );
+ 
+    var globs = [
+        'dist/**',
+        'dist/css/**',
+        'dist/js/**',
+        'dist/vendor/**',
+        'dist/vendor/**/*',
+        'dist/*.html'
+    ];
+ 
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+ 
+    return gulp.src( globs, { base: '.', buffer: false } )
+        // .pipe( conn.newer( '/public_html' ) ) // only upload newer files
+        .pipe( conn.dest( '/eopenweb' ) );
+ 
+} );
+
+
+
+
+
+
 gulp.task('default', ['browser','fileinclude']);
 
 // gulp.task('default', ['browser','fileinclude','minify-css']);
 gulp.task('minicss', ['minify-css']);
+
+
+
+
+
+
+
 
 
 
@@ -136,6 +218,11 @@ gulp.task('minicss', ['minify-css']);
 //     .pipe(gulp.dest('build/'));
 
 //   });
+
+
+
+
+
 
 console.log('no error');
 
