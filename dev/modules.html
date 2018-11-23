@@ -16,7 +16,9 @@
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     @@include('layout/header.html')
     <div class="app-body">
-        @@include('layout/sidebar.html')
+        @@include('layout/sidebar.html' , {
+            "class01": "active"
+        });
         <div class="main">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
