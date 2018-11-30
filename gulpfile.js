@@ -22,7 +22,6 @@ var web = {
     ],
     html: [
         'dev/*.html',
-        'dev/**/*.html',
         'dev/**/*.html'
     ],
     pug: [
@@ -75,7 +74,7 @@ gulp.task('concat', function() {
 
  // html module  
 gulp.task('fileinclude', function () {
-    return gulp.src(['dev/*.html' ,'dev/**/*.html' , 'dev/**/**/*.html'])
+    return gulp.src('dev/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'

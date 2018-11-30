@@ -111,8 +111,6 @@ $('#inline-radio10').on('click', function () {
 })
 
 
-
-
 // 科目寫法
 $(":checkbox").change(function () {
   if (this.checked) {
@@ -120,4 +118,16 @@ $(":checkbox").change(function () {
   } else {
     $(this).siblings('.none').css('display', 'none');
   }
+});
+
+$(".noid").on('click', function () {
+  var $this = $(this);
+  $this.addClass('active').siblings('.active').removeClass('active');
+  $(".noidc").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
+});
+
+$(".haveid").on('click', function () {
+  var $this = $(this);
+  $this.addClass('active').siblings('.active').removeClass('active');
+  $(".haveidc").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
 });
