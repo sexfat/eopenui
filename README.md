@@ -16,6 +16,17 @@
 ### 11/23版本
 左側選單順序有更動--帳戶資料  調動到身份檢核下方
 
+### 11/30版本
+新增證件
+
+- addCard.html 新增證件  (成年人戶)
+http://aresuns.com/eopenweb/dist/addCard.html
+
+- addCard_company.html  新增證件 (公司戶)
+http://aresuns.com/eopenweb/dist/addCard_company.html
+
+- addCard_over18.html 新增證件 （未成年戶） 
+http://aresuns.com/eopenweb/dist/addCard_over18.html
 
 
 
