@@ -33,6 +33,15 @@ http://aresuns.com/eopenweb/dist/addCard_over18.html
 ### 12/3版本
 管理頁面首頁
 
+- index.html
+http://aresuns.com/eopenweb/dist/index.html
+
+-  index_return.html
+http://aresuns.com/eopenweb/dist/index_return.html
+
+
+
+
 - html 中間內容
 
 ```html
