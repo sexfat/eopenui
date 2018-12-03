@@ -8,8 +8,8 @@ var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
-var gutil = require( 'gulp-util' );
-var ftp = require( 'vinyl-ftp' );
+var gutil = require('gulp-util');
+var ftp = require('vinyl-ftp');
 var reload = browserSync.reload;
 
 // path
@@ -18,7 +18,7 @@ var web = {
     sass: [
         'dev/scss/*.scss',
         'dev/scss/**/*.scss'
-        
+
     ],
     html: [
         'dev/*.html',
@@ -66,13 +66,13 @@ gulp.task('minify-css', function () {
 
 
 // concat  module
-gulp.task('concat', function() {
+gulp.task('concat', function () {
     return gulp.src('css/*.css')
         .pipe(concat('all.css'))
         .pipe(gulp.dest('css/build/'));
 });
 
- // html module  
+// html module
 gulp.task('fileinclude', function () {
     return gulp.src('dev/*.html')
         .pipe(fileinclude({
@@ -114,8 +114,8 @@ gulp.task('browser', ['sass'], function () {
 
     gulp.watch(web.sass, ['sass']).on('change', reload);
     gulp.watch(web.js).on('change', reload);
-    gulp.watch(web.html, ['fileinclude']).on('change', reload); 
-    gulp.watch(web.html, ['fileinclude']).on('change', reload); 
+    gulp.watch(web.html, ['fileinclude']).on('change', reload);
+    gulp.watch(web.html, ['fileinclude']).on('change', reload);
     // gulp.watch("images/*").on('change', reload);
 });
 
@@ -132,11 +132,11 @@ gulp.task('clean', function () {
 
 
 
-gulp.task('dist' ,['clean'],function () {
+gulp.task('dist', ['clean'], function () {
 
     //html
     return gulp.src('*.html')
-           .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./dist'))
 
         //css
         &&
@@ -150,12 +150,11 @@ gulp.task('dist' ,['clean'],function () {
         &&
         gulp.src('js/*.js')
         .pipe(gulp.dest('./dist/js/'))
-        //img      
+        //img
         &&
         gulp.src('img/*')
-        .pipe(gulp.dest('./dist/img/'))
-        &&
-        gulp.src(['vendor/*' , 'vendor/**/*'])
+        .pipe(gulp.dest('./dist/img/')) &&
+        gulp.src(['vendor/*', 'vendor/**/*'])
         .pipe(gulp.dest('./dist/vendor/'))
 });
 
@@ -164,16 +163,16 @@ gulp.task('dist' ,['clean'],function () {
 //ftp用
 
 
-gulp.task( 'deploy', function () {
- 
-    var conn = ftp.create( {
-        host:     'ftp.officalssuhuiho.com',
-        user:     'aresuns@aresuns.com',
+gulp.task('deploy', function () {
+
+    var conn = ftp.create({
+        host: 'ftp.officalssuhuiho.com',
+        user: 'aresuns@aresuns.com',
         password: 'Iloveyou6831',
         parallel: 20,
-        log:      gutil.log
-    } );
- 
+        log: gutil.log
+    });
+
     var globs = [
         'dist/**',
         'dist/css/**',
@@ -182,22 +181,25 @@ gulp.task( 'deploy', function () {
         'dist/vendor/**/*',
         'dist/*.html'
     ];
- 
+
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
- 
-    return gulp.src( globs, { base: '.', buffer: false } )
+
+    return gulp.src(globs, {
+            base: '.',
+            buffer: false
+        })
         // .pipe( conn.newer( '/public_html' ) ) // only upload newer files
-        .pipe( conn.dest( '/eopenweb' ) );
- 
-} );
+        .pipe(conn.dest('/eopenweb'));
+
+});
 
 
 
 
 
 
-gulp.task('default', ['browser','fileinclude']);
+gulp.task('default', ['browser', 'fileinclude']);
 
 // gulp.task('default', ['browser','fileinclude','minify-css']);
 gulp.task('minicss', ['minify-css']);
@@ -220,9 +222,4 @@ gulp.task('minicss', ['minify-css']);
 //   });
 
 
-
-
-
-
 console.log('no error');
-

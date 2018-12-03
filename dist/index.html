@@ -21,7 +21,7 @@
     <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="main.html">
+    <a class="navbar-brand" href="index.html">
       Eopen電子開戶系統Web3.0
       <!-- <img class="navbar-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo"> -->
       <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
@@ -72,45 +72,25 @@
         </li>
         <li class="nav-title">功能列</li>
         <li class="nav-item">
-          <a class="nav-link @@class01" href="id.html">
-            <i class="nav-icon icon-user-following"></i> 身份科目</a>
+          <a class="nav-link  active" href="index.html">
+            <i class="nav-icon icon-drop"></i>未完成案件</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link @@class02" href="#">
+            <i class="nav-icon icon-pencil"></i> 引用案件</a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link @@class02" href="addCard.html">
-            <i class="nav-icon icon-picture"></i> 新增證件</a>
+          <a class="nav-link  @@class02" href="index_return.html">
+            <i class="nav-icon icon-pencil"></i> 退件</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link @@class03" href="#">
-            <i class="nav-icon icon-pencil"></i> 身份檢核</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link @@class04" href="#">
-            <i class="nav-icon icon-pencil"></i> 帳戶資料</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link @@class05" href="#">
-            <i class="nav-icon icon-pencil"></i> 新增人像</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link @@class06" href="#">
-            <i class="nav-icon icon-pencil"></i> 基本資料</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link @@class07" href="#">
-            <i class="nav-icon icon-pencil"></i> 新增印鑑卡</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link @@class08" href="#">
-              <i class="nav-icon icon-pencil"></i> 作業完成</a>
-          </li>
-          <li class="divider"></li>
-          <li class="nav-item">
+          <!-- <li class="divider"></li> -->
+          <!-- <li class="nav-item">
               <a class="nav-link @@class09" href="#">
                 <i class="nav-icon icon-pencil"></i>開戶中斷
                 <span class="badge badge-danger">STOP</span>
               </a>
                  
-            </li>
+            </li> -->
         <!-- <li class="nav-item mt-auto">
           <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
             <i class="nav-icon icon-cloud-download"></i> Download CoreUI</a>
@@ -125,14 +105,15 @@
     </nav>
     <button class="sidebar-minimizer brand-minimizer" type="button"></button>
   </div>;
+        
         <div class="main">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">
-                    Admin
+                    <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">新增證件</li>
+                <li class="breadcrumb-item active">Dashboard</li>
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
                     <div class="btn-group" role="group" aria-label="Button group">
@@ -154,53 +135,53 @@
                     <div class="row">
                         <div class="col-sm-12 col-xl-12">
     <div class="card">
-        <div class="card-header">OCR 辨識結果
+        <div class="card-header"> @@titles
         </div>
         <div class="card-body">
-            <div class="form-group">
-                <label class="width10 col-form-label" for="text-input">統一編號</label>
-                <div class="width25">
-                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="width10 col-form-label" for="text-input">戶名</label>
-                <div class="width25">
-                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="width10 col-form-label" for="text-input">出身年月日</label>
-                <div class="width25">
-                    <input class="form-control" id="text-input" type="date" name="text-input" placeholder="Text">
-                </div>
-                <div class="width25">
-                    <input class="form-control" id="text-input" type="date" name="text-input" placeholder="Text">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="width10 col-form-label" for="text-input">性別</label>
-                <div class="width25">
-                    <input type="radio" name="gender" id="">
-                    <label class="width3" for="">男</label>
-                    <input type="radio" name="gender" id="">
-                    <label class="width3" for="">女</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="width10 col-form-label" for="text-input">發證日期</label>
-                <div class="width25">
-                    <input class="form-control" id="text-input" type="date" name="text-input" placeholder="Text">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="width10 col-form-label" for="text-input">發證地點</label>
-                <div class="width25">
-                    <input class="form-control" id="text-input" type="date" name="text-input" placeholder="Text">
-                </div>
-            </div>
+            <table class="table table-responsive-sm table-sm margintop-20">
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>身分證字號</th>
+                        <th>戶號</th>
 
+                    </tr>
+                </thead>
+                <tbody>
 
+                    <tr>
+                        <td><a href="">王大明</a> </td>
+                        <td>A123456789</td>
+                        <td>301-44566909</td>
+
+                        </a>
+                    <tr>
+                        <td> <a href="">李曉明</a></td>
+                        <td>A123456719</td>
+                        <td>301-44536909</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#">Prev</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -235,5 +216,4 @@
   <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
   <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script> -->
   <script src="js/scripts.js"></script>
-
 </html>

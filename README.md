@@ -30,6 +30,8 @@ http://aresuns.com/eopenweb/dist/addCard_over18.html
 
 
 
+### 12/3版本
+管理頁面首頁
 
 - html 中間內容
 
