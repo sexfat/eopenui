@@ -81,7 +81,7 @@
             <i class="nav-icon icon-picture"></i> 新增證件</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">
+          <a class="nav-link active" href="Idvalidation.html">
             <i class="nav-icon icon-bell"></i> 身份檢核</a>
         </li>
         <li class="nav-item">
@@ -172,7 +172,7 @@
                     <tbody>
                         <tr>
                             <td>總歸戶查詢</td>
-                            <td><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">查詢</a></td>
+                            <td><a href="#" data-toggle="modal" data-target=".empty_modal-lg">查詢</a></td>
                             <td>
                                 <span class="badge badge-success">Active</span>
                                 <span class="badge badge-danger">Rejected</span>
@@ -256,7 +256,7 @@
                         </tr>
                         <tr>
                             <td>開戶檢核表</td>
-                            <td><a href="">查詢</a></td>
+                            <td><a href="" data-toggle="modal" data-target=".valid-modal-lg">查詢</a></td>
                             <td>
                                 <span class="badge badge-success">Active</span>
                                 <span class="badge badge-danger">Rejected</span>
@@ -268,10 +268,6 @@
                         </tr>
                     </tbody>
                 </table>
-
-                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Launch demo modal
-                </button> -->
             </div>
 
 
@@ -289,17 +285,17 @@
 
 
 
-<div class="modal fade bd-example-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+<div class="modal fade empty_modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">空白</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                    <iframe src="https://www.ris.gov.tw/app/portal/3014"></iframe>
+                   .......test
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -308,6 +304,27 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade valid-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xxlg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">開戶檢核表</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                       .......開戶檢核表
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
                     </div>
                     <!-- end -->
                 </div>
