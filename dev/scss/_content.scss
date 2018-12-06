@@ -5,7 +5,29 @@
         padding: 15px;
 
     }
+}
 
+//========= 身份檢核 =======//
 
+.title {
+    .row {
+        margin-bottom: 3px;
+    }
+}
 
+.space {
+    tr {
+        td {
+            span,
+            div {
+                margin-left: 10px;
+            }
+            &:nth-child(1) {
+                width:  60px;
+           }
+            &:nth-child(3) {
+                 width:  180px;
+            }
+        }
+    }
 }
