@@ -131,3 +131,12 @@ $(".haveid").on('click', function () {
   $this.addClass('active').siblings('.active').removeClass('active');
   $(".haveidc").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
 });
+
+// 身份檢核
+
+$('.btnasd').on('click', function(){ 
+
+  $(".aasd").attr('checked'); 
+});
+
+
