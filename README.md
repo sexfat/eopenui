@@ -39,6 +39,14 @@ http://www.djimage.com.tw/dist/index.html
 -  index_return.html
 http://www.djimage.com.tw/dist/index_return.html
 
+### 12/7版本
+***身份檢核***
+-  Idvalidation.html
+http://www.djimage.com.tw/dist/Idvalidation.html
+
+***帳戶資料***
+- account_info.html
+http://www.djimage.com.tw/dist/account_info.html
 
 
 
