@@ -186,7 +186,7 @@ gulp.task('deploy', function () {
     // turn off buffering in gulp.src for best performance
 
     return gulp.src(globs, {
-            base: '.',
+            base: './dist',
             buffer: false
         })
         // .pipe( conn.newer( '/public_html' ) ) // only upload newer files
