@@ -20,13 +20,13 @@
 新增證件
 
 - addCard.html 新增證件  (成年人戶)
-http://aresuns.com/eopenweb/dist/addCard.html
+http://www.djimage.com.tw/dist/addCard.html
 
 - addCard_company.html  新增證件 (公司戶)
-http://aresuns.com/eopenweb/dist/addCard_company.html
+http://www.djimage.com.tw/dist/addCard_company.html
 
 - addCard_over18.html 新增證件 （未成年戶） 
-http://aresuns.com/eopenweb/dist/addCard_over18.html
+http://www.djimage.com.tw/dist/addCard_over18.html
 
 
 
@@ -34,10 +34,10 @@ http://aresuns.com/eopenweb/dist/addCard_over18.html
 管理頁面首頁
 
 - index.html
-http://aresuns.com/eopenweb/dist/index.html
+http://www.djimage.com.tw/dist/index.html
 
 -  index_return.html
-http://aresuns.com/eopenweb/dist/index_return.html
+http://www.djimage.com.tw/dist/index_return.html
 
 
 
