@@ -85,7 +85,7 @@
             <i class="nav-icon icon-bell"></i> 身份檢核</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@class04" href="#">
+          <a class="nav-link @@class04" href="account_info.html">
             <i class="nav-icon icon-list"></i> 帳戶資料</a>
         </li>
         <li class="nav-item">
@@ -256,7 +256,7 @@
                         </tr>
                         <tr>
                             <td>開戶檢核表</td>
-                            <td><a href="" data-toggle="modal" data-target=".valid-modal-lg">查詢</a></td>
+                            <td><a href="" data-toggle="modal" data-target=".valid-modal-lg">登打</a></td>
                             <td>
                                 <span class="badge badge-success">Active</span>
                                 <span class="badge badge-danger">Rejected</span>
@@ -267,10 +267,19 @@
                             <td>......</td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
 
-
+            <button class="btn btn-block btn-success btn-xxl margintop-50" type="button">確定</button>
         </div>
     </div>
 </div>
@@ -284,8 +293,8 @@
 
 
 
-
-<div class="modal fade empty_modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<!-- 空白的 -->
+<div class="modal fade empty_modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xxlg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -295,7 +304,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                   .......test
+                .......test
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -306,25 +315,324 @@
 </div>
 
 
-<div class="modal fade valid-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xxlg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">開戶檢核表</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+<!-- 開戶檢核表 -->
+<div class="modal fade valid-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">開戶檢核表</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- start -->
+                <div class="title margintop-20">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>戶名：<span>黃大發</span></h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10">
+                            <h6>身分證統編： <span>A123456789</span></h6>
+                        </div>
+                        <div class="col-2">
+                            <h6>日期：<span>2018/12/31</span></h6>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="modal-body">
-                       .......開戶檢核表
+                <div class="validform margintop-30">
+                    <table class="table table-responsive-sm table-bordered space">
+                        <thead>
+                            <tr>
+                                <th>編號</th>
+                                <th>開戶檢核作業項目</th>
+                                <th>確認結果</th>
+                                <th>臨櫃應注意事項</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>
+                                    <h5>雙重身分證明文件查核</h5>
+                                    <h6 class="marginbottom-15 margintop-20"> 第二證件名稱：</h6>
+                                    <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">健保卡</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">駕照</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">護照</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">學生證</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">中央主管機關出具之老農津貼專戶證明文件</label></span>
+                                    <div class="margintop-1"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">其他</label>
+                                        <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+                                    </div>
+                                    <h6 class="margintop-20">第二證件號碼/卡號： <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+
+                                    </h6>
+
+
+                                </td>
+                                <td>
+                                    <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>
+                                    <h5>身分證之相片是否與本人相符</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">符合</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>
+                                    <h5 class="marginbottom-15">開戶目的清楚表達</h5>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">儲蓄</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">薪轉</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">證券戶</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">資金調撥</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">投資</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">老農津貼專戶</label></span>
+                                    <div>
+                                        <input type="checkbox" value="radio1" name="purpose">
+                                        <label for="radio1">其他:</label>
+                                        <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">合理</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>
+                                    <h5>職業與客戶本人氣質等外觀表現符合</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">相符</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>
+                                    <h5>
+                                        填寫開戶資料需不斷詢問他人地址、電話或向經辦人員查詢開戶進度
+                                    </h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>
+                                    <h5>主動詢問電話語音、網路及ATM相關問題，並積極表現要申請前項服務項目，與其職業或外觀氣質是否相當</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>
+                                    <h5>清楚知道自己與本會有無其他業務往來</h5>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">存款</label></span>
+                                    <span class=""> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">授信</label></span>
+                                    <span class=""> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">現金卡</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">壽險</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">尚未往來</label></span>
+                                    <div>
+                                        <input type="checkbox" value="radio1" name="purpose">
+                                        <label for="radio1">其他:</label>
+                                        <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">清楚</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td>
+                                    <h5>短期間（含申請當日）於金融聯合徵信中心開戶查詢次數異常或頻繁者</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">合理</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>
+                                    <h5>「國民身分證」正常否有偽變造情形</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <h5>主動詢問電話語音、網路及ATM相關問題，並積極表現要申請前項服務項目，與其職業或外觀氣質是否相當</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">相符</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>
+                                    <h5>客戶資料內部查詢顯示警語【 】</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>
+                                    <h5>查詢「Z21國民身分證領補換資料查詢驗證」</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>
+                                    <h5>查詢「Z22通報案件紀錄及補充註記資訊」</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>
+                                    <h5>查詢「監護、輔助宣告」<a target="_blank" href="http://www.judicial.gov.tw">(http://www.judicial.gov.tw)</a></h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td colspan="3">
+                                    <h5> <input type="checkbox" value="fraud" name="fraud">
+                                        <label for="fraud">已向客戶宣導提供帳戶交詐騙集團使用，涉嫌違反刑法幫助詐欺罪，及或觸犯幫助洗錢罪，得處5年以下有期徒刑</label>
+                                    </h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h5>
+                                        基於上述確認後，是否同意其開戶：
+                                    </h5>
+                                        <ul>
+                                            <li>編號1、2、10~14如屬異常者得婉拒開戶。</li>
+                                            <li>15項如屬異常者，須經法定代理人(監護人)之同意。</li>
+                                            <li>編號3~9， 供斟酌受理開戶之參考，如有可疑仍宜婉拒。</li>
+                                            <li>編號3 開戶目的為老農津貼專戶，專供老農津貼匯入；經辦人員應向客戶告知開立本專戶之應注意事項，並於電腦上註記。</li>
+                                        </ul>
+                                   
+                                </td>
+                                <td>
+                                    <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">受理</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">拒絕</label></span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                        <h5 class="margintop-10">如有異常情形仍受理開戶之理由：</h5>
+                                        <textarea class="form-control"  name="textarea-input" rows="9" placeholder="理由"></textarea>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+
+
+
+
+
+                <!-- end -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary">儲存</button>
             </div>
         </div>
     </div>
+</div>
                     </div>
                     <!-- end -->
                 </div>
@@ -348,9 +656,10 @@
 
 </body>
 <!-- necessary plugins-->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/modal.js"></script>
+<script src="js/jquery.min.js" defer></script>
+<script src="js/bootstrap.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/datepicker.min.js" defer></script>
 
 <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
 <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -358,5 +667,5 @@
   <script src="node_modules/pace-progress/pace.min.js"></script>
   <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
   <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script> -->
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js" defer></script>
 </html>

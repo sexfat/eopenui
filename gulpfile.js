@@ -166,10 +166,10 @@ gulp.task('dist', ['clean'], function () {
 gulp.task('deploy', function () {
 
     var conn = ftp.create({
-        host: 'ftp.officalssuhuiho.com',
-        user: 'aresuns@aresuns.com',
+        host: 'ftp.djimage.com.tw',
+        user: 'web@djimage.com.tw',
         password: 'Iloveyou6831',
-        parallel: 20,
+        parallel: 21,
         log: gutil.log
     });
 
@@ -190,7 +190,7 @@ gulp.task('deploy', function () {
             buffer: false
         })
         // .pipe( conn.newer( '/public_html' ) ) // only upload newer files
-        .pipe(conn.dest('/eopenweb'));
+        .pipe(conn.dest('/'));
 
 });
 

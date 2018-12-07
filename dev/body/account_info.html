@@ -4,21 +4,49 @@
         </div>
         <div class="card-body">
             <form action="" method="">
+                <h3 class="account_title">活期存款</h3>
                 <div class="form-group">
                     <label class="width12 col-form-label" for="text-input">帳號</label>
                     <div class="width25">
-                        <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                        <input id="account01" class="form-control" type="text" name="text-input" placeholder="請填入">
                         <!-- <span class="help-block">This is a help text</span> -->
                     </div>
+                    <div class="width12 marginleft-10"><button class="btn btn-block btn-primary btn-l inlineBlock" type="button">自動取號</button></div>
                 </div>
                 <div class="form-group">
                     <label class="width12 col-form-label" for="text-input">開戶日期</label>
-                    <div class="width25">
-                        <input class="form-control" type="date" name="text-input" placeholder="請填入">
+                    <div class="width25 ">
+                        <input data-toggle="datepicker" class="form-control datepickers" name="datepicker"
+                            placeholder="請填入">
                         <!-- <span class="help-block">This is a help text</span> -->
                     </div>
                 </div>
+                <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose">
+                    <label for="purpose">聯行註記</label></span>
+                <hr>
+
+                <h3 class="account_title">活期儲蓄存款</h3>
+                <div class="form-group">
+                    <label class="width12 col-form-label" for="text-input">帳號</label>
+                    <div class="width25">
+                        <input id="account11" class="form-control" type="text" name="text-input" placeholder="請填入">
+                        <!-- <span class="help-block">This is a help text</span> -->
+                    </div>
+                    <div class="width12 marginleft-10"><button class="btn btn-block btn-primary btn-l inlineBlock" type="button">自動取號</button></div>
+                </div>
+                <div class="form-group">
+                    <label class="width12 col-form-label" for="text-input">開戶日期</label>
+                    <div class="width25 ">
+                        <input data-toggle="datepicker" class="form-control datepickers" name="datepicker"
+                            placeholder="請填入">
+                        <!-- <span class="help-block">This is a help text</span> -->
+                    </div>
+                </div>
+                <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose">
+                    <label for="purpose">聯行註記</label></span>
             </form>
+            <button class="btn btn-block btn-success btn-xxl margintop-50" type="button">確定</button>
         </div>
     </div>
 </div>
+

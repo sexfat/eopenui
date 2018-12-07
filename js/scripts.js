@@ -131,3 +131,18 @@ $(".haveid").on('click', function () {
   $this.addClass('active').siblings('.active').removeClass('active');
   $(".haveidc").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
 });
+
+$('.datepickers').datepicker({
+  format: 'yyyy-mm-dd',
+  autoPick: true
+});
+
+var accountId = 'acc01';
+
+if (accountId == 'acc01') {
+  $('#account01').val('6201-01-');
+} else if (accountId == 'acc11') {
+  $('#account11').val('6201-11-');
+} else {
+  $('#account11').val('請填入');
+}
