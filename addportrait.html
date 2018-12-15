@@ -85,11 +85,11 @@
             <i class="nav-icon icon-bell"></i> 身份檢核</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="account_info.html">
+          <a class="nav-link @@class04" href="account_info.html">
             <i class="nav-icon icon-list"></i> 帳戶資料</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@class05" href="addportrait.html">
+          <a class="nav-link active" href="addportrait.html">
             <i class="nav-icon  icon-people"></i> 新增人像</a>
         </li>
         <li class="nav-item">
@@ -133,7 +133,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">帳戶資料</li>
+                <li class="breadcrumb-item active">新增人像</li>
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
                     <div class="btn-group" role="group" aria-label="Button group">
@@ -155,56 +155,113 @@
                     <div class="row">
                             <div class="col-sm-12 col-xl-12">
     <div class="card">
-        <div class="card-header">帳戶資料
+        <div class="card-header">成年人 新增人像
         </div>
         <div class="card-body">
-            <form action="" method="">
-                <h3 class="account_title">活期存款</h3>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">帳號</label>
-                    <div class="width25">
-                        <input id="account01" class="form-control" type="text" name="text-input" placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                    <div class="width12 marginleft-10"><button class="btn btn-block btn-primary btn-l inlineBlock" type="button">自動取號</button></div>
-                </div>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">開戶日期</label>
-                    <div class="width25 ">
-                        <input data-toggle="datepicker" class="form-control datepickers" name="datepicker"
-                            placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                </div>
-                <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose">
-                    <label for="purpose">聯行註記</label></span>
-                <hr>
+            <span>科目：活期存款01</span>
+            <h3 class="account_title">帳號：6201-133423213</h3>
 
-                <h3 class="account_title">活期儲蓄存款</h3>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">帳號</label>
-                    <div class="width25">
-                        <input id="account11" class="form-control" type="text" name="text-input" placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
+            <div class="addCard">
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                <div class="card-main margintop-20">
+                    <!-- 人像匯入處 -->
+                    <div id="boxprint">
+                        <!-- 人像匯入處 -->
+                        人像匯入處
                     </div>
-                    <div class="width12 marginleft-10"><button class="btn btn-block btn-primary btn-l inlineBlock" type="button">自動取號</button></div>
-                </div>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">開戶日期</label>
-                    <div class="width25 ">
-                        <input data-toggle="datepicker" class="form-control datepickers" name="datepicker"
-                            placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
+                    <div class="ocr_box">
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
                     </div>
                 </div>
-                <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose">
-                    <label for="purpose">聯行註記</label></span>
-            </form>
-            <button class="btn btn-block btn-success btn-xxl margintop-50" type="button">確定</button>
+            </div>
+
         </div>
     </div>
 </div>
 
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">成年人 新增人像
+        </div>
+        <div class="card-body">
+            <span>科目：活期儲蓄存款11</span>
+            <h3 class="account_title">帳號：6211-133423213</h3>
+
+            <div class="addCard">
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                <div class="card-main margintop-20">
+                    <!-- 人像匯入處 -->
+                    <div id="boxprint">
+                        <!-- 人像匯入處 -->
+                        人像匯入處
+                    </div>
+                    <div class="ocr_box">
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">未年人 新增人像
+        </div>
+        <div class="card-body">
+            <span>科目：活期儲蓄存款11</span>
+            <h3 class="account_title">帳號：6211-133423213</h3>
+
+            <div class="addCard">
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                <div class="card-main margintop-20">
+                    <!-- 人像匯入處 -->
+                    <div id="boxprint">
+                        <!-- 人像匯入處 -->
+                        人像匯入處
+                    </div>
+                    <div class="ocr_box">
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-12">
+        <div class="card">
+            <div class="card-header">監護人 新增人像
+            </div>
+            <div class="card-body">
+                <span>科目：活期儲蓄存款11</span>
+                <h3 class="account_title">帳號：6211-133423213</h3>
+    
+                <div class="addCard">
+                    <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
+                    <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                    <div class="card-main margintop-20">
+                        <!-- 人像匯入處 -->
+                        <div id="boxprint">
+                            <!-- 人像匯入處 -->
+                            人像匯入處
+                        </div>
+                        <div class="ocr_box">
+                            <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-block btn-success btn-xxl marginbottom-30" type="button">確定</button>
 
                     </div>
                     <!-- end -->
