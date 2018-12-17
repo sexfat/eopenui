@@ -60,23 +60,24 @@
     }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 80 {
     .width#{$i} {
         min-width: $i * 10px;
         display: inline-block;
-        width:  $i * 10px;
+        width: $i * 10px;
     }
 }
 
 
 .dateform {
- 
+
     label {
-        margin:  0  5px;
+        margin: 0 5px;
     }
 
 
 }
+
 .addGuardian {
     font-size: .8rem;
 }
@@ -84,4 +85,36 @@
 
 .modal-xxlg {
     max-width: 87%;
+}
+
+.form-group {
+    .box {
+        border: 2px solid rgb(243, 243, 243);
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(247, 247, 247);
+        // box-shadow: 1px 1px 20px #cccccc;
+    }
+}
+
+.table-hover {
+    tbody {
+        tr {
+            transition: .2s all ease-in;
+
+            &:hover {
+                background: #e0f3ff;
+            }
+        }
+    }
+}
+
+.basic-info-card {
+    margin-top: 80px;
+
+    .card-img {
+        width: 130px;
+        height: 85px;
+        border-radius: 6px;
+    }
 }

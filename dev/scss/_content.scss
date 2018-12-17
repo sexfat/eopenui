@@ -18,15 +18,18 @@
 .space {
     tr {
         td {
+
             span,
             div {
                 margin-left: 10px;
             }
+
             &:nth-child(1) {
-                width:  60px;
-           }
+                width: 60px;
+            }
+
             &:nth-child(3) {
-                 width:  180px;
+                width: 180px;
             }
         }
     }
@@ -34,9 +37,14 @@
 
 // 帳戶資料
 
-.account_title  {
- margin-bottom: 25px;
- margin-top: 10px
+.account_title {
+    margin-bottom: 25px;
+    margin-top: 10px
+}
 
 
+//基本資料  套印
+
+.icon-basic {
+    width: 24px;
 }

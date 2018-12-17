@@ -49,6 +49,20 @@ http://www.djimage.com.tw/dist/Idvalidation.html
 http://www.djimage.com.tw/dist/account_info.html
 
 
+### 12/17版本
+***新增人像***
+- addportrait.html
+http://www.djimage.com.tw/dist/addportrait.html
+
+***基本資料***
+- basic_info.html
+http://www.djimage.com.tw/dist/basic_info.html
+
+***套表***
+- nested_table.html
+http://www.djimage.com.tw/dist/nested_table.html
+
+
 
 - html 中間內容
 
