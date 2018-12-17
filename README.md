@@ -62,6 +62,8 @@ http://www.djimage.com.tw/dist/basic_info.html
 - nested_table.html
 http://www.djimage.com.tw/dist/nested_table.html
 
+套印會依照選擇幾張表  套印出幾張表單
+
 
 
 - html 中間內容
