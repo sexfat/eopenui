@@ -4,9 +4,11 @@ console.log('js load ok');
 
 
 
-$(".btn_01").on('click', function () {
-  var $this = $(this);
-  $this.addClass('active').siblings('.active').removeClass('active');
+
+
+
+$(".btn_01").on('click', function (){
+  $(this).siblings('.active').removeClass('active');
   $(".box01").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
   $('.submenu > div > div > input').prop('checked', false);
   $('.j-1').prop('checked', false);
@@ -17,8 +19,7 @@ $(".btn_01").on('click', function () {
 });
 
 $(".btn_02").on('click', function () {
-  var $this = $(this);
-  $this.addClass('active').siblings('.active').removeClass('active');
+  $(this).siblings('.active').removeClass('active');
   $(".box02").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
   $('.j-1').prop('checked', false);
   $('.submenu > div > div > input').prop('checked', false);
@@ -27,8 +28,7 @@ $(".btn_02").on('click', function () {
 });
 
 $(".btn_03").on('click', function () {
-  var $this = $(this);
-  $this.addClass('active').siblings('.active').removeClass('active');
+  $(this).siblings('.active').removeClass('active');
   $(".box03").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
   $('.j-1').prop('checked', false);
   $('.submenu > div > div > input').prop('checked', false);
@@ -37,7 +37,7 @@ $(".btn_03").on('click', function () {
 });
 
 
-//=======================
+// =========
 $('#inline-radio1').on('click', function () {
   $('.submenu:eq(0)').css('display', 'block').siblings('.submenu:not(0)').css('display', 'none');
   $('.submenu .none').css('display', 'none');
