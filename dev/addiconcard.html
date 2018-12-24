@@ -17,16 +17,16 @@
     @@include('layout/header.html')
     <div class="app-body">
         @@include('layout/sidebar.html', {
-        "class01": "active"
+        "class07": "active"
         });
         <div class="main">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">
-                    <a href="#">管理者</a>
+                    <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">身份科目</li>
+                <li class="breadcrumb-item active">新增印鑑卡</li>
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
                     <div class="btn-group" role="group" aria-label="Button group">
@@ -40,31 +40,28 @@
                     </div>
                 </li>
             </ol>
-            <!-- content -->
             <div class="container-fluid">
+                <!-- content -->
                 <div class="animated fadeIn">
+                    <!-- inner-content  -->
+                    <!-- 內部結構 -->
                     <div class="row">
-                        <!-- 內部結構 -->
-                        @@include('body/idno.html')
-                        <!-- 本來三商行的 -->
-                        <!-- @@include('body/id.html') -->
-                        <!-- end -->
-
+                            @@include('body/addiconcard.html')
                     </div>
+                    <!-- end -->
                 </div>
-
             </div>
         </div>
-        <!-- @@include('layout/aside.html') -->
+        @@include('layout/aside.html')
     </div>
     <footer class="app-footer">
         <div>
-            <a href="https://coreui.io">djimage</a>
+            <a href="#">djimage</a>
             <span>&copy; 2018 All Rights Reserved</span>
         </div>
         <div class="ml-auto">
             <span>Powered by</span>
-            <a href="https://coreui.io">djimage</a>
+            <a href="#">djimage</a>
         </div>
     </footer>
     <!-- necessary plugins-->
@@ -73,5 +70,4 @@
 
 </body>
 @@include('assets/scripts.html')
-
 </html>
