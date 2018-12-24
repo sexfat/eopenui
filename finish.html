@@ -154,39 +154,66 @@
                     <!-- 內部結構 -->
                     <div class="row">
                             <div class="col-sm-12 col-xl-12">
-    <div class="card">
-        <div class="card-header">作業完成
-        </div>
-        <div class="card-body">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active show" data-toggle="tab" href="#basic_info" role="tab" aria-controls="home"
+                aria-selected="false">
+                <!-- <i class="icon-calculator"></i> -->基本資料</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link show" data-toggle="tab" href="#basic_detail" role="tab" aria-controls="profile"
+                aria-selected="true">
+                明細</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link show" data-toggle="tab" href="#no_63501-01-0000000" role="tab" aria-controls="profile"
+                aria-selected="true">
+                63501-01-0000000</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#no_63501-11-0000000" role="tab" aria-controls="messages"
+                aria-selected="false">
+                63501-11-0000000</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active show" id="basic_info" role="tabpanel">
+            <!-- 基本資料 -->
+            <div class="person_info">
+                <img class="person_img" src="https://placem.at/people?w=150&random=some_seed" alt="">
+
+            </div>
+
+            <div class="form-group bigtext">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    A123456789
+                </div>
+            </div>
+
+            <div class="form-group bigtext">
+                    <label class="width12 col-form-label" for="text-input">客戶名稱</label>
+                    <div class="width25">
+                        王大發
+                    </div>
+                </div>
+
 
         </div>
-    </div>
-</div>
-<div class="col-sm-12 col-xl-12">
-    <div class="fin_tab">
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#home3" role="tab" aria-controls="home"
-                    aria-selected="true">
-                    <i class="icon-calculator"></i> 客戶資料</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#profile3" role="tab" aria-controls="profile" aria-selected="false">
-                    <i class="icon-basket-loaded"></i> 戶號：63501-01-0000000</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#messages3" role="tab" aria-controls="messages"
-                    aria-selected="false">
-                    <i class="icon-pie-chart"></i> 戶號：63501-11-0000000</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane" id="#home3" role="tabpanel">111</div>
-            <div class="tab-pane" id="#profile3" role="tabpanel">222</div>
-            <div class="tab-pane" id="#messages3" role="tabpanel">333</div>
+        <div class="tab-pane " id="basic_detail" role="tabpanel">
+            <!-- 明細 -->
+            明細</div>
+        <div class="tab-pane " id="no_63501-01-0000000" role="tabpanel">
+            <!-- 帳號 -->
+        </div>
+
+        <div class="tab-pane" id="no_63501-11-0000000" role="tabpanel">
+            <!-- 帳號資料 -->
         </div>
     </div>
 </div>
+
+<button class="btn btn-block btn-success btn-xxl  margintop-30" type="button">完成</button>
                     </div>
                     <!-- end -->
                 </div>

@@ -48,3 +48,20 @@
 .icon-basic {
     width: 24px;
 }
+
+// 作業完成
+
+
+.person_img {
+    @include boxzone(150px , 210px);
+    border:  1px solid rgb(99, 99, 99);
+    padding: 1px;
+    margin-bottom: 30px;
+}
+
+.bigtext {
+    font-size:  16px;
+    margin-bottom: .1rem;
+}
+
+
