@@ -64,6 +64,22 @@ http://www.djimage.com.tw/dist/nested_table.html
 
 套印會依照選擇幾張表  套印出幾張表單
 
+###12/26版本
+
+***新增印鑑卡***
+- addiconcard.html
+http://www.djimage.com.tw/dist/addiconcard.html
+
+***完成作業***
+- finish.html.html
+http://www.djimage.com.tw/dist/finish.html
+
+***科目帳號已修改***
+- account_info.html
+http://www.djimage.com.tw/dist/account_info.html
+
+
+
 
 
 - html 中間內容
