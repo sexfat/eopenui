@@ -118,3 +118,9 @@
         border-radius: 6px;
     }
 }
+
+.noborder {
+   tr , td ,th {
+    border: none;
+   }
+}

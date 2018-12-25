@@ -4,9 +4,6 @@ console.log('js load ok');
 
 
 
-
-
-
 $(".btn_01").on('click', function () {
   $(this).siblings('.active').removeClass('active');
   $(".box01").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
@@ -148,29 +145,43 @@ if (accountId == 'acc01') {
 }
 
 
+(function ($) {
+  var switchs = $('.addaccount > .switchs');
+  switchs.hide();
+  $('.account_title > input:checkbox').click(function () {
+    $(this).parent().next().fadeToggle();
+  })
+})(jQuery);
+
+
+
+
+
+
+
 
 // 新增印鑑卡
 
 
-var month = 7;
+// var month = 7;
 
-switch (Math.ceil(month / 3)) {
-  case 1:
-    console.log('春天');
-    break;
-  case 2:
-    console.log('夏天');
-    break;
-  case 3:
-    console.log('秋天');
-    break;
-  case 4:
-    console.log('冬天');
-    break;
-  default:
-    console.log('月份錯誤');
-    break;
-}
+// switch (Math.ceil(month / 3)) {
+//   case 1:
+//     console.log('春天');
+//     break;
+//   case 2:
+//     console.log('夏天');
+//     break;
+//   case 3:
+//     console.log('秋天');
+//     break;
+//   case 4:
+//     console.log('冬天');
+//     break;
+//   default:
+//     console.log('月份錯誤');
+//     break;
+// }
 
 
 //tab
@@ -203,3 +214,5 @@ switch (Math.ceil(month / 3)) {
 //     });
 //   });
 // });
+
+console.log('end ok');

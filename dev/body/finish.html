@@ -24,38 +24,296 @@
     <div class="tab-content">
         <div class="tab-pane active show" id="basic_info" role="tabpanel">
             <!-- 基本資料 -->
-            <div class="person_info">
-                <img class="person_img" src="https://placem.at/people?w=150&random=some_seed" alt="">
+            <table class="table table-responsive-sm noborder">
+                <tbody>
+                    <tr>
+                        <td class="width21">
+                            <div class="person_info">
+                                <img class="person_img" src="https://placem.at/people?w=180&random=some_seed" alt="">
+                            </div>
+                        </td>
+                        <td class="width50">
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">身分證字號</label>
+                                <div class="">
+                                    A123456789
+                                </div>
+                            </div>
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">客戶名稱</label>
+                                <div>
+                                    王大發
+                                </div>
+                            </div>
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">客戶類別</label>
+                                <div>
+                                    本國成年人
+                                </div>
+                            </div>
 
-            </div>
 
-            <div class="form-group bigtext">
-                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
-                <div class="width25">
-                    A123456789
+                        </td>
+                </tbody>
+            </table>
+            <div class="form-group bigtext remarks">
+                <label class="col-form-label" for="text-input">狀態備註</label>
+                <div>
+                    <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4" placeholder="備註欄位....."></textarea>
                 </div>
             </div>
 
-            <div class="form-group bigtext">
-                    <label class="width12 col-form-label" for="text-input">客戶名稱</label>
-                    <div class="width25">
-                        王大發
-                    </div>
+            <div class="card margintop-80">
+                <div class="card-header">
+                    證件影像
+                    <small>身份證正反面</small>
                 </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_top.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_bottom.jpg" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+
+
 
 
         </div>
         <div class="tab-pane " id="basic_detail" role="tabpanel">
             <!-- 明細 -->
-            明細</div>
+            <div class="id_detail">
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">出生年月日</label>
+                    <div> 88年 12月 12日
+                    </div>
+                </div>
+                <!-- 性別 -->
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">性別</label>
+                    <div>
+                        男
+                    </div>
+                </div>
+                <!-- 電話 -->
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">電話</label>
+                    <div>
+                        02-22456432
+                    </div>
+                </div>
+                <!-- 手機 -->
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">手機</label>
+                    <div>
+                        0975459678
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">Email</label>
+                    <div>
+                        djimages@djimages.com
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">通訊地郵遞區號</label>
+                    <div>
+                        200
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">出生地</label>
+                    <div>
+                        台北市民權東路三段234巷一弄45號4樓
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶籍地郵遞區號</label>
+                    <div>
+                        200
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶籍地</label>
+                    <div>
+                        新竹市公道5路6巷一弄3號1樓
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">各地檔戶名</label>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="tab-pane " id="no_63501-01-0000000" role="tabpanel">
             <!-- 帳號 -->
+            <div class="id_detail">
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">科目</label>
+                    <div> 活期存款01
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶號</label>
+                    <div> 63501-01-0000000
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">開戶日期</label>
+                    <div> 107年 10月31日
+                    </div>
+                </div>
+            </div>
+            <div class="card margintop-50">
+                <div class="card-header">
+                    印鑑
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="idbamp">
+                                    <img src="img/idbamp_01.gif" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="idbamp">
+                                    <img src="img/idbamp.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+            <div class="card margintop-30">
+                <div class="card-header">
+                    印鑑卡正面
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+
+                                <img src="img/bampcard.jpg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+            <div class="card margintop-30">
+                <div class="card-header">
+                    印鑑卡反面
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+
+                                <img src="img/bampcard.jpg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
         </div>
 
         <div class="tab-pane" id="no_63501-11-0000000" role="tabpanel">
             <!-- 帳號資料 -->
+            <div class="id_detail">
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">科目</label>
+                    <div> 活期儲蓄存款 11
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶號</label>
+                    <div> 63501-11-0000000
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">開戶日期</label>
+                    <div> 107年 10月31日
+                    </div>
+                </div>
+            </div>
+            <div class="card margintop-50">
+                    <div class="card-header">
+                        印鑑
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="idbamp">
+                                        <img src="img/idbamp_01.gif" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="idbamp">
+                                        <img src="img/idbamp.png" alt="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+    
+    
+                    </div>
+                </div>
+                <div class="card margintop-30">
+                    <div class="card-header">
+                        印鑑卡正面
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td>
+    
+                                    <img src="img/bampcard.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+    
+    
+                    </div>
+                </div>
+                <div class="card margintop-30">
+                    <div class="card-header">
+                        印鑑卡反面
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td>
+    
+                                    <img src="img/bampcard.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+    
+    
+                    </div>
+                </div>
         </div>
     </div>
 </div>
 
-<button class="btn btn-block btn-success btn-xxl  margintop-30" type="button">完成</button>
+<button class="btn btn-block btn-success btn-xxl  margintop-30 marginbottom-50" type="button">確定歸戶</button>

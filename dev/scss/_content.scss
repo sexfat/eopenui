@@ -35,12 +35,38 @@
     }
 }
 
-// 帳戶資料
+//  科目帳戶資料
 
 .account_title {
     margin-bottom: 25px;
-    margin-top: 10px
+    margin-top: 10px;
+
+    .titles {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    input {
+        position: relative;
+        top: -2px;
+
+    }
+
+    label {
+        margin-left: 5px;
+
+    }
 }
+
+.choice {
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+// .switchs {
+//     display: none;
+// }
 
 
 //基本資料  套印
@@ -53,15 +79,48 @@
 
 
 .person_img {
-    @include boxzone(150px , 210px);
-    border:  1px solid rgb(99, 99, 99);
+    @include boxzone(180px, 210px);
+    border: 1px solid rgb(99, 99, 99);
     padding: 1px;
     margin-bottom: 30px;
 }
 
-.bigtext {
-    font-size:  16px;
-    margin-bottom: .1rem;
+%label {
+    label {
+        font-size: 12px;
+        color: #a7a7a7;
+    }
 }
 
 
+.bigtext {
+    font-size: 18px;
+    margin-bottom: .1rem;
+    margin-top: 10px;
+    @extend %label;
+
+}
+
+.remarks {
+    margin-top: -45px;
+}
+
+.iduser {
+    img {
+        width: 320px;
+    }
+}
+
+.idbamp {
+    img {
+        width: 100px;
+    }
+}
+
+.id_detail {
+    @extend %label;
+
+    label {
+        padding-bottom: 0px;
+    }
+}
