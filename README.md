@@ -17,7 +17,7 @@
 左側選單順序有更動--帳戶資料  調動到身份檢核下方
 
 ### 11/30版本
-新增證件
+***新增證件***
 
 - addCard.html 新增證件  (成年人戶)
 http://www.djimage.com.tw/dist/addCard.html
@@ -28,7 +28,9 @@ http://www.djimage.com.tw/dist/addCard_company.html
 - addCard_over18.html 新增證件 （未成年戶） 
 http://www.djimage.com.tw/dist/addCard_over18.html
 
+- addCard_foreigner.html  外國人（成年 / 未成年）
 
+http://www.djimage.com.tw/dist/addCard_foreigner.html
 
 ### 12/3版本
 管理頁面首頁
@@ -47,6 +49,9 @@ http://www.djimage.com.tw/dist/Idvalidation.html
 ***帳戶資料***
 - account_info.html
 http://www.djimage.com.tw/dist/account_info.html
+
+ 
+
 
 
 ### 12/17版本
@@ -77,6 +82,9 @@ http://www.djimage.com.tw/dist/finish.html
 ***科目帳號已修改***
 - account_info.html
 http://www.djimage.com.tw/dist/account_info.html
+
+
+
 
 
 # 分支master
