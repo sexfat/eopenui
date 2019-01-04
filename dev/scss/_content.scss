@@ -1,3 +1,13 @@
+//三商行
+//=============================
+//首頁登入
+
+.align-items-center {
+    .row {
+        display: flex;
+    }
+}
+
 //======== 新增證件  ======== //
 .addCard {
     .card-main {
@@ -47,4 +57,54 @@
 
 .icon-basic {
     width: 24px;
+}
+
+
+// 作業完成
+
+.person_img {
+    @include boxzone(180px, 210px);
+    border: 1px solid rgb(99, 99, 99);
+    padding: 1px;
+    margin-bottom: 30px;
+}
+
+%label {
+    label {
+        font-size: 12px;
+        color: #a7a7a7;
+    }
+}
+
+
+.bigtext {
+    font-size: 18px;
+    margin-bottom: .1rem;
+    margin-top: 10px;
+    @extend %label;
+
+}
+
+.remarks {
+    margin-top: -45px;
+}
+
+.iduser {
+    img {
+        width: 320px;
+    }
+}
+
+.idbamp {
+    img {
+        width: 100px;
+    }
+}
+
+.id_detail {
+    @extend %label;
+
+    label {
+        padding-bottom: 0px;
+    }
 }
