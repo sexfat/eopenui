@@ -85,7 +85,7 @@
             <i class="nav-icon icon-bell"></i> 身份檢核</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="account_info.html">
+          <a class="nav-link @@class04" href="account_info.html">
             <i class="nav-icon icon-list"></i> 帳戶資料</a>
         </li>
         <li class="nav-item">
@@ -97,7 +97,7 @@
             <i class="nav-icon icon-pencil"></i> 基本資料</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@class07" href="addiconcard.html">
+          <a class="nav-link active" href="addiconcard.html">
             <i class="nav-icon icon-info"></i> 新增印鑑卡</a>
         </li>
         <li class="nav-item">
@@ -133,7 +133,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">帳戶資料</li>
+                <li class="breadcrumb-item active">新增印鑑卡</li>
                 <!-- Breadcrumb Menu-->
                 <li class="breadcrumb-menu d-md-down-none">
                     <div class="btn-group" role="group" aria-label="Button group">
@@ -155,52 +155,89 @@
                     <div class="row">
                             <div class="col-sm-12 col-xl-12">
     <div class="card">
-        <div class="card-header">帳戶資料
+        <div class="card-header"> 新增印鑑卡
         </div>
         <div class="card-body">
-            <form action="" method="">
-                <h3 class="account_title">活期存款</h3>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">帳號</label>
-                    <div class="width25">
-                        <input id="account01" class="form-control" type="text" name="text-input" placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                    <div class="width12 marginleft-10"><button class="btn btn-block btn-primary btn-l inlineBlock" type="button">自動取號</button></div>
-                </div>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">開戶日期</label>
-                    <div class="width25 ">
-                        <input data-toggle="datepicker" class="form-control datepickers" name="datepicker"
-                            placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                </div>
-                <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose">
-                    <label for="purpose">聯行註記</label></span>
-                <hr>
+            <div class="form-group wires">
+                <div class="box">
+                    <table class="table table-responsive-sm table-hover wires">
+                        <thead>
+                            <tr>
+                                <th>科目</th>
+                                <th>帳號</th>
+                                <th>身分證字號</th>
+                                <th>開戶日</th>
+                                <th>啟用日</th>
+                                <th>式憑備取</th>
+                                <th>新增印鑑卡</th>
 
-                <h3 class="account_title">活期儲蓄存款</h3>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">帳號</label>
-                    <div class="width25">
-                        <input id="account11" class="form-control" type="text" name="text-input" placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                    <div class="width12 marginleft-10"><button class="btn btn-block btn-primary btn-l inlineBlock" type="button">自動取號</button></div>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>活期存款01</td>
+                                <td>63501-01-0000000</td>
+                                <td>A123456789</td>
+                                <td>2017/10/31</td>
+                                <td>2017/11/1</td>
+                                <td></td>
+                                <td><button id="newCard" class="btn btn-block btn-primary btn-l inlineBlock" type="button">新增印鑑卡</button>
+                                    <!-- <button class="btn btn-block btn-warning btn-l inlineBlock" type="button">修改</button> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>活期存款11</td>
+                                <td>63501-11-0000000</td>
+                                <td>A123456789</td>
+                                <td>2017/10/31</td>
+                                <td>2017/11/1</td>
+                                <td></td>
+                                <td><button class="btn btn-block btn-primary btn-l inlineBlock newCard" type="button">新增印鑑卡</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">開戶日期</label>
-                    <div class="width25 ">
-                        <input data-toggle="datepicker" class="form-control datepickers" name="datepicker"
-                            placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
+                <div class="addiconcards newCard section margintop-60">
+                    <span>科目：活期存款01</span>
+                    <h3 class="account_title">帳號：63501-01-0000000</h3>
+                    <div class="addCard">
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                        <div class="card-main margintop-20">
+                            <!-- 人像匯入處 -->
+                            <div id="boxprint">
+                                <!-- 人像匯入處 -->
+                                人像匯入處
+                            </div>
+                            <div class="ocr_box">
+                                <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose">
-                    <label for="purpose">聯行註記</label></span>
-            </form>
-            <button class="btn btn-block btn-success btn-xxl margintop-50" type="button">確定</button>
+                <div class="addiconcards section margintop-60">
+                        <span>科目：活期存款11</span>
+                        <h3 class="account_title">帳號：63501-01-0000000</h3>
+                        <div class="addCard">
+                            <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
+                            <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                            <div class="card-main margintop-20">
+                                <!-- 人像匯入處 -->
+                                <div id="boxprint">
+                                    <!-- 人像匯入處 -->
+                                    人像匯入處
+                                </div>
+                                <div class="ocr_box">
+                                    <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
         </div>
     </div>
 </div>

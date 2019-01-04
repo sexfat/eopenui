@@ -11,7 +11,11 @@
 ### layout 切割邏輯：
 
 
-# 更動版本紀錄
+# 三商行版本
+
+- login.html 登入畫面
+http://www.djimage.com.tw/dist3/login.html
+
 
 ### 11/23版本
 左側選單順序有更動--帳戶資料  調動到身份檢核下方
@@ -20,13 +24,13 @@
 新增證件
 
 - addCard.html 新增證件  (成年人戶)
-http://www.djimage.com.tw/dist/addCard.html
+http://www.djimage.com.tw/dist3/addCard.html
 
 - addCard_company.html  新增證件 (公司戶)
-http://www.djimage.com.tw/dist/addCard_company.html
+http://www.djimage.com.tw/dist3/addCard_company.html
 
 - addCard_over18.html 新增證件 （未成年戶） 
-http://www.djimage.com.tw/dist/addCard_over18.html
+http://www.djimage.com.tw/dist3/addCard_over18.html
 
 
 
@@ -34,35 +38,46 @@ http://www.djimage.com.tw/dist/addCard_over18.html
 管理頁面首頁
 
 - index.html
-http://www.djimage.com.tw/dist/index.html
+http://www.djimage.com.tw/dist3/index.html
 
 -  index_return.html
-http://www.djimage.com.tw/dist/index_return.html
+http://www.djimage.com.tw/dist3/index_return.html
 
 ### 12/7版本
 ***身份檢核***
 -  Idvalidation.html
-http://www.djimage.com.tw/dist/Idvalidation.html
+http://www.djimage.com.tw/dist3/Idvalidation.html
 
 ***帳戶資料***
 - account_info.html
-http://www.djimage.com.tw/dist/account_info.html
+http://www.djimage.com.tw/dist3/account_info.html
 
 
 ### 12/17版本
 ***新增人像***
 - addportrait.html
-http://www.djimage.com.tw/dist/addportrait.html
+http://www.djimage.com.tw/dist3/addportrait.html
 
 ***基本資料***
 - basic_info.html
-http://www.djimage.com.tw/dist/basic_info.html
+http://www.djimage.com.tw/dist3/basic_info.html
 
 ***套表***
 - nested_table.html
-http://www.djimage.com.tw/dist/nested_table.html
+http://www.djimage.com.tw/dist3/nested_table.html
 
 套印會依照選擇幾張表  套印出幾張表單
+
+*** 新增印鑑卡***
+- addiconcard.html
+http://www.djimage.com.tw/dist3/addiconcard.html
+
+
+*** 作業完成 ***
+- finish.html
+http://www.djimage.com.tw/dist3/finish.html
+
+
 
 
 

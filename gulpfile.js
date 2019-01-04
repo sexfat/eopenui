@@ -174,12 +174,12 @@ gulp.task('deploy', function () {
     });
 
     var globs = [
-        'dist/**',
-        'dist/css/**',
-        'dist/js/**',
-        'dist/vendor/**',
-        'dist/vendor/**/*',
-        'dist/*.html'
+        './**',
+        './css/**',
+        './js/**',
+        './vendor/**',
+        './vendor/**/*',
+        './*.html'
     ];
 
     // using base = '.' will transfer everything to /public_html correctly
@@ -190,7 +190,7 @@ gulp.task('deploy', function () {
             buffer: false
         })
         // .pipe( conn.newer( '/public_html' ) ) // only upload newer files
-        .pipe(conn.dest('/'));
+        .pipe(conn.dest('/dist3'));
 
 });
 
