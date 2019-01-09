@@ -85,6 +85,10 @@ http://www.djimage.com.tw/dist/account_info.html
 
 
 
+***聯名戶已增加***
+- addCard_household.html
+http://www.djimage.com.tw/dist/addCard_household.html
+
 
 
 # 分支master
