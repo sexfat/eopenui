@@ -131,6 +131,8 @@ https://coreui.io/demo/#main.html
 http://printjs.crabbly.com/
 
 
+- 截章
+https://fengyuanchen.github.io/cropper/
 
 ### 目前產出
 - index.html

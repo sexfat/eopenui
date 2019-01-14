@@ -137,3 +137,17 @@
         padding-bottom: 0px;
     }
 }
+
+//新增印鑑卡
+.sealcut {
+    min-height: 200px;
+    height: auto;
+    position: relative;
+
+    .seal_box {
+        position: relative;
+        display: inline-block;
+        float: right;
+
+    }
+}
