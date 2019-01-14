@@ -153,44 +153,33 @@
                     <!-- inner-content  -->
                     <!-- 內部結構 -->
                     <div class="row">
-                            <div class="col-sm-12 col-xl-12">
-    <div class="card">
-        <div class="card-header">基本資料
-        </div>
-        <div class="card-body">
-            <form action="">
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">客戶類別</label>
-                    <div class="width25">
-                        <span>本國成年人</span>
-                        <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
-                    <div class="width25">
-                        <input class="form-control" type="text" name="text-input" placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="width12 col-form-label" for="text-input">戶名</label>
-                    <div class="width25">
-                        <input class="form-control" type="text" name="text-input" placeholder="請填入">
-                        <!-- <span class="help-block">This is a help text</span> -->
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<!-- 套表明細資料 -->
+                            <!-- 套表明細資料 -->
 <div class="col-sm-12 col-xl-12">
     <div class="card">
-        <div class="card-header">套表明細資料
+        <div class="card-header">本國成年人套表明細資料
         </div>
         <div class="card-body">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">客戶類別</label>
+                <div class="width25">
+                    <span>本國成年人</span>
+                    <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    <h5>A123456789</h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶名</label>
+                <div class="width25">
+                    <h5>王大發</h5>
+                </div>
+            </div>
+            <hr class="margintop-50 marginbottom-50">
             <div class="form-group">
                 <label class="width12 col-form-label" for="text-input">出生年月日</label>
                 <div class="width12">
@@ -281,7 +270,7 @@
                             <tr>
                                 <th>證件</th>
                                 <th>描述</th>
-                                <th>選擇</th>
+                                <th>備註</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -289,31 +278,875 @@
                                 <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
                                 <td>A22130321 <br>
                                     身分證正面</td>
-                                <td><input type="checkbox" value="purpose" name="purpose"></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
                                 <td>A22130321 <br>
                                     身分證反面</td>
-                                <td><input type="checkbox" value="purpose" name="purpose"></td>
+                                <td></td>
                             </tr>
 
                             <tr>
                                 <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
                                 <td>A22130321 <br>
                                     監護人身分證正面</td>
-                                <td><input type="checkbox" value="purpose" name="purpose"></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            </div>
-
         </div>
+
     </div>
 </div>
-<a href="nested_table.html"><button class="btn btn-block btn-success btn-xxl  marginbottom-30" type="button">全部套表</button></a> 
+<!-- 本國未成年 -->
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">本國未年人套表明細資料
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">客戶類別</label>
+                <div class="width25">
+                    <span>監護人</span>
+                    <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    <h5>A123456789</h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶名</label>
+                <div class="width25">
+                    <h5>王大發</h5>
+                </div>
+            </div>
+            <hr class="margintop-50 marginbottom-50">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生年月日</label>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="年">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="月">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="日">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 性別 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">性別</label>
+                <div class="width25">
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">男</label>
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">女</label>
+                </div>
+            </div>
+            <!-- 電話 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">電話</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="tel" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 手機 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">手機</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="cellphone" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">Email</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="email" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">通訊地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">各地檔戶名</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group basic-info-card">
+                <div class="box">
+                    <table class="table table-responsive-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th>證件</th>
+                                <th>描述</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證正面</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證反面</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    監護人身分證正面</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 聯名戶 -->
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">聯名戶套表明細資料
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">客戶類別</label>
+                <div class="width25">
+                    <span>聯名戶（1）</span>
+                    <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    <h5>A123456789</h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶名</label>
+                <div class="width25">
+                    <h5>王大發</h5>
+                </div>
+            </div>
+            <hr class="margintop-50 marginbottom-50">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生年月日</label>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="年">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="月">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="日">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 性別 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">性別</label>
+                <div class="width25">
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">男</label>
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">女</label>
+                </div>
+            </div>
+            <!-- 電話 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">電話</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="tel" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 手機 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">手機</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="cellphone" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">Email</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="email" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">通訊地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">各地檔戶名</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group basic-info-card">
+                <div class="box">
+                    <table class="table table-responsive-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th>證件</th>
+                                <th>描述</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證正面</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證反面</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    監護人身分證正面</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">聯名戶套表明細資料
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">客戶類別</label>
+                <div class="width25">
+                    <span>聯名戶（2）</span>
+                    <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    <h5>A123456789</h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶名</label>
+                <div class="width25">
+                    <h5>王小發</h5>
+                </div>
+            </div>
+            <hr class="margintop-50 marginbottom-50">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生年月日</label>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="年">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="月">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="日">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 性別 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">性別</label>
+                <div class="width25">
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">男</label>
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">女</label>
+                </div>
+            </div>
+            <!-- 電話 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">電話</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="tel" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 手機 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">手機</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="cellphone" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">Email</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="email" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">通訊地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">各地檔戶名</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group basic-info-card">
+                <div class="box">
+                    <table class="table table-responsive-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th>證件</th>
+                                <th>描述</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證正面</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證反面</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    監護人身分證正面</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 籌備處 -->
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">籌備處套表明細資料
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">客戶類別</label>
+                <div class="width25">
+                    <span>籌備處</span>
+                    <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    <h5>A123456789</h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶名</label>
+                <div class="width25">
+                    <h5>王大發</h5>
+                </div>
+            </div>
+            <hr class="margintop-50 marginbottom-50">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生年月日</label>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="年">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="月">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="日">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 性別 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">性別</label>
+                <div class="width25">
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">男</label>
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">女</label>
+                </div>
+            </div>
+            <!-- 電話 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">電話</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="tel" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 手機 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">手機</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="cellphone" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">Email</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="email" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">通訊地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">各地檔戶名</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group basic-info-card">
+                <div class="box">
+                    <table class="table table-responsive-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th>證件</th>
+                                <th>描述</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證正面</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證反面</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    監護人身分證正面</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 公司戶 -->
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">公司戶套表明細資料
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">客戶類別</label>
+                <div class="width25">
+                    <span>公司戶</span>
+                    <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    <h5>34329870</h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶名</label>
+                <div class="width25">
+                    <h5>台積電股份有限公司</h5>
+                </div>
+            </div>
+            <hr class="margintop-50 marginbottom-50">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">核准登記日期</label>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="年">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="月">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="日">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 電話 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">公司電話</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="tel" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">Email</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="email" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">公司郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">公司所在地址</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group basic-info-card">
+                <div class="box">
+                    <table class="table table-responsive-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th>證件</th>
+                                <th>描述</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>公司營業登記證</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>上市公司登記證</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>經濟部證書</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">公司負責人套表明細資料
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">客戶類別</label>
+                <div class="width25">
+                    <span>公司負責人</span>
+                    <!-- <input class="form-control" type="text" name="text-input" placeholder="請填入"> -->
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">身分證統一編號</label>
+                <div class="width25">
+                    <h5>A123456789</h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶名</label>
+                <div class="width25">
+                    <h5>王大發</h5>
+                </div>
+            </div>
+            <hr class="margintop-50 marginbottom-50">
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生年月日</label>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="年">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="月">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+                <div class="width12">
+                    <input class="form-control" type="text" name="text-input" placeholder="日">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 性別 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">性別</label>
+                <div class="width25">
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">男</label>
+                    <input type="radio" name="gender" id="">
+                    <label class="width3" for="">女</label>
+                </div>
+            </div>
+            <!-- 電話 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">電話</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="tel" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <!-- 手機 -->
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">手機</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="cellphone" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">Email</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="email" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">通訊地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">出生地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地郵遞區號</label>
+                <div class="width8">
+                    <input class="form-control" type="text" name="area" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">戶籍地</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="width12 col-form-label" for="text-input">各地檔戶名</label>
+                <div class="width25">
+                    <input class="form-control" type="text" name="location" placeholder="請填入">
+                    <!-- <span class="help-block">This is a help text</span> -->
+                </div>
+            </div>
+            <div class="form-group basic-info-card">
+                <div class="box">
+                    <table class="table table-responsive-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th>證件</th>
+                                <th>描述</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證正面</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    身分證反面</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://picsum.photos/130/85" alt="" class="card-img"></td>
+                                <td>A22130321 <br>
+                                    監護人身分證正面</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<a href="nested_table.html"><button class="btn btn-block btn-success btn-xxl  marginbottom-30" type="button">全部套表</button></a>
                     </div>
                     <!-- end -->
                 </div>
