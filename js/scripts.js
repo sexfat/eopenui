@@ -104,7 +104,6 @@ $(".addfr").on('click', function () {
   
 //   }
 // }
-
 var selectEl = document.getElementById('redirectSelect');
 
 selectEl.onchange = function(){

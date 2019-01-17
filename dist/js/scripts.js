@@ -79,7 +79,7 @@ if (accountId == 'acc01') {
 })(jQuery);
 
 
-//
+//外國監護人
 
 
 $(".addlocal").on('click', function () {
@@ -94,6 +94,24 @@ $(".addfr").on('click', function () {
   $(".addfr_box").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
 });
 
+
+//select url
+
+// function redirect(goto){
+//   var conf = confirm("確認連結到系統外站");
+//   if (conf && goto != '') {
+//       window.open = goto;
+  
+//   }
+// }
+var selectEl = document.getElementById('redirectSelect');
+
+selectEl.onchange = function(){
+  var goto = this.value;
+  // redirect(goto);
+  window.open(goto, '_blank');
+
+};
 
 
 
