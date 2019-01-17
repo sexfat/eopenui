@@ -23,6 +23,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "jquery": "^3.3.1",
+    "jquery-cropper": "^1.0.0",
     "simple-line-icons": "^2.4.1",
     "vinyl-ftp": "^0.6.1"
   },

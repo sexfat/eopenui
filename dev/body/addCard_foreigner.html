@@ -1,6 +1,6 @@
 <div class="col-sm-12 col-xl-12">
     <div class="card">
-        <div class="card-header">外國人 證件資料
+        <div class="card-header">外國人成年人 證件資料
         </div>
         <div class="card-body">
             @@include('../component/idform_fre.html')
@@ -10,4 +10,47 @@
     </div>
 </div>
 
-                <button class="btn btn-block btn-success btn-xxl marginbottom-30" type="button">確定</button>
+
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">外國人未成年 證件資料
+        </div>
+        <div class="card-body">
+
+                @@include('../component/idform_fre.html')
+                <div class="margintop-50"><button class="btn  btn-outline-primary btn-50  inlineBlock addlocal addGuardian" type="button"> +
+                        本國監護人</button>
+                    <button class="btn btn-outline-primary btn-50 inlineBlock addfr addGuardian" type="button"> + 外國監護人</button></div>
+                
+
+        </div>
+    </div>
+</div>
+
+<!-- 監護人資料 -->
+<div class="col-sm-12 col-xl-12 none addlocal_box">
+        <div class="card">
+            <div class="card-header">本國監護人資料
+            </div>
+            <div class="card-body">
+                @@include('../component/idform.html')
+                <div class="margintop-50"></div>
+                @@include('../component/addCard_screen.html')
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-xl-12 none addfr_box">
+            <div class="card">
+                <div class="card-header">外國人監護人 證件資料
+                </div>
+                <div class="card-body">
+                    @@include('../component/idform_fre.html')
+                    <div class="margintop-50"></div>
+                    @@include('../component/addCard_screen_fre.html')
+                </div>
+            </div>
+        </div>
+
+
+<button class="btn btn-block btn-success btn-xxl marginbottom-30" type="button">確定</button>
