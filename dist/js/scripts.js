@@ -33,81 +33,6 @@ $(".btn_03").on('click', function () {
   $('.submenu .none').css('display', 'none');
 });
 
-
-// =========
-// $('#inline-radio1').on('click', function () {
-//   $('.submenu:eq(0)').css('display', 'block').siblings('.submenu:not(0)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-// $('#inline-radio2').on('click', function () {
-//   $('.submenu:eq(1)').css('display', 'block').siblings('.submenu:not(1)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-
-// })
-// $('#inline-radio3').on('click', function () {
-//   $('.submenu:eq(2)').css('display', 'block').siblings('.submenu:not(2)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-// $('#inline-radio4').on('click', function () {
-//   $('.submenu:eq(3)').css('display', 'block').siblings('.submenu:not(3)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-// $('#inline-radio5').on('click', function () {
-//   $('.submenu:eq(4)').css('display', 'block').siblings('.submenu:not(4)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-
-// $('#inline-radio6').on('click', function () {
-//   $('.submenu:eq(5)').css('display', 'block').siblings('.submenu:not(5)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-
-// $('#inline-radio7').on('click', function () {
-//   $('.submenu:eq(6)').css('display', 'block').siblings('.submenu:not(6)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-// $('#inline-radio8').on('click', function () {
-//   $('.submenu:eq(7)').css('display', 'block').siblings('.submenu:not(7)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-// $('#inline-radio9').on('click', function () {
-//   $('.submenu:eq(8)').css('display', 'block').siblings('.submenu:not(8)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-// $('#inline-radio10').on('click', function () {
-//   $('.submenu:eq(9)').css('display', 'block').siblings('.submenu:not(9)').css('display', 'none');
-//   $('.submenu .none').css('display', 'none');
-//   $('.k-1').prop('checked', false);
-//   $('.submenu > div > div > input').prop('checked', false);
-// })
-
-
 // 科目寫法
 $(":checkbox").change(function () {
   if (this.checked) {
@@ -152,6 +77,107 @@ if (accountId == 'acc01') {
     $(this).parent().next().fadeToggle();
   })
 })(jQuery);
+
+
+//
+
+
+$(".addlocal").on('click', function () {
+  var $this = $(this);
+  $this.addClass('active').siblings('.active').removeClass('active');
+  $(".addlocal_box").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
+});
+
+$(".addfr").on('click', function () {
+  var $this = $(this);
+  $this.addClass('active').siblings('.active').removeClass('active');
+  $(".addfr_box").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
+});
+
+
+
+
+//截章
+
+
+var image = document.getElementById('imagescut');
+var start = document.getElementById('StartStmap');
+var restart = document.getElementById('RestartStmap');
+
+
+// var restart = document.getElementsByClassName('RestartStmap');
+
+start.addEventListener('click' , function () {
+  new Cropper(image, {
+    autoCrop: true,
+    zoomOnWheel: false,
+    toggleDragModeOnDblclick: true,
+    ready() {
+      this.cropper.crop();
+    },
+  });
+});
+
+
+// $("#RestartStmap").on("click", function () {
+//   var cas = $('#imagescut').cropper.getCroppedCanvas();
+//   // var base64url = cas.toDataURL('image/jpeg');
+//   $('#cavans').html(cas);
+// })
+
+
+// var canvas = document.getElementById('canvas');
+// var dataURL = canvas.toDataURL();
+// console.log(dataURL);
+
+
+
+// cropper.getCroppedCanvas();
+// var canvas = document.getElementById('canvas');
+// var dataURL = canvas.toDataURL();
+
+
+// function stop(){
+//   cropper.crop();
+// }
+
+
+
+// function cuttingStamp() {
+
+//   
+// }
+
+
+// image.addEventListener('click', (event) => {
+
+//   var cropper = new Cropper(image, {
+//     crop(event) {
+//       console.log(event.detail.x);
+//       console.log(event.detail.y);
+//       console.log(event.detail.width);
+//       console.log(event.detail.height);
+//       console.log(event.detail.rotate);
+//       console.log(event.detail.scaleX);
+//       console.log(event.detail.scaleY);
+//     },
+//   });
+// });
+
+
+
+
+
+
+
+
+
+// function cutStamp() {
+//   var $image = $('#imagescut');
+//   $image .cropper({aspectRatio: 16 / 9});
+// }
+
+// cutStamp();
 
 
 

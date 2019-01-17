@@ -203,16 +203,32 @@
                         <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
                         <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
                         <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                        <div class="selectType">
+                            <label for="applyTWY"> 式別 </label>
+                        <select id="selectType" name="selectType" class="form-control inlineBlock width8 min-control"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
+                        <button class="btn btn-dark btn-primary btn-l inlineBlock btn-primary marginleft-40" id="StartStmap" type="button">啟動擷取</button>
+                        <button class="btn btn-dark btn-primary btn-l inlineBlock btn-primary" type="button">旋轉</button>
+                        <button class="btn btn-dark btn-primary btn-l inlineBlock btn-primary" id="RestartStmap"  type="button">重置</button>
+
+
+
+                        </div>
+                        
                         <div class="card-main margintop-20">
                             <!-- 印章匯入處 -->
                             <div class="sealcut">
                                 <!-- 印章匯入處 -->
-                                <img src="img/bampcard.jpg" alt="">
+                                <div class="seal_box img-container">功能區</div>
+                                <img id="imagescut" src="img/bampcard.jpg" alt="">
+                               
                             </div>
 
                         </div>
-                        <div class="card-main margintop-20">
-                            功能區
+                        <div class="card-main margintop-20 stampbox">
+                            <!-- 截章區 -->
+                            <img src="" id="preview">
+                            <!-- <canvas id="canvas"></canvas> -->
+                            <canvas id="canvas" width="5" height="5"></canvas>
                         </div>
                     </div>
                 </div>
@@ -250,6 +266,8 @@
 <script src="js/modal.js" defer></script>
 <script src="js/datepicker.min.js" defer></script>
 <script src="js/cropper.min.js" defer></script>
+<!-- <script src="js/jquery-csropper.min.js" defer></script> -->
+
 
 <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
 <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
