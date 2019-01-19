@@ -1,12 +1,16 @@
-<!-- 候選人公庫本國成年人 -->
+<!-- 政黨 / 公司 -->
 <div class="col-sm-12 col-xl-12">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
             <a class="nav-link active show" data-toggle="tab" href="#basic_info" role="tab" aria-controls="home"
                 aria-selected="false">
-                <!-- <i class="icon-calculator"></i> -->基本資料</a>
+                <!-- <i class="icon-calculator"></i> -->公司基本資料</a>
         </li>
-       
+        <li class="nav-item">
+            <a class="nav-link show" data-toggle="tab" href="#basic_detail" role="tab" aria-controls="profile"
+                aria-selected="true">
+                負責人基本資料</a>
+        </li>
         <li class="nav-item">
             <a class="nav-link show" data-toggle="tab" href="#no_63501-01-0000000" role="tab" aria-controls="profile"
                 aria-selected="true">
@@ -31,15 +35,116 @@
                         </td>
                         <td class="width50">
                             <div class="form-group bigtext">
-                                <label class="col-form-label" for="text-input">身分證字號</label>
+                                <label class="col-form-label" for="text-input">統一編號</label>
                                 <div class="">
-                                    A123456789
+                                    45312345
                                 </div>
                             </div>
                             <div class="form-group bigtext">
                                 <label class="col-form-label" for="text-input">客戶名稱</label>
                                 <div>
-                                    王大發
+                                    台積電股份有限公司
+                                </div>
+                            </div>
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">客戶類別</label>
+                                <div>
+                                    公司戶（政黨）
+                                </div>
+                            </div>
+
+
+                        </td>
+                </tbody>
+            </table>
+            <div class="form-group bigtext remarks">
+                <label class="col-form-label" for="text-input">狀態備註</label>
+                <div>
+                    <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4" placeholder="備註欄位....."></textarea>
+                </div>
+            </div>
+            <div class="id_detail margintop-50">
+                <h5 class="underline marginbottom-30">基本資料明細</h5>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">核准登記日期</label>
+                    <div> 88年 10月 12日
+                    </div>
+                </div>
+                <!-- 電話 -->
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">公司電話</label>
+                    <div>
+                        02-22456432
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">公司信箱</label>
+                    <div>
+                        djimages@djimages.com
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">公司郵遞區號</label>
+                    <div>
+                        200
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">公司所在地址</label>
+                    <div>
+                        台北市民權東路三段234巷一弄45號4樓
+                    </div>
+                </div>
+            </div>
+            <div class="card margintop-80">
+                <div class="card-header">
+                    公司證件影像
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_top.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_bottom.jpg" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="tab-pane show" id="basic_detail" role="tabpanel">
+            <!-- 聯名戶基本資料二 -->
+            <table class="table table-responsive-sm noborder">
+                <tbody>
+                    <tr>
+                        <td class="width21">
+                            <div class="person_info">
+                                <img class="person_img" src="https://placem.at/people?w=180&random=some_seed" alt="">
+                            </div>
+                        </td>
+                        <td class="width50">
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">身分證字號</label>
+                                <div class="">
+                                    A211322432
+                                </div>
+                            </div>
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">客戶名稱</label>
+                                <div>
+                                    王小發
                                 </div>
                             </div>
                             <div class="form-group bigtext">
@@ -58,13 +163,13 @@
                 <div>
                     <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4" placeholder="備註欄位....."></textarea>
                 </div>
-            </div>            
+            </div>
             <div class="id_detail margintop-50">
-                    <h5 class="underline marginbottom-30">基本資料明細</h5>
+                <h5 class="underline marginbottom-30">基本資料明細</h5>
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">出生年月日</label>
-                    <div> 88年 12月 12日
-                    </div> 
+                    <div> 90年 11月 10日
+                    </div>
                 </div>
                 <!-- 性別 -->
                 <div class="form-group">
@@ -77,7 +182,7 @@
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">電話</label>
                     <div>
-                        02-22456432
+                        02-22452432
                     </div>
                 </div>
                 <!-- 手機 -->
@@ -90,31 +195,31 @@
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">Email</label>
                     <div>
-                        djimages@djimages.com
+                        funjun@djimages.com
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">通訊地郵遞區號</label>
                     <div>
-                        200
+                        220
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">出生地</label>
                     <div>
-                        台北市民權東路三段234巷一弄45號4樓
+                        台北市民生東路一段223巷二弄30號1樓
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">戶籍地郵遞區號</label>
                     <div>
-                        200
+                        220
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">戶籍地</label>
                     <div>
-                        新竹市公道5路6巷一弄3號1樓
+                        新北市長安東路6巷一弄3號1樓
                     </div>
                 </div>
                 <div class="form-group">
@@ -250,62 +355,62 @@
                 </div>
             </div>
             <div class="card margintop-50">
-                    <div class="card-header">
-                        印鑑
-                    </div>
-                    <div class="card-body">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="idbamp">
-                                        <img src="img/idbamp_01.gif" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="idbamp">
-                                        <img src="img/idbamp.png" alt="">
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-    
-    
-                    </div>
+                <div class="card-header">
+                    印鑑
                 </div>
-                <div class="card margintop-30">
-                    <div class="card-header">
-                        印鑑卡正面
-                    </div>
-                    <div class="card-body">
-                        <table>
-                            <tr>
-                                <td>
-    
-                                    <img src="img/bampcard.jpg" alt="">
-                                </td>
-                            </tr>
-                        </table>
-    
-    
-                    </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="idbamp">
+                                    <img src="img/idbamp_01.gif" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="idbamp">
+                                    <img src="img/idbamp.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
                 </div>
-                <div class="card margintop-30">
-                    <div class="card-header">
-                        印鑑卡反面
-                    </div>
-                    <div class="card-body">
-                        <table>
-                            <tr>
-                                <td>
-    
-                                    <img src="img/bampcard.jpg" alt="">
-                                </td>
-                            </tr>
-                        </table>
-    
-    
-                    </div>
+            </div>
+            <div class="card margintop-30">
+                <div class="card-header">
+                    印鑑卡正面
                 </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+
+                                <img src="img/bampcard.jpg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+            <div class="card margintop-30">
+                <div class="card-header">
+                    印鑑卡反面
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+
+                                <img src="img/bampcard.jpg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
