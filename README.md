@@ -76,8 +76,15 @@ http://www.djimage.com.tw/dist/nested_table.html
 http://www.djimage.com.tw/dist/addiconcard.html
 
 ***完成作業***
-- finish.html.html
+- finish.html.html 本國成年人
 http://www.djimage.com.tw/dist/finish.html
+
+- finish_company.html 公司 / 政黨
+http://www.djimage.com.tw/dist/finish_company.html
+
+- finish_multi.html 候選人 ，公庫   本國成年人
+http://www.djimage.com.tw/dist/finish_multi.html
+
 
 ***科目帳號已修改***
 - account_info.html
