@@ -6,6 +6,7 @@
         display: flex;
     }
 }
+
 //======== 新增證件  ======== //
 .addCard {
     .card-main {
@@ -13,12 +14,14 @@
         padding: 15px;
     }
 }
+
 //========= 身份檢核 =======//
 .title {
     .row {
         margin-bottom: 3px;
     }
 }
+
 .space {
     tr {
         td {
@@ -134,28 +137,59 @@
     min-height: 200px;
     height: auto;
     position: relative;
+
     img {
         position: relative;
         z-index: 0;
         max-width: 100%;
     }
+
     .seal_box {
         position: relative;
         display: inline-block;
         float: right;
         z-index: 100;
-        background-color: rgb(222, 21, 21);
+        background-color: rgb(233, 48, 16);
         color: #fff;
-        padding: 20px;
+        width: 120px;
+        height: 35px;
+        text-align: center;
+        padding-top: 6px;
+        border-bottom-left-radius: 5px;
+        cursor: pointer;
+        right: -15px;
+        top: -15px;
+
 
     }
 }
+
 .addCard {
     .selectType {
         margin-top: 30px;
         border: 1px solid #f0f0f0;
         box-shadow: 0px 0px 4px #f1f1f1;
         padding: 14px 10px;
+    }
+    .stampbox {
+        .bgtext {
+            position: relative;
+            z-index: 0;
+            font-size: 20px;
+            color:#cfcfcf;
+            text-align: center;
+
+        }
+        #result {
+           
+            img {
+                margin-right: 10px;
+                margin-bottom: 6px;
+                @include box-shadow(1px , 3px , 8px ,#cecece);
+                position: relative;
+                z-index: 20;
+            }
+        }
     }
 
 }
