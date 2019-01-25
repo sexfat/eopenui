@@ -116,12 +116,12 @@ function gotoUrl() {
 
 //截章
 
-
 var image = document.getElementById('imagescut');
 var start = document.getElementById('StartStmap');
 var restart = document.getElementById('RestartStmap');
 var canvas = $('.sealcut');
 var $result = $('#result');
+
 start.addEventListener('click', function () {
   new Cropper(image, {
     autoCrop: true,
@@ -168,6 +168,15 @@ $('#imgRotation').click(function () {
 $('#clearImg').click(function () {
   $result.empty();
 });
+
+
+
+$( ".addstamp" ).click(function() {
+  $( ".addiconcards" ).show();
+});
+
+
+
 
 
 

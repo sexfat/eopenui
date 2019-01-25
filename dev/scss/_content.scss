@@ -149,16 +149,15 @@
         display: inline-block;
         float: right;
         z-index: 100;
-        background-color: rgb(233, 48, 16);
-        color: #fff;
+       
+ 
         width: 120px;
         height: 35px;
-        text-align: center;
-        padding-top: 6px;
-        border-bottom-left-radius: 5px;
-        cursor: pointer;
-        right: -15px;
-        top: -15px;
+        
+        .btn {
+            margin-bottom: 10px;
+        }
+     
 
 
     }

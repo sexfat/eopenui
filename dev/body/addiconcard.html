@@ -25,7 +25,7 @@
                                 <td>2017/10/31</td>
                                 <td>2017/11/1</td>
                                 <td></td>
-                                <td><button id="newCard" class="btn btn-block btn-primary btn-l inlineBlock" type="button">新增印鑑卡</button>
+                                <td><button  class="btn btn-block btn-primary btn-l inlineBlock addstamp" type="button">新增印鑑卡</button>
                                     <!-- <button class="btn btn-block btn-warning btn-l inlineBlock" type="button">修改</button> -->
                                 </td>
                             </tr>
@@ -36,13 +36,13 @@
                                 <td>2017/10/31</td>
                                 <td>2017/11/1</td>
                                 <td></td>
-                                <td><button class="btn btn-block btn-primary btn-l inlineBlock newCard" type="button">新增印鑑卡</button></td>
+                                <td>完成</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="addiconcards section margintop-60">
-                    <span>科目：活期存款11</span>
+                <div class="addiconcards section margintop-60  none">
+                    <span>科目：活期存款01</span>
                     <h3 class="account_title">帳號：63501-01-0000000</h3>
                     <div class="addCard">
                         <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
@@ -56,10 +56,9 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button class="btn  btn-ocr btn-l inlineBlock  marginleft-40" id="StartStmap" type="button">啟動擷取</button>
-                            <button class="btn btn-dark btn-primary btn-l inlineBlock " id="imgRotation" type="button">圖片旋轉</button>
-                            <button class="btn btn-dark btn-primary btn-l inlineBlock " id="RestartStmap" type="button">重置</button>
+                            <button class="btn btn-block btn-primary btn-xl inlineBlock marginleft-30" type="button">新增</button>  
                             <button class="btn btn-dark btn-secondary btn-l inlineBlock " id="clearImg" type="button">清除</button>
+                           
 
 
 
@@ -76,7 +75,16 @@
                             <!-- 印章匯入處 -->
                             <div class="sealcut">
                                 <!-- 印章匯入處 -->
-                                <div class="seal_box img-container" id="cropStmap">截章</div>
+                                <div class="function seal_box img-container">
+                                    <button class="btn  btn-ocr btn-l inlineBlock" id="StartStmap" type="button">啟動擷取</button>
+                                    <button class="btn btn-dark btn-primary btn-l inlineBlock " id="imgRotation" type="button">圖片旋轉</button>
+                                    <button class="btn btn-dark btn-primary btn-l inlineBlock " id="RestartStmap" type="button">重置</button>
+                                   
+                                    <button class="btn btn-crop btn-secondary btn-l inlineBlock " id="cropStmap" type="button">截章</button>
+
+                                    
+                                </div>
+                                <!-- <div class=" " >截章</div> -->
                                 <img id="imagescut" src="img/bampcard.jpg" alt="">
 
                             </div>
