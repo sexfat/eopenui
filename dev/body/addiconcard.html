@@ -1,3 +1,4 @@
+<form action="">
 <div class="col-sm-12 col-xl-12">
     <div class="card">
         <div class="card-header"> 新增印鑑卡
@@ -25,7 +26,7 @@
                                 <td>2017/10/31</td>
                                 <td>2017/11/1</td>
                                 <td></td>
-                                <td><button  class="btn btn-block btn-primary btn-l inlineBlock addstamp" type="button">新增印鑑卡</button>
+                                <td><button class="btn btn-block btn-primary btn-l inlineBlock addstamp" type="button">新增印鑑卡</button>
                                     <!-- <button class="btn btn-block btn-warning btn-l inlineBlock" type="button">修改</button> -->
                                 </td>
                             </tr>
@@ -46,7 +47,14 @@
                     <h3 class="account_title">帳號：63501-01-0000000</h3>
                     <div class="addCard">
                         <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
-                        <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                       
+                            <label class="btn btn-block btn-primary btn-xl inlineBlock uploadfile">匯入文件
+                                <input type="file" multiple id="imgInp" accept="image/gif, image/jpg, image/png"/>
+                            </label>
+                    
+                        
+
+
                         <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
                         <div class="selectType">
                             <label for="applyTWY"> 式別 </label>
@@ -56,9 +64,9 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button class="btn btn-block btn-primary btn-xl inlineBlock marginleft-30" type="button">新增</button>  
+                            <button class="btn btn-block btn-primary btn-xl inlineBlock marginleft-30" type="button">新增</button>
                             <button class="btn btn-dark btn-secondary btn-l inlineBlock " id="clearImg" type="button">清除</button>
-                           
+
 
 
 
@@ -79,13 +87,15 @@
                                     <button class="btn  btn-ocr btn-l inlineBlock" id="StartStmap" type="button">啟動擷取</button>
                                     <button class="btn btn-dark btn-primary btn-l inlineBlock " id="imgRotation" type="button">圖片旋轉</button>
                                     <button class="btn btn-dark btn-primary btn-l inlineBlock " id="RestartStmap" type="button">重置</button>
-                                   
+
                                     <button class="btn btn-crop btn-secondary btn-l inlineBlock " id="cropStmap" type="button">截章</button>
 
-                                    
+
                                 </div>
                                 <!-- <div class=" " >截章</div> -->
-                                <img id="imagescut" src="img/bampcard.jpg" alt="">
+                                <!-- <img id="imagescut" src="img/bampcard.jpg" alt=""> -->
+                                <img id="imagescut" src="img/bampcard.jpg" alt="your image" />
+                               
 
                             </div>
 
@@ -102,3 +112,4 @@
 </div>
 
 <button class="btn btn-block  btn-success btn-xxl marginbottom-30" type="button">確認</button>
+</form>

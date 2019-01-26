@@ -141,17 +141,17 @@ $('#cropStmap').on('click', function () {
   var croppedImageDataURL = image.cropper.getCroppedCanvas();
   var ders = croppedImageDataURL.toDataURL("image/jpeg");
   $result.append($('<img>').attr('src', ders));
-  
+
   var xData = image.cropper.getData();
   var imgBase64 = image.cropper
-  
+
   console.log(croppedImageDataURL);
   console.log('x:' + xData.x);
   console.log('y:' + xData.y);
   console.log('width:' + xData.width);
   console.log('height:' + xData.height);
   console.log('base64:' + ders);
- 
+
 
 });
 
@@ -171,9 +171,53 @@ $('#clearImg').click(function () {
 
 
 
-$( ".addstamp" ).click(function() {
-  $( ".addiconcards" ).show();
+$(".addstamp").click(function () {
+  $(".addiconcards").show();
 });
+
+//上傳圖片，並且預覽
+
+var reader = new FileReader();
+reader.onload = function (e) {
+    $('#imagescut').attr('src', e.target.result);
+}
+
+   function readURL(input) {
+        if (input.files && input.files[0]) {
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+
+
+// function showMyImage(fileInput) {
+//   var files = fileInput.files;
+//   for (var i = 0; i < files.length; i++) {
+//     var file = files[i];
+//     var imageType = /image.*/;
+//     if (!file.type.match(imageType)) {
+//       continue;
+//     }
+//     var img = document.getElementById("imagescut");
+//     img.file = file;
+//     var reader = new FileReader();
+//     reader.onload = (function (aImg) {
+//       return function (e) {
+//         aImg.src = e.target.result;
+//       };
+//     })(img);
+//     reader.readAsDataURL(file);
+//   }
+// }
+
+
+// $("#imgInp").change(function () {
+//   showMyImage(this)
+// });
+
 
 
 
