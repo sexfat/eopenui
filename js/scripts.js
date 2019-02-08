@@ -105,9 +105,7 @@ $(".addfr").on('click', function () {
 //   }
 // }
 
-// document.getElementById('redirectSelect').onchange = 
-
-function gotoUrl() {
+document.getElementById('redirectSelect').onchange = function gotoUrl() {
   var goto = this.value;
   window.open(goto, '_blank');
 };
