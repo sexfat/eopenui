@@ -146,3 +146,8 @@ if (accountId == 'acc01') {
 } else {
   $('#account11').val('請填入');
 }
+
+function gotoUrl() {
+  var goto = this.value;
+  window.open(goto, '_blank');
+};
