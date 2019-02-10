@@ -1,89 +1,118 @@
-<div class="col-sm-12 col-xl-12">
-    <div class="card">
-        <div class="card-header"> 新增印鑑卡
-        </div>
-        <div class="card-body">
-            <div class="form-group wires">
-                <div class="box">
-                    <table class="table table-responsive-sm table-hover wires">
-                        <thead>
-                            <tr>
-                                <th>科目</th>
-                                <th>帳號</th>
-                                <th>身分證字號</th>
-                                <th>開戶日</th>
-                                <th>啟用日</th>
-                                <th>式憑備取</th>
-                                <th>新增印鑑卡</th>
-
-
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>活期存款01</td>
-                                <td>63501-01-0000000</td>
-                                <td>A123456789</td>
-                                <td>2017/10/31</td>
-                                <td>2017/11/1</td>
-                                <td></td>
-                                <td><button id="newCard" class="btn btn-block btn-primary btn-l inlineBlock" type="button">新增印鑑卡</button>
-                                    <!-- <button class="btn btn-block btn-warning btn-l inlineBlock" type="button">修改</button> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>活期存款11</td>
-                                <td>63501-11-0000000</td>
-                                <td>A123456789</td>
-                                <td>2017/10/31</td>
-                                <td>2017/11/1</td>
-                                <td></td>
-                                <td><button class="btn btn-block btn-primary btn-l inlineBlock newCard" type="button">新增印鑑卡</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="addiconcards newCard section margintop-60">
-                    <span>科目：活期存款01</span>
-                    <h3 class="account_title">帳號：63501-01-0000000</h3>
-                    <div class="addCard">
-                        <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
-                        <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
-                        <div class="card-main margintop-20">
-                            <!-- 人像匯入處 -->
-                            <div id="boxprint">
-                                <!-- 人像匯入處 -->
-                                人像匯入處
-                            </div>
-                            <div class="ocr_box">
-                                <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
-                            </div>
-                        </div>
+<form action="">
+    <div class="col-sm-12 col-xl-12">
+        <div class="card">
+            <div class="card-header"> 新增印鑑卡
+            </div>
+            <div class="card-body">
+                <div class="form-group wires">
+                    <div class="box">
+                        <table class="table table-responsive-sm table-hover wires">
+                            <thead>
+                                <tr>
+                                    <th>科目</th>
+                                    <th>帳號</th>
+                                    <th>身分證字號</th>
+                                    <th>開戶日</th>
+                                    <th>啟用日</th>
+                                    <th>式憑備註</th>
+                                    <th>新增印鑑卡</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>活期存款01</td>
+                                    <td>63501-01-0000000</td>
+                                    <td>A123456789</td>
+                                    <td>2017/10/31</td>
+                                    <td>2017/11/1</td>
+                                    <td></td>
+                                    <td><button class="btn btn-block btn-primary btn-l inlineBlock addstamp" type="button">新增印鑑卡</button>
+                                        <!-- <button class="btn btn-block btn-warning btn-l inlineBlock" type="button">修改</button> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>活期存款11</td>
+                                    <td>63501-11-0000000</td>
+                                    <td>A123456789</td>
+                                    <td>2017/10/31</td>
+                                    <td>2017/11/1</td>
+                                    <td></td>
+                                    <td>完成</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                <div class="addiconcards section margintop-60">
-                        <span>科目：活期存款11</span>
+                    <div class="addiconcards section margintop-60  none">
+                        <span>科目：活期存款01</span>
                         <h3 class="account_title">帳號：63501-01-0000000</h3>
                         <div class="addCard">
                             <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
-                            <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
-                            <div class="card-main margintop-20">
-                                <!-- 人像匯入處 -->
-                                <div id="boxprint">
-                                    <!-- 人像匯入處 -->
-                                    人像匯入處
-                                </div>
-                                <div class="ocr_box">
-                                    <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+
+                            <label class="btn btn-block btn-primary btn-xl inlineBlock uploadfile">匯入文件
+                                <input type="file" multiple id="imgInp" accept="image/gif, image/jpg, image/png" />
+                            </label>
+
+
+
+
+                            <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                            <div class="selectType">
+                                <label for="applyTWY"> 式別 </label>
+                                <select id="selectType" name="selectType" class="form-control inlineBlock width8 min-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <button class="btn btn-block btn-primary btn-xl inlineBlock marginleft-30" type="button">新增</button>
+                                <button class="btn btn-dark btn-secondary btn-l inlineBlock " id="clearImg" type="button">清除</button>
+
+
+
+
+
+                            </div>
+                            <div class="card-main margintop-20 stampbox">
+
+                                <div class="bgtext">截章區</div>
+                                <div id="result">
+                                    <!-- 截章區 -->
                                 </div>
                             </div>
+                            <div class="card-main margintop-20">
+                                <!-- 印章匯入處 -->
+                                <div class="sealcut">
+                                    <!-- 印章匯入處 -->
+                                    <div class="function seal_box img-container">
+                                        <button class="btn  btn-ocr btn-l inlineBlock" id="StartStmap" type="button">啟動擷取</button>
+                                        <button class="btn btn-dark btn-primary btn-l inlineBlock " id="imgRotation"
+                                            type="button">圖片旋轉</button>
+                                        <button class="btn btn-dark btn-primary btn-l inlineBlock " id="RestartStmap"
+                                            type="button">重置</button>
+
+                                        <button class="btn btn-crop btn-secondary btn-l inlineBlock " id="cropStmap"
+                                            type="button">截章</button>
+
+
+                                    </div>
+                                    <!-- <div class=" " >截章</div> -->
+                                    <!-- <img id="imagescut" src="img/bampcard.jpg" alt=""> -->
+                                    <img id="imagescut" src="img/bampcard.jpg" alt="your image" />
+
+
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
+                </div>
+
+
+
             </div>
-
-
         </div>
     </div>
-</div>
 
+    <button class="btn btn-block  btn-success btn-xxl marginbottom-30" type="button">確認</button>
+</form>
