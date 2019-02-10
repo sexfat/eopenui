@@ -145,9 +145,31 @@ if (accountId == 'acc01') {
   $('#account11').val('6201-11-');
 } else {
   $('#account11').val('請填入');
-}
+};
 
-document.getElementById('redirectSelect').onchange = function gotoUrl() {
+
+// 新增證件
+//外國監護人
+
+
+$(".addlocal").on('click', function () {
+  var $this = $(this);
+  $this.addClass('active').siblings('.active').removeClass('active');
+  $(".addlocal_box").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
+});
+
+$(".addfr").on('click', function () {
+  var $this = $(this);
+  $this.addClass('active').siblings('.active').removeClass('active');
+  $(".addfr_box").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
+});
+
+
+
+// select gotourl 身份檢核
+document.getElementById('redirectSelect').onchange = function gotoUrl(){
   var goto = this.value;
   window.open(goto, '_blank');
 };
+
+
