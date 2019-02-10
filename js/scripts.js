@@ -147,7 +147,7 @@ if (accountId == 'acc01') {
   $('#account11').val('請填入');
 }
 
-function gotoUrl() {
+document.getElementById('redirectSelect').onchange = function gotoUrl() {
   var goto = this.value;
   window.open(goto, '_blank');
 };
