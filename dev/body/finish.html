@@ -1,3 +1,4 @@
+<!-- 候選人公庫本國成年人 -->
 <div class="col-sm-12 col-xl-12">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
@@ -5,11 +6,7 @@
                 aria-selected="false">
                 <!-- <i class="icon-calculator"></i> -->基本資料</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link show" data-toggle="tab" href="#basic_detail" role="tab" aria-controls="profile"
-                aria-selected="true">
-                明細</a>
-        </li>
+       
         <li class="nav-item">
             <a class="nav-link show" data-toggle="tab" href="#no_63501-01-0000000" role="tab" aria-controls="profile"
                 aria-selected="true">
@@ -61,44 +58,13 @@
                 <div>
                     <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4" placeholder="備註欄位....."></textarea>
                 </div>
-            </div>
-
-            <div class="card margintop-80">
-                <div class="card-header">
-                    證件影像
-                    <small>身份證正反面</small>
-                </div>
-                <div class="card-body">
-                    <table>
-                        <tr>
-                            <td>
-                                <div class="iduser">
-                                    <img src="img/id_top.jpg" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="iduser">
-                                    <img src="img/id_bottom.jpg" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-
-
-                </div>
-            </div>
-
-
-
-
-        </div>
-        <div class="tab-pane " id="basic_detail" role="tabpanel">
-            <!-- 明細 -->
-            <div class="id_detail">
+            </div>            
+            <div class="id_detail margintop-50">
+                    <h5 class="underline marginbottom-30">基本資料明細</h5>
                 <div class="form-group">
                     <label class="col-form-label" for="text-input">出生年月日</label>
                     <div> 88年 12月 12日
-                    </div>
+                    </div> 
                 </div>
                 <!-- 性別 -->
                 <div class="form-group">
@@ -152,11 +118,39 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label" for="text-input">各地檔戶名</label>
+                    <label class="col-form-label" for="text-input">名地檔戶名</label>
                     <div>
                     </div>
                 </div>
             </div>
+            <div class="card margintop-80">
+                <div class="card-header">
+                    證件影像
+                    <small>身份證正反面</small>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_top.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_bottom.jpg" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+
+
+
+
         </div>
         <div class="tab-pane " id="no_63501-01-0000000" role="tabpanel">
             <!-- 帳號 -->
@@ -315,5 +309,7 @@
         </div>
     </div>
 </div>
+
+
 
 <button class="btn btn-block btn-success btn-xxl  margintop-30 marginbottom-50" type="button">確定歸戶</button>
