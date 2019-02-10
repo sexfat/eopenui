@@ -165,6 +165,64 @@ $(".addfr").on('click', function () {
 });
 
 
+//截章
+
+var image = document.getElementById('imagescut');
+var start = document.getElementById('StartStmap');
+var restart = document.getElementById('RestartStmap');
+var canvas = $('.sealcut');
+var $result = $('#result');
+
+start.addEventListener('click', function () {
+  new Cropper(image, {
+    autoCrop: true,
+    zoomOnWheel: false,
+    rotatable: true,
+    toggleDragModeOnDblclick: true,
+    background: true,
+    ready() {
+      this.cropper.crop();
+    },
+
+  });
+});
+
+
+$('#cropStmap').on('click', function () {
+  var croppedImageDataURL = image.cropper.getCroppedCanvas();
+  var ders = croppedImageDataURL.toDataURL("image/jpeg");
+  $result.append($('<img>').attr('src', ders));
+
+  var xData = image.cropper.getData();
+  var imgBase64 = image.cropper
+
+  console.log(croppedImageDataURL);
+  console.log('x:' + xData.x);
+  console.log('y:' + xData.y);
+  console.log('width:' + xData.width);
+  console.log('height:' + xData.height);
+  console.log('base64:' + ders);
+
+});
+
+$('#RestartStmap').on('click', function () {
+  image.cropper.destroy();
+});
+
+
+$('#imgRotation').click(function () {
+  image.cropper.rotate(90);
+});
+
+
+$('#clearImg').click(function () {
+  $result.empty();
+});
+
+$(".addstamp").click(function () {
+  $(".addiconcards").show();
+});
+
 
 // select gotourl 身份檢核
 document.getElementById('redirectSelect').onchange = function gotoUrl(){
