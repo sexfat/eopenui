@@ -136,7 +136,7 @@ gulp.task('dist', ['clean'], function () {
 
     //html
     return gulp.src('*.html')
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./dist3'))
 
         //css
         &&
@@ -144,18 +144,18 @@ gulp.task('dist', ['clean'], function () {
         .pipe(cssmin({
             keepSpecialComments: '*'
         }))
-        .pipe(gulp.dest('./dist/css/'))
+        .pipe(gulp.dest('./dist3/css/'))
 
         // js
         &&
         gulp.src('js/*.js')
-        .pipe(gulp.dest('./dist/js/'))
+        .pipe(gulp.dest('./dist3/js/'))
         //img
         &&
         gulp.src('img/*')
-        .pipe(gulp.dest('./dist/img/')) &&
+        .pipe(gulp.dest('./dist3/img/')) &&
         gulp.src(['vendor/*', 'vendor/**/*'])
-        .pipe(gulp.dest('./dist/vendor/'))
+        .pipe(gulp.dest('./dist3/vendor/'))
 });
 
 
@@ -186,7 +186,7 @@ gulp.task('deploy', function () {
     // turn off buffering in gulp.src for best performance
 
     return gulp.src(globs, {
-            base: './dist',
+            base: './dist3',
             buffer: false
         })
         // .pipe( conn.newer( '/public_html' ) ) // only upload newer files
