@@ -13,88 +13,97 @@
 
 # 更動版本紀錄
 
-### 11/23版本
 左側選單順序有更動--帳戶資料  調動到身份檢核下方
 
-### 11/30版本
+### 目錄
+
+***管理頁面首頁***
+
+- index.html
+http://www.djimage.com.tw/dist3/index.html
+
+-  index_return.html
+http://www.djimage.com.tw/dist3/index_return.html
+
+
+
+
+***身份科目***
+
+- addCard.html 身份科目
+http://www.djimage.com.tw/dist3/id.html
+
+
+
 ***新增證件***
 
 - addCard.html 新增證件  (成年人戶)
-http://www.djimage.com.tw/dist/addCard.html
+http://www.djimage.com.tw/dist3/addCard.html
 
 - addCard_company.html  新增證件 (公司戶)
-http://www.djimage.com.tw/dist/addCard_company.html
+http://www.djimage.com.tw/dist3/addCard_company.html
 
 - addCard_over18.html 新增證件 （未成年戶） 
-http://www.djimage.com.tw/dist/addCard_over18.html
+http://www.djimage.com.tw/dist3/addCard_over18.html
 
 - addCard_foreigner.html  外國人（成年 / 未成年）
-
-http://www.djimage.com.tw/dist/addCard_foreigner.html
-
-### 12/3版本
-管理頁面首頁
-
-- index.html
-http://www.djimage.com.tw/dist/index.html
-
--  index_return.html
-http://www.djimage.com.tw/dist/index_return.html
-
-### 12/7版本
-***身份檢核***
--  Idvalidation.html
-http://www.djimage.com.tw/dist/Idvalidation.html
-
-***帳戶資料***
-- account_info.html
-http://www.djimage.com.tw/dist/account_info.html
-
- 
-
-
-
-### 12/17版本
-***新增人像***
-- addportrait.html
-http://www.djimage.com.tw/dist/addportrait.html
-
-***基本資料***
-- basic_info.html
-http://www.djimage.com.tw/dist/basic_info.html
-
-***套表***
-- nested_table.html
-http://www.djimage.com.tw/dist/nested_table.html
-
-套印會依照選擇幾張表  套印出幾張表單
-
-###12/26版本
-
-***新增印鑑卡***
-- addiconcard.html
-http://www.djimage.com.tw/dist/addiconcard.html
-
-***完成作業***
-- finish.html.html 本國成年人
-http://www.djimage.com.tw/dist/finish.html
-
-- finish_company.html 公司 / 政黨
-http://www.djimage.com.tw/dist/finish_company.html
-
-- finish_multi.html 候選人 ，公庫   本國成年人
-http://www.djimage.com.tw/dist/finish_multi.html
-
-
-***科目帳號已修改***
-- account_info.html
-http://www.djimage.com.tw/dist/account_info.html
-
-
+http://www.djimage.com.tw/dist3/addCard_foreigner.html
 
 ***聯名戶已增加***
 - addCard_household.html
-http://www.djimage.com.tw/dist/addCard_household.html
+http://www.djimage.com.tw/dist3/addCard_household.html
+
+
+
+
+
+***身份檢核***
+-  Idvalidation.html
+http://www.djimage.com.tw/dist3/Idvalidation.html
+
+
+***新增人像***
+- addportrait.html
+http://www.djimage.com.tw/dist3/addportrait.html
+
+
+***基本資料***
+- basic_info.html
+http://www.djimage.com.tw/dist3/basic_info.html
+
+
+***套表***
+- nested_table.html
+http://www.djimage.com.tw/dist3/nested_table.html
+
+套印會依照選擇幾張表  套印出幾張表單
+
+
+***帳戶資料***
+- account_info.html
+http://www.djimage.com.tw/dist3/account_info.html
+
+ 
+
+***新增印鑑卡***
+- addiconcard.html
+http://www.djimage.com.tw/dist3/addiconcard.html
+
+***完成作業***
+- finish.html.html 本國成年人
+http://www.djimage.com.tw/dist3/finish.html
+
+- finish_company.html 公司 / 政黨
+http://www.djimage.com.tw/dist3/finish_company.html
+
+- finish_multi.html 候選人 ，公庫   本國成年人
+http://www.djimage.com.tw/dist3/finish_multi.html
+
+
+
+
+
+
 
 
 
