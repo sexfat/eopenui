@@ -134,15 +134,22 @@
         .btn {
             margin-bottom: 10px;
         }
+    }
 
-
-
+}
+#result {
+    .red {
+        border: 1px solid #ff3633;
+    }
+    .blue {
+        border: 1px solid  #1c04f3;
     }
 }
 
 //上傳檔案
 .uploadfile {
     margin-bottom: 0px;
+
     input[type=file] {
         position: absolute;
         width: 1px;
