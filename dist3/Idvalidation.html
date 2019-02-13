@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="admin">
+    <meta name="author" content="">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Eopen 電子開戶系統 Web3.0版</title>
+    <!-- Icons-->
+    
+<link href="css/vendor.css" rel="stylesheet">
+<!-- Main styles for this application-->
+<link href="css/style.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+    <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+      Eopen電子開戶系統Web3.0
+      <!-- <img class="navbar-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo"> -->
+      <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+    </a>
+    <!-- <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <ul class="nav navbar-nav d-md-down-none">
+      <li class="nav-item px-3">
+        <a class="nav-link" href="id.html">開戶建檔</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">印鑑建檔</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">審核作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">異動作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">查詢作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">報表作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">快速建檔</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">空白表單列印</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">外網查詢</a>
+      </li>
+    </ul>
+    
+    <!-- <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+  </header>
+    <div class="app-body">
+        <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="nav-icon icon-speedometer"></i> Dashboard 1.0
+            <span class="badge badge-primary">NEW</span>
+          </a>
+        </li>
+        <li class="nav-title">功能列</li>
+        <li class="nav-item">
+          <a class="nav-link @@class01" href="id.html">
+            <i class="nav-icon icon-user-following"></i> 身份科目</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  @@class02" href="addCard.html">
+            <i class="nav-icon icon-picture"></i> 新增證件</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Idvalidation.html">
+            <i class="nav-icon icon-bell"></i> 身份檢核</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class05" href="addportrait.html">
+            <i class="nav-icon  icon-people"></i> 新增人像</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class06" href="basic_info.html">
+            <i class="nav-icon icon-pencil"></i> 基本資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class04" href="account_info.html">
+            <i class="nav-icon icon-list"></i> 帳戶資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class07" href="addiconcard.html">
+            <i class="nav-icon icon-info"></i> 新增印鑑卡</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @@class08" href="finish.html">
+              <i class="nav-icon icon-star"></i> 作業完成</a>
+          </li>
+          <li class="divider"></li>
+          <li class="nav-item">
+              <a class="nav-link @@class09" href="#">
+                <i class="nav-icon icon-info"></i>開戶中斷
+                <span class="badge badge-danger">STOP</span>
+              </a>
+                 
+            </li>
+        <!-- <li class="nav-item mt-auto">
+          <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+            <i class="nav-icon icon-cloud-download"></i> Download CoreUI</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+            <i class="nav-icon icon-layers"></i> Try CoreUI
+            <strong>PRO</strong>
+          </a>
+        </li> -->
+      </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+  </div>;
+        <div class="main">
+            <!-- Breadcrumb-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">
+                    Admin
+                </li>
+                <li class="breadcrumb-item active">身份檢核</li>
+                <!-- Breadcrumb Menu-->
+                <!-- setup -->
+<li class="breadcrumb-menu d-md-down-none">
+    <div class="btn-group" role="group" aria-label="Button group">
+        <!-- <a class="btn" href="#">
+            <i class="icon-speech"></i>
+        </a> -->
+        <a class="btn" href="./">
+            <i class="icon-graph"></i> 系統維護</a>
+        <a class="btn" href="#">
+            <i class="icon-settings"></i>  離開系統</a>
+    </div>
+</li>
+            </ol>
+            <div class="container-fluid">
+                <!-- content -->
+                <div class="animated fadeIn">
+                    <!-- inner-content  -->
+                    <!-- 內部結構 -->
+                    <div class="row">
+                            <div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">身份檢核
+        </div>
+        <div class="card-body">
+            <div class="valid">
+                <table class="table table-responsive-sm table-striped">
+                    <thead>
+                        <tr>
+                            <th> 項次</th>
+                            <th>檢核項目</th>
+                            <th>狀態</th>
+                            <th>異常警語</th>
+                            <th>明細內容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>總歸戶查詢</td>
+                            <td><a href="#" data-toggle="modal" data-target=".empty_modal-lg">查詢</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                共有<span>0</span>個帳戶
+                            </td>
+                            <td>......</td>
+                        </tr>
+                        <tr>
+                            <td>內政部身分證領補換資料查詢</td>
+                            <td><a href="">查詢</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                無任何問題
+                            </td>
+                            <td>......</td>
+                        </tr>
+                        <tr>
+                            <td>身分證領換補查詢驗證 (Z21)</td>
+                            <td><a href="">查詢</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                無任何問題
+                            </td>
+                            <td>......</td>
+                        </tr>
+                        <tr>
+                            <td>通報案件紀錄及補充註記(Z22)</td>
+                            <td><a href="">查詢</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                無任何問題
+                            </td>
+                            <td>......</td>
+                        </tr>
+                        <tr>
+                            <td>家事事件公告</td>
+                            <td><a href="">查詢</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                無任何問題
+                            </td>
+                            <td>......</td>
+                        </tr>
+                        <tr>
+                            <td>FATCA</td>
+                            <td><a href="">查詢</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                無任何問題
+                            </td>
+                            <td>......</td>
+                        </tr>
+                        <tr>
+                            <td>姓名檢核</td>
+                            <td><a href="">查詢</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                無任何問題
+                            </td>
+                            <td>......</td>
+                        </tr>
+                        <tr>
+                            <td>開戶檢核表</td>
+                            <td><a href="" data-toggle="modal" data-target=".valid-modal-lg">登打</a></td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                                <span class="badge badge-danger">Rejected</span>
+                            </td>
+                            <td>
+                                無任何問題
+                            </td>
+                            <td>......</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <select id="redirectSelect" class="form-control width15  min-control">
+                <option value=""> 選擇其它驗證方式...</option>
+                <!-- <option value="https://www.ris.gov.tw/app/portal/">身分證領換補查詢驗證(Z21)</option>-->
+                <option value="https://www.ris.gov.tw/app/portal/">通報案件紀錄及補充註記(Z22)</option> 
+                <option value="http://www.twnch.org.tw">台灣票據交換所</option>
+                <option value="http://www.judicial.gov.tw/index.asp">司法院</option>
+                <option value="http://www.immigration.gov.tw/aspcode/index_ch_main.asp">入出境管理局</option>
+                <option value="http://ooca.dortp.gov.tw">台北市商業管理處</option>
+                <option value="https://172.31.200.202/jinq2/">金融聯合徵信中心</option>
+                <option value="http://gcis.nat.gov.tw/index.jsp">經濟部全國商工行政服務入口網</option>
+            </select>
+
+            <button class="btn btn-block btn-success btn-xxl margintop-50" type="button">確定</button>
+        </div>
+    </div>
+</div>
+<!-- <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            ...
+          </div>
+        </div>
+      </div> -->
+
+
+
+<!-- 空白的 -->
+<div class="modal fade empty_modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">空白</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                .......test
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 開戶檢核表 -->
+<div class="modal fade valid-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">開戶檢核表</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- start -->
+                <div class="title margintop-20">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>戶名：<span>黃大發</span></h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10">
+                            <h6>身分證統編： <span>A123456789</span></h6>
+                        </div>
+                        <div class="col-2">
+                            <h6>日期：<span>2018/12/31</span></h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="validform margintop-30">
+                    <table class="table table-responsive-sm table-bordered space">
+                        <thead>
+                            <tr>
+                                <th>編號</th>
+                                <th>開戶檢核作業項目</th>
+                                <th>確認結果</th>
+                                <th>臨櫃應注意事項</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>
+                                    <h5>雙重身分證明文件查核</h5>
+                                    <h6 class="marginbottom-15 margintop-20"> 第二證件名稱：</h6>
+                                    <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">健保卡</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">駕照</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">護照</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">學生證</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">中央主管機關出具之老農津貼專戶證明文件</label></span>
+                                    <div class="margintop-1"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">其他</label>
+                                        <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+                                    </div>
+                                    <h6 class="margintop-20">第二證件號碼/卡號： <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+
+                                    </h6>
+
+
+                                </td>
+                                <td>
+                                    <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>
+                                    <h5>身分證之相片是否與本人相符</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">符合</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>
+                                    <h5 class="marginbottom-15">開戶目的清楚表達</h5>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">儲蓄</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">薪轉</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">證券戶</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">資金調撥</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">投資</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">老農津貼專戶</label></span>
+                                    <div>
+                                        <input type="checkbox" value="radio1" name="purpose">
+                                        <label for="radio1">其他:</label>
+                                        <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">合理</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>
+                                    <h5>職業與客戶本人氣質等外觀表現符合</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">相符</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>
+                                    <h5>
+                                        填寫開戶資料需不斷詢問他人地址、電話或向經辦人員查詢開戶進度
+                                    </h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>
+                                    <h5>主動詢問電話語音、網路及ATM相關問題，並積極表現要申請前項服務項目，與其職業或外觀氣質是否相當</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>
+                                    <h5>清楚知道自己與本會有無其他業務往來</h5>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">存款</label></span>
+                                    <span class=""> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">授信</label></span>
+                                    <span class=""> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">現金卡</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">壽險</label></span>
+                                    <span> <input type="checkbox" value="purpose" name="purpose">
+                                        <label for="purpose">尚未往來</label></span>
+                                    <div>
+                                        <input type="checkbox" value="radio1" name="purpose">
+                                        <label for="radio1">其他:</label>
+                                        <div class="width25 marginleft-6">
+                                            <input class="form-control" type="text" name="text-input" placeholder="請填入">
+                                            <!-- <span class="help-block">This is a help text</span> -->
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">清楚</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td>
+                                    <h5>短期間（含申請當日）於金融聯合徵信中心開戶查詢次數異常或頻繁者</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">合理</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>
+                                    <h5>「國民身分證」正常否有偽變造情形</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <h5>主動詢問電話語音、網路及ATM相關問題，並積極表現要申請前項服務項目，與其職業或外觀氣質是否相當</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">相符</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>
+                                    <h5>客戶資料內部查詢顯示警語【 】</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>
+                                    <h5>查詢「Z21國民身分證領補換資料查詢驗證」</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>
+                                    <h5>查詢「Z22通報案件紀錄及補充註記資訊」</h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>
+                                    <h5>查詢「監護、輔助宣告」<a target="_blank" href="http://www.judicial.gov.tw">(http://www.judicial.gov.tw)</a></h5>
+                                </td>
+                                <td> <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">正常</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">異常</label></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td colspan="3">
+                                    <h5> <input type="checkbox" value="fraud" name="fraud">
+                                        <label for="fraud">已向客戶宣導提供帳戶交詐騙集團使用，涉嫌違反刑法幫助詐欺罪，及或觸犯幫助洗錢罪，得處5年以下有期徒刑</label>
+                                    </h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h5>
+                                        基於上述確認後，是否同意其開戶：
+                                    </h5>
+                                        <ul>
+                                            <li>編號1、2、10~14如屬異常者得婉拒開戶。</li>
+                                            <li>15項如屬異常者，須經法定代理人(監護人)之同意。</li>
+                                            <li>編號3~9， 供斟酌受理開戶之參考，如有可疑仍宜婉拒。</li>
+                                            <li>編號3 開戶目的為老農津貼專戶，專供老農津貼匯入；經辦人員應向客戶告知開立本專戶之應注意事項，並於電腦上註記。</li>
+                                        </ul>
+                                   
+                                </td>
+                                <td>
+                                    <span> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">受理</label></span>
+                                    <span class="marginleft-20"> <input type="radio" value="radio1" name="idvalid">
+                                        <label for="radio1">拒絕</label></span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                        <h5 class="margintop-10">如有異常情形仍受理開戶之理由：</h5>
+                                        <textarea class="form-control"  name="textarea-input" rows="9" placeholder="理由"></textarea>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+
+
+                <!-- end -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary">儲存</button>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="app-footer">
+        <div>
+            <a href="https://coreui.io">djimage</a>
+            <span>&copy; 2018 All Rights Reserved</span>
+        </div>
+        <div class="ml-auto">
+            <span>Powered by</span>
+            <a href="#">djimage</a>
+        </div>
+    </footer>
+    <!-- necessary plugins-->
+
+
+
+</body>
+<!-- necessary plugins-->
+<script src="js/jquery.min.js" defer></script>
+<script src="js/bootstrap.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/datepicker.min.js" defer></script>
+<script src="js/cropper.min.js" defer></script>
+
+<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+<!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/pace-progress/pace.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script> -->
+<script src="js/scripts.js" defer></script>
+</html>
