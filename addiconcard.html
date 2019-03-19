@@ -38,7 +38,7 @@
         <a class="nav-link" href="#">印鑑建檔</a>
       </li>
       <li class="nav-item px-3">
-        <a class="nav-link" href="#">審核作業</a>
+        <a class="nav-link" href="review.html">審核作業</a>
       </li>
       <li class="nav-item px-3">
         <a class="nav-link" href="#">異動作業</a>
@@ -208,7 +208,7 @@
                         <span>科目：活期存款01</span>
                         <h3 class="account_title">帳號：63501-01-0000000</h3>
                         <div class="addCard">
-                            <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描機</button>
+                            <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button" onclick="scanToJpg();">連接掃描機</button>
 
                             <label class="btn btn-block btn-primary btn-xl inlineBlock uploadfile">匯入文件
                                 <input type="file" multiple id="imgInp" accept="image/gif, image/jpg, image/png" />
@@ -226,7 +226,7 @@
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
-                                <button class="btn btn-block btn-primary btn-xl inlineBlock marginleft-30" type="button">新增</button>
+                                <button class="btn btn-block btn-primary btn-xl inlineBlock marginleft-30" type="button">加入此式</button>
                                 <button class="btn btn-dark btn-secondary btn-l inlineBlock " id="clearImg" type="button">清除</button>
 
 
@@ -261,7 +261,11 @@
                                     </div>
                                     <!-- <div class=" " >截章</div> -->
                                     <!-- <img id="imagescut" src="img/bampcard.jpg" alt=""> -->
-                                    <img id="imagescut" src="img/bampcard.jpg" alt="your image" />
+                                    <div id="clickadd">
+                                        <img id="imagescut" src="img/bampcard.jpg" alt="your image" />
+                                        <!-- <img  id="imagescut" src="img/bampcard.jpg" alt="your image" />  -->
+                                    </div>
+                                   
 
 
                                 </div>
@@ -308,12 +312,7 @@
 <script src="js/modal.js" defer></script>
 <script src="js/datepicker.min.js" defer></script>
 <script src="js/cropper.min.js" defer></script>
+<!-- <script src="js/scanner.js" defer></script> -->
 
-<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
-<!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="node_modules/pace-progress/pace.min.js"></script>
-  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script> -->
 <script src="js/scripts.js" defer></script>
 </html>

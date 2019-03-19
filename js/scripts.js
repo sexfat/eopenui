@@ -7,7 +7,7 @@ console.log('js load ok');
 
 
 
-$(".btn_01").on('click', function (){
+$(".btn_01").on('click', function () {
   $(this).siblings('.active').removeClass('active');
   $(".box01").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
   $('.submenu > div > div > input').prop('checked', false);
@@ -167,15 +167,17 @@ $(".addfr").on('click', function () {
 
 //截章
 
-$(function(){
+$(function () {
   var image = document.getElementById('imagescut');
+  // var emls = document.querySelector('#clickadd  img');
+  // var image = document.getElementsByClassName('imagescut');
   var start = document.getElementById('StartStmap');
   var restart = document.getElementById('RestartStmap');
   var canvas = $('.sealcut');
   var $result = $('#result');
-  
-  start.addEventListener('click', function() {
-    new Cropper(image, {
+
+  start.addEventListener('click', function () {
+    new Cropper(image , {
       autoCrop: true,
       zoomOnWheel: false,
       rotatable: true,
@@ -184,76 +186,154 @@ $(function(){
       ready() {
         this.cropper.crop();
       },
-  
+
     });
   });
-  
-  
+
+  start.addEventListener('click', function () {
+    new Cropper(image , {
+      autoCrop: true,
+      zoomOnWheel: false,
+      rotatable: true,
+      toggleDragModeOnDblclick: true,
+      background: true,
+      ready() {
+        this.cropper.crop();
+      },
+
+    });
+  });
+
+
+
+
+
+
+
+
+
   $('#cropStmap_red').on('click', function () {
     var croppedImageDataURL = image.cropper.getCroppedCanvas();
     var ders = croppedImageDataURL.toDataURL("image/jpeg");
     $result.append($('<img>').attr('src', ders).addClass("red"));
-  
+
     var xData = image.cropper.getData();
     var imgBase64 = image.cropper
-  
+
     console.log(croppedImageDataURL);
     console.log('x:' + xData.x);
     console.log('y:' + xData.y);
     console.log('width:' + xData.width);
     console.log('height:' + xData.height);
     console.log('base64:' + ders);
-  
+
   });
-  
-  
-  
+
+
+
   $('#cropStmap_blue').on('click', function () {
     var croppedImageDataURL = image.cropper.getCroppedCanvas();
     var ders = croppedImageDataURL.toDataURL("image/jpeg");
     $result.append($('<img>').attr('src', ders).addClass("blue"));
-  
+
     var xData = image.cropper.getData();
     var imgBase64 = image.cropper
-  
+
     console.log(croppedImageDataURL);
     console.log('x:' + xData.x);
     console.log('y:' + xData.y);
     console.log('width:' + xData.width);
     console.log('height:' + xData.height);
     console.log('base64:' + ders);
-  
+
   });
-  
+
   $('#RestartStmap').on('click', function () {
     image.cropper.destroy();
   });
-  
-  
+
+
   $('#imgRotation').click(function () {
     image.cropper.rotate(90);
   });
-  
-  
+
+
   $('#clearImg').click(function () {
     $result.empty();
   });
-  
+
   $(".addstamp").click(function () {
     $(".addiconcards").show();
   });
 
 
 
+  // var emls = document.querySelector('#clickadd  img');
+  // // $("#clickadd  img").click(function () {
+  // //   $("#clickadd  img").attr('id', 'imagescut');
+  // // });
+
+  // emls.addEventListener('click', function (e) {
+  //   e.preventDefault();
+  //   $("#clickadd  img").attr('id', 'imagescut');
+  // }, false);
+
 });
 
-
-
-
 //select gotourl 身份檢核
-document.getElementById('redirectSelect').onchange = function gotoUrl(){
+document.getElementById('redirectSelect').onchange = function gotoUrl() {
   var goto = this.value;
   window.open(goto, '_blank');
 };
 
 
+// scanner.js  主要程式
+
+//
+// Please read scanner.js developer's guide at: http://asprise.com/document-scan-upload-image-browser/ie-chrome-firefox-scanner-docs.html
+//
+
+/** Initiates a scan */
+// function scanToJpg() {
+//   scanner.scan(displayImagesOnPage, {
+//     "output_settings": [{
+//       "type": "return-base64",
+//       "format": "jpg"
+//     }]
+//   });
+// }
+// /** Processes the scan result */
+// function displayImagesOnPage(successful, mesg, response) {
+//   if (!successful) { // On error
+//     console.error('Failed: ' + mesg);
+//     return;
+//   }
+
+//   if (successful && mesg != null && mesg.toLowerCase().indexOf('user cancel') >= 0) { // User cancelled.
+//     console.info('User cancelled');
+//     return;
+//   }
+
+//   var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
+//   for (var i = 0;
+//     (scannedImages instanceof Array) && i < scannedImages.length; i++) {
+//     var scannedImage = scannedImages[i];
+//     processScannedImage(scannedImage);
+//   }
+// }
+
+// /** Images scanned so far. */
+// var imagesScanned = [];
+
+// /** Processes a ScannedImage */
+// function processScannedImage(scannedImage) {
+//   imagesScanned.push(scannedImage);
+//   var elementImg = scanner.createDomElementFromModel({
+//     'name': 'img',
+//     'attributes': {
+//       'class': 'scanned',
+//       'src': scannedImage.src
+//     }
+//   });
+//   document.getElementById('images').appendChild(elementImg);
+// }

@@ -79,16 +79,16 @@
         </li>
         <li class="nav-title">功能列</li>
         <li class="nav-item">
-          <a class="nav-link  @@class01" href="index.html">
-            <i class="nav-icon icon-drop"></i>未完成案件</a>
+          <a class="nav-link  @@class01" href="review.html">
+            <i class="nav-icon icon-drop"></i>審核新開戶</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link active" href="#">
-            <i class="nav-icon icon-pencil"></i> 引用案件</a>
-        </li> -->
         <li class="nav-item">
-          <a class="nav-link  active" href="index_return.html">
-            <i class="nav-icon icon-pencil"></i> 退件</a>
+          <a class="nav-link  active" href="review_change.html">
+            <i class="nav-icon icon-pencil"></i>審核變更戶</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  @@class03" href="">
+            <i class="nav-icon icon-pencil"></i>異動註記</a>
         </li>
           <!-- <li class="divider"></li> -->
           <!-- <li class="nav-item">
@@ -119,7 +119,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">Dashboard</li>
+                <li class="breadcrumb-item active">審核</li>
                 <!-- Breadcrumb Menu-->
                  <!-- setup -->
 <li class="breadcrumb-menu d-md-down-none">
@@ -142,63 +142,40 @@
                     <div class="row">
                             <div class="col-sm-12 col-xl-12">
         <div class="card">
-            <div class="card-header">
-                @@titles
+            <div class="card-header">變更資料
             </div>
             <div class="card-body">
-                <table class="table table-responsive-sm table-sm margintop-20">
-                    <thead>
-                        <tr>
-                            <th>eSN</th>
-                            <th>帳號</th>
-                            <th>姓名</th>
-                            <th>統編</th>
-                            <th>開戶日期</th>
+                <div class="list-group">
+                    <!-- activ -->
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">帳號：60201-01-32213456</h5>
+                            <small>變更項目:<b>基本資料</b></small>
+                        </div>
+                        <p class="mb-1 margintop-3">客戶名稱：王大發</p>
+                        <p class="mb-1">證號：A123456789</p>
     
-                        </tr>
-                    </thead>
-                    <tbody>
+                    </a>
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">帳號：60202-01-34213456</h5>
+                            <small>變更項目:<b>身份證</b></small>
+                        </div>
+                        <p class="mb-1 margintop-3">客戶名稱：王小發</p>
+                        <p class="mb-1">證號：A123456789</p>
     
-                        <tr>
-                            <td><a href="">00123456</a> </td>
-                            <td>
-                                
-                                    <div>63501-01-1234567</div>
-                                    <div>63501-11-1234567</div>
-                                
-                            </td>
-                            <td>bryan</td>
-                            <td>A123456789</td>
-                            <td>108/01/09</td>
-                        <tr>
-                            <td><a href="">0012343</a> </td>
-                            <td>63501-01-1234567</td>
-                            <td>kevun</td>
-                            <td>B123456789</td>
-                            <td>108/01/10</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#">Prev</a>
-                    </li>
-                    <li class="page-item active">
-                        <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">4</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
+                    </a>
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">帳號：60201-02-32213256</h5>
+                            <small>變更項目:<b>帳戶資料 , 身份證</b></small>
+                        </div>
+                        <p class="mb-1 margintop-3">客戶名稱：李阿一</p>
+                        <p class="mb-1">證號：A123456789</p>
+    
+                    </a>
+                </div>
+    
             </div>
         </div>
     </div>
@@ -211,7 +188,7 @@
     </div>
     <footer class="app-footer">
         <div>
-            <a href="https://coreui.io">djimage</a>
+            <a href="#">djimage</a>
             <span>&copy; 2018 All Rights Reserved</span>
         </div>
         <div class="ml-auto">
