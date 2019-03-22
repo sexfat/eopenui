@@ -177,7 +177,7 @@ $(function () {
   var $result = $('#result');
 
   start.addEventListener('click', function () {
-    new Cropper(image , {
+    new Cropper(image, {
       autoCrop: true,
       zoomOnWheel: false,
       rotatable: true,
@@ -191,7 +191,7 @@ $(function () {
   });
 
   start.addEventListener('click', function () {
-    new Cropper(image , {
+    new Cropper(image, {
       autoCrop: true,
       zoomOnWheel: false,
       rotatable: true,
@@ -266,74 +266,69 @@ $(function () {
     $(".addiconcards").show();
   });
 
-
-
-  // var emls = document.querySelector('#clickadd  img');
-  // // $("#clickadd  img").click(function () {
-  // //   $("#clickadd  img").attr('id', 'imagescut');
-  // // });
-
-  // emls.addEventListener('click', function (e) {
-  //   e.preventDefault();
-  //   $("#clickadd  img").attr('id', 'imagescut');
-  // }, false);
-
 });
 
 //select gotourl 身份檢核
-document.getElementById('redirectSelect').onchange = function gotoUrl() {
-  var goto = this.value;
-  window.open(goto, '_blank');
-};
+
+// document.getElementById('redirectSelect').onchange = function gotoUrl() {
+//   var goto = this.value;
+//   window.open(goto, '_blank');
+// };
 
 
 // scanner.js  主要程式
 
-//
-// Please read scanner.js developer's guide at: http://asprise.com/document-scan-upload-image-browser/ie-chrome-firefox-scanner-docs.html
-//
 
-/** Initiates a scan */
-// function scanToJpg() {
-//   scanner.scan(displayImagesOnPage, {
-//     "output_settings": [{
-//       "type": "return-base64",
-//       "format": "jpg"
-//     }]
-//   });
-// }
-// /** Processes the scan result */
-// function displayImagesOnPage(successful, mesg, response) {
-//   if (!successful) { // On error
-//     console.error('Failed: ' + mesg);
-//     return;
-//   }
+function scanToJpg() {
+  scanner.scan(displayImagesOnPage, {
+    "output_settings": [{
+      "type": "return-base64",
+      "format": "jpg"
+    }]
+  });
+}
 
-//   if (successful && mesg != null && mesg.toLowerCase().indexOf('user cancel') >= 0) { // User cancelled.
-//     console.info('User cancelled');
-//     return;
-//   }
+/** Processes the scan result */
+function displayImagesOnPage(successful, mesg, response) {
+  if (!successful) { // On error
+    console.error('Failed: ' + mesg);
+    return;
+  }
 
-//   var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
-//   for (var i = 0;
-//     (scannedImages instanceof Array) && i < scannedImages.length; i++) {
-//     var scannedImage = scannedImages[i];
-//     processScannedImage(scannedImage);
-//   }
-// }
+  if (successful && mesg != null && mesg.toLowerCase().indexOf('user cancel') >= 0) { // User cancelled.
+    console.info('User cancelled');
+    return;
+  }
 
-// /** Images scanned so far. */
-// var imagesScanned = [];
+  var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
+  for (var i = 0;
+    (scannedImages instanceof Array) && i < scannedImages.length; i++) {
+    var scannedImage = scannedImages[i];
+    processScannedImage(scannedImage);
+  }
+}
 
-// /** Processes a ScannedImage */
-// function processScannedImage(scannedImage) {
-//   imagesScanned.push(scannedImage);
-//   var elementImg = scanner.createDomElementFromModel({
-//     'name': 'img',
-//     'attributes': {
-//       'class': 'scanned',
-//       'src': scannedImage.src
-//     }
-//   });
-//   document.getElementById('images').appendChild(elementImg);
-// }
+/** Images scanned so far. */
+var imagesScanned = [];
+
+/** Processes a ScannedImage */
+function processScannedImage(scannedImage) {
+  imagesScanned.push(scannedImage);
+  var elementImg = scanner.createDomElementFromModel({
+    'name': 'img',
+    'attributes': {
+      'id': 'imagescut',
+      'src': scannedImage.src
+    }
+  });
+    $('#cutImg').append(elementImg , function(){
+      var cutObj =  $('#cutImg > img');
+      var xp = cutObj.width();
+      var addWidth = Math.round(xp * .4132) + 'px';
+      cutObj.attr("width", addWidth);
+      console.log(addWidth + 'ok');
+    });
+}
+
+
+// 1:1 寫法
