@@ -167,10 +167,8 @@ $(".addfr").on('click', function () {
 
 //截章
 
-$(function () {
+function cropstamp(){
   var image = document.getElementById('imagescut');
-  // var emls = document.querySelector('#clickadd  img');
-  // var image = document.getElementsByClassName('imagescut');
   var start = document.getElementById('StartStmap');
   var restart = document.getElementById('RestartStmap');
   var canvas = $('.sealcut');
@@ -203,12 +201,6 @@ $(function () {
 
     });
   });
-
-
-
-
-
-
 
 
 
@@ -262,10 +254,11 @@ $(function () {
     $result.empty();
   });
 
-  $(".addstamp").click(function () {
-    $(".addiconcards").show();
-  });
 
+};
+
+$(".addstamp").click(function () {
+  $(".addiconcards").show();
 });
 
 //select gotourl 身份檢核
@@ -274,6 +267,15 @@ $(function () {
 //   var goto = this.value;
 //   window.open(goto, '_blank');
 // };
+
+
+// upload
+
+
+
+
+
+
 
 
 // scanner.js  主要程式
@@ -308,6 +310,7 @@ function displayImagesOnPage(successful, mesg, response) {
   }
 }
 
+
 /** Images scanned so far. */
 var imagesScanned = [];
 
@@ -321,14 +324,78 @@ function processScannedImage(scannedImage) {
       'src': scannedImage.src
     }
   });
-    $('#cutImg').append(elementImg , function(){
-      var cutObj =  $('#cutImg > img');
-      var xp = cutObj.width();
-      var addWidth = Math.round(xp * .4132) + 'px';
-      cutObj.attr("width", addWidth);
-      console.log(addWidth + 'ok');
-    });
+  $('#cutImg').append(elementImg);
 }
 
 
+
+function resize(){
+  var cutObjs = $('#cutImg > img');
+  var xps = cutObjs.width();
+  var addWidths = Math.round(xps * 0.44496855) + 'px';
+  cutObjs.attr("width", addWidths);
+}
+
+// var cutObjs = $('#cutImg > img');
+//   var xps = cutObjs.width();
+//   var addWidths = Math.round(xps * 0.44496855) + 'px';
+//   cutObjs.attr("width", addWidths);
+//   console.log('scanner' + addWidths + 'ok');
+
+// window.setTimeout( function(){
+//   var cutObjs = $('#cutImg > img');
+//   var xps = cutObjs.width();
+//   var addWidths = Math.round(xps * .4132) + 'px';
+//   cutObjs.attr("width", addWidths);
+//   console.log('scanner' + addWidths + 'ok');
+//   }, 1000);
+
+
+
 // 1:1 寫法
+
+
+// upload
+
+
+//上傳圖片，並且預覽
+
+
+
+$("#imgInp").change(function () {
+  $("#cutImg").html(""); // 清除預覽
+  readURL(this);
+});
+
+function readURL(input) {
+  if (input.files && input.files.length >= 0) {
+    for (var i = 0; i < input.files.length; i++) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var img = $("<img id='imagescut'>").attr('src', e.target.result);
+
+        $("#cutImg").append(img);
+        cropstamp();
+   
+        // var cutObj = $('#cutImg > img');
+        // var xp = cutObj.width();
+        // var addWidth = Math.round(xp * .4132) + 'px';
+        // cutObj.attr("width", addWidth);
+        // console.log('upload' + addWidth + 'ok');
+        // console.log('upload ok');
+      }
+      reader.readAsDataURL(input.files[i]);
+    }
+  } else {
+    var noPictures = $("<p>目前沒有圖片</p>");
+    $("#cutImg").append(noPictures);
+  }
+}
+
+
+
+
+
+
+
+console.log('end ok');
