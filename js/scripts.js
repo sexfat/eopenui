@@ -167,7 +167,7 @@ $(".addfr").on('click', function () {
 
 //截章
 
-function cropstamp(){
+function cropstamp() {
   var image = document.getElementById('imagescut');
   var start = document.getElementById('StartStmap');
   var restart = document.getElementById('RestartStmap');
@@ -307,6 +307,11 @@ function displayImagesOnPage(successful, mesg, response) {
     (scannedImages instanceof Array) && i < scannedImages.length; i++) {
     var scannedImage = scannedImages[i];
     processScannedImage(scannedImage);
+    window.setTimeout(function () {
+      resize();
+      cropstamp();
+    }, 100);
+
   }
 }
 
@@ -329,11 +334,13 @@ function processScannedImage(scannedImage) {
 
 
 
-function resize(){
-  var cutObjs = $('#cutImg > img');
+function resize() {
+
+  var cutObjs = $('#cutImg img');
   var xps = cutObjs.width();
-  var addWidths = Math.round(xps * 0.44496855) + 'px';
+  var addWidths = Math.round(xps * 0.4032) + 'px';
   cutObjs.attr("width", addWidths);
+
 }
 
 // var cutObjs = $('#cutImg > img');
@@ -376,7 +383,7 @@ function readURL(input) {
 
         $("#cutImg").append(img);
         cropstamp();
-   
+
         // var cutObj = $('#cutImg > img');
         // var xp = cutObj.width();
         // var addWidth = Math.round(xp * .4132) + 'px';
@@ -394,6 +401,17 @@ function readURL(input) {
 
 
 
+
+
+
+function redirectPage(){
+  var wjb51 = screen.width;
+  var hjb51 = screen.height;
+  console.log('經系統檢測，你的螢幕解析度為' + wjb51 + 'x' + hjb51);
+}
+
+
+redirectPage();
 
 
 

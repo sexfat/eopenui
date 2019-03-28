@@ -168,7 +168,7 @@ gulp.task('deploy', function () {
     var conn = ftp.create({
         host: 'ftp.djimage.com.tw',
         user: 'web@djimage.com.tw',
-        password: 'Iloveyou6831',
+        password: 'qweasdzxc_123',
         parallel: 21,
         log: gutil.log
     });

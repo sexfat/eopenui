@@ -105,6 +105,15 @@ http://www.djimage.com.tw/dist3/finish_multi.html
 - review.html 審核新開戶
 http://www.djimage.com.tw/dist3/review.html
 
+- review_page.html 個人戶
+http://www.djimage.com.tw/dist3/review_page.html
+
+- review_company.html 公司戶
+http://www.djimage.com.tw/dist3/review_company.html
+
+- review_multi.html 聯名戶
+http://www.djimage.com.tw/dist3/review_multi.html
+
 
 
 
