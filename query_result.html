@@ -70,66 +70,15 @@
     </button> -->
   </header>
     <div class="app-body">
-        <div class="sidebar">
-    <nav class="sidebar-nav">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="nav-icon icon-speedometer"></i> Dashboard 1.0
-            <span class="badge badge-primary">NEW</span>
-          </a>
-        </li>
-        <li class="nav-title">功能列</li>
-        <li class="nav-item">
-          <a class="nav-link  active" href="review.html">
-            <i class="nav-icon icon-drop"></i>審核新開戶</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  @@class02" href="review_change.html">
-            <i class="nav-icon icon-pencil"></i>審核變更</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  @@class03" href="">
-            <i class="nav-icon icon-pencil"></i>審核異動註記</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  @@class04" href="">
-            <i class="nav-icon icon-pencil"></i>審核結清</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  @@class05" href="">
-            <i class="nav-icon icon-pencil"></i>審核掛失</a>
-        </li>
-          <!-- <li class="divider"></li> -->
-          <!-- <li class="nav-item">
-              <a class="nav-link @@class09" href="#">
-                <i class="nav-icon icon-pencil"></i>開戶中斷
-                <span class="badge badge-danger">STOP</span>
-              </a>
-                 
-            </li> -->
-        <!-- <li class="nav-item mt-auto">
-          <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
-            <i class="nav-icon icon-cloud-download"></i> Download CoreUI</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
-            <i class="nav-icon icon-layers"></i> Try CoreUI
-            <strong>PRO</strong>
-          </a>
-        </li> -->
-      </ul>
-    </nav>
-    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-  </div>;
-        <div class="main">
+       
+        <div class="main full-width_all">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">審核</li>
+                <li class="breadcrumb-item active">查詢作業</li>
                 <!-- Breadcrumb Menu-->
                  <!-- setup -->
 <li class="breadcrumb-menu d-md-down-none">
@@ -150,45 +99,48 @@
                     <!-- inner-content  -->
                     <!-- 內部結構 -->
                     <div class="row">
-                            <div class="col-sm-12 col-xl-12">
+                            <!-- content -->
+<div class="col-sm-12 col-xl-12">
+    <div class="card text-white bg-danger text-center">
+        <div class="card-body">
+            <h5>帳戶掛失</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-12">
+        <div class="card text-white bg-warning text-center">
+            <div class="card-body">
+                <h5>帳戶異動中</h5>
+            </div>
+        </div>
+    </div>
+<!-- 警示列 -->
+<div class="col-sm-12 col-xl-12">
     <div class="card">
-        <div class="card-header">新開戶資料
+        <div class="card-header">帳戶資訊
         </div>
         <div class="card-body">
-            <div class="list-group">
-                <!-- activ -->
-                <a class="list-group-item list-group-item-action flex-column align-items-start" href="review_page.html">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">帳號：60201-01-32213456</h5>
-                        <small>身份別： <span class="badge badge-primary">個人戶</span></small>
-                    </div>
-                    <p class="mb-1 margintop-3">客戶名稱：王大發</p>
-                    <p class="mb-1">證號：A123456789</p>
 
-                </a>
-                <a class="list-group-item list-group-item-action flex-column align-items-start" href="review_company.html">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">帳號：60202-01-34213456</h5>
-                        <small>身份別： <span class="badge badge-primary">公司戶</span></small>
-                    </div>
-                    <p class="mb-1 margintop-3">客戶名稱：王小發</p>
-                    <p class="mb-1">證號：A123456789</p>
 
-                </a>
-                <a class="list-group-item list-group-item-action flex-column align-items-start" href="review_multi.html">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">帳號：60201-02-32213256</h5>
-                        <small>身份別： <span class="badge badge-primary">聯名戶</span></small>
-                    </div>
-                    <p class="mb-1 margintop-3">客戶名稱：李阿一</p>
-                    <p class="mb-1">證號：A123456789</p>
 
-                </a>
-            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">原始基本資料
+        </div>
+        <div class="card-body gray_bgcolor">
+
 
         </div>
     </div>
 </div>
+<!-- content end -->
                     </div>
                     <!-- end -->
                 </div>
@@ -196,7 +148,7 @@
         </div>
         
     </div>
-    <footer class="app-footer">
+    <footer class="app-footer full-width_all">
         <div>
             <a href="#">djimage</a>
             <span>&copy; 2018 All Rights Reserved</span>

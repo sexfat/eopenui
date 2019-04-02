@@ -148,7 +148,18 @@
 
 
 .gray_bgcolor {
-    background-color: #d6d6d6;
+   background-color: rgb(238, 238, 238);
+   color: rgb(122, 122, 122)
+}
+
+.full-width_all {
+    margin-left: initial !important;
+    
+}
+
+.query_box {
+    width: 35rem;
+    margin: 0 auto;
 }
 
 

@@ -137,12 +137,14 @@
     }
 
 }
+
 #result {
     .red {
         border: 1px solid #ff3633;
     }
+
     .blue {
-        border: 1px solid  #1c04f3;
+        border: 1px solid #1c04f3;
     }
 }
 
@@ -196,3 +198,8 @@
 
 }
 
+
+//============= 查詢頁面============
+.outline-d4 {
+    border: 1px solid #d4d4d4;
+}
