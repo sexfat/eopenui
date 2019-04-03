@@ -20,10 +20,10 @@
 ***管理頁面首頁***
 
 - index.html
-http://www.djimage.com.tw/dist3/index.html
+https://sexfat.github.io/eopenui/dist3/index.html
 
 -  index_return.html
-http://www.djimage.com.tw/dist3/index_return.html
+https://sexfat.github.io/eopenui/dist3/index_return.html
 
 
 
@@ -31,27 +31,27 @@ http://www.djimage.com.tw/dist3/index_return.html
 ***身份科目***
 
 - addCard.html 身份科目
-http://www.djimage.com.tw/dist3/id.html
+https://sexfat.github.io/eopenui/dist3/id.html
 
 
 
 ***新增證件***
 
 - addCard.html 新增證件  (成年人戶)
-http://www.djimage.com.tw/dist3/addCard.html
+https://sexfat.github.io/eopenui/dist3/addCard.html
 
 - addCard_company.html  新增證件 (公司戶)
-http://www.djimage.com.tw/dist3/addCard_company.html
+https://sexfat.github.io/eopenui/dist3/addCard_company.html
 
 - addCard_over18.html 新增證件 （未成年戶） 
-http://www.djimage.com.tw/dist3/addCard_over18.html
+https://sexfat.github.io/eopenui/dist3/addCard_over18.html
 
 - addCard_foreigner.html  外國人（成年 / 未成年）
-http://www.djimage.com.tw/dist3/addCard_foreigner.html
+https://sexfat.github.io/eopenui/dist3/addCard_foreigner.html
 
 ***聯名戶已增加***
 - addCard_household.html
-http://www.djimage.com.tw/dist3/addCard_household.html
+https://sexfat.github.io/eopenui/dist3/addCard_household.html
 
 
 
@@ -59,65 +59,71 @@ http://www.djimage.com.tw/dist3/addCard_household.html
 
 ***身份檢核***
 -  Idvalidation.html
-http://www.djimage.com.tw/dist3/Idvalidation.html
+https://sexfat.github.io/eopenui/dist3/Idvalidation.html
 
 
 ***新增人像***
 - addportrait.html
-http://www.djimage.com.tw/dist3/addportrait.html
+https://sexfat.github.io/eopenui/dist3/addportrait.html
 
 
 ***基本資料***
 - basic_info.html
-http://www.djimage.com.tw/dist3/basic_info.html
+https://sexfat.github.io/eopenui/dist3/basic_info.html
 
 
 ***套表***
 - nested_table.html
-http://www.djimage.com.tw/dist3/nested_table.html
+https://sexfat.github.io/eopenui/dist3/nested_table.html
 
 套印會依照選擇幾張表  套印出幾張表單
 
 
 ***帳戶資料***
 - account_info.html
-http://www.djimage.com.tw/dist3/account_info.html
+https://sexfat.github.io/eopenui/dist3/account_info.html
 
  
 
 ***新增印鑑卡***
 - addiconcard.html
-http://www.djimage.com.tw/dist3/addiconcard.html
+https://sexfat.github.io/eopenui/dist3/addiconcard.html
 
 ***完成作業***
 - finish.html.html 本國成年人
-http://www.djimage.com.tw/dist3/finish.html
+https://sexfat.github.io/eopenui/dist3/finish.html
 
 - finish_company.html 公司 / 政黨
-http://www.djimage.com.tw/dist3/finish_company.html
+https://sexfat.github.io/eopenui/dist3/finish_company.html
 
 - finish_multi.html 候選人 ，公庫   本國成年人
-http://www.djimage.com.tw/dist3/finish_multi.html
+https://sexfat.github.io/eopenui/dist3/finish_multi.html
 
 
 ***審核新開戶***
 
 - review.html 審核新開戶
-http://www.djimage.com.tw/dist3/review.html
+https://sexfat.github.io/eopenui/dist3/review.html
 
 - review_page.html 個人戶
-http://www.djimage.com.tw/dist3/review_page.html
+https://sexfat.github.io/eopenui/dist3/review_page.html
 
 - review_company.html 公司戶
-http://www.djimage.com.tw/dist3/review_company.html
+https://sexfat.github.io/eopenui/dist3/review_company.html
 
 - review_multi.html 聯名戶
-http://www.djimage.com.tw/dist3/review_multi.html
+https://sexfat.github.io/eopenui/dist3/review_multi.html
 
 
+***查詢帳戶頁面***
 
 
+- queryid.html 查詢首頁
+https://sexfat.github.io/eopenui/dist3/queryid.html
 
+
+- query_result.html 查詢結果頁
+https://sexfat.github.io/eopenui/dist3/query_result.html
 
 
 
