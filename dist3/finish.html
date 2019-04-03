@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="admin">
+    <meta name="author" content="">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Eopen 電子開戶系統 Web3.0版</title>
+    <!-- Icons-->
+    
+<link href="css/vendor.css" rel="stylesheet">
+<!-- Main styles for this application-->
+<link href="css/style.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+<script src="https://asprise.azureedge.net/scannerjs/scanner.js" type="text/javascript"></script>
+
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+    <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+      Eopen電子開戶系統Web3.0
+      <!-- <img class="navbar-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo"> -->
+      <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+    </a>
+    <!-- <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <ul class="nav navbar-nav d-md-down-none">
+      <li class="nav-item px-3">
+        <a class="nav-link" href="id.html">開戶建檔</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">印鑑建檔</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="review.html">審核作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">異動作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="queryid.html">查詢作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">報表作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">快速建檔</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">空白表單列印</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">外網查詢</a>
+      </li>
+    </ul>
+    
+    <!-- <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+  </header>
+    <div class="app-body">
+        <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="nav-icon icon-speedometer"></i> Dashboard 1.0
+            <span class="badge badge-primary">NEW</span>
+          </a>
+        </li>
+        <li class="nav-title">功能列</li>
+        <li class="nav-item">
+          <a class="nav-link @@class01" href="id.html">
+            <i class="nav-icon icon-user-following"></i> 身份科目</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  @@class02" href="addCard.html">
+            <i class="nav-icon icon-picture"></i> 新增證件</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class03" href="Idvalidation.html">
+            <i class="nav-icon icon-bell"></i> 身份檢核</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class05" href="addportrait.html">
+            <i class="nav-icon  icon-people"></i> 新增人像</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class06" href="basic_info.html">
+            <i class="nav-icon icon-pencil"></i> 基本資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class04" href="account_info.html">
+            <i class="nav-icon icon-list"></i> 帳戶資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class07" href="addiconcard.html">
+            <i class="nav-icon icon-info"></i> 新增印鑑卡</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="finish.html">
+              <i class="nav-icon icon-star"></i> 作業完成</a>
+          </li>
+          <li class="divider"></li>
+          <li class="nav-item">
+              <a class="nav-link @@class09" href="#">
+                <i class="nav-icon icon-info"></i>開戶中斷
+                <span class="badge badge-danger">STOP</span>
+              </a>
+                 
+            </li>
+        <!-- <li class="nav-item mt-auto">
+          <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+            <i class="nav-icon icon-cloud-download"></i> Download CoreUI</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+            <i class="nav-icon icon-layers"></i> Try CoreUI
+            <strong>PRO</strong>
+          </a>
+        </li> -->
+      </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+  </div>;
+        <div class="main">
+            <!-- Breadcrumb-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">
+                    <a href="#">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">作業完成</li>
+                <!-- Breadcrumb Menu-->
+                 <!-- setup -->
+<li class="breadcrumb-menu d-md-down-none">
+    <div class="btn-group" role="group" aria-label="Button group">
+        <!-- <a class="btn" href="#">
+            <i class="icon-speech"></i>
+        </a> -->
+        <a class="btn" href="./">
+            <i class="icon-graph"></i> 系統維護</a>
+        <a class="btn" href="#">
+            <i class="icon-settings"></i>  離開系統</a>
+    </div>
+</li>
+            </ol>
+            <div class="container-fluid">
+                <!-- content -->
+                <div class="animated fadeIn">
+                    <!-- inner-content  -->
+                    <!-- 內部結構 -->
+                    <div class="row">
+                            <!-- 候選人公庫本國成年人 -->
+<div class="col-sm-12 col-xl-12">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active show" data-toggle="tab" href="#basic_info" role="tab" aria-controls="home"
+                aria-selected="false">
+                <!-- <i class="icon-calculator"></i> -->基本資料</a>
+        </li>
+       
+        <li class="nav-item">
+            <a class="nav-link show" data-toggle="tab" href="#no_63501-01-0000000" role="tab" aria-controls="profile"
+                aria-selected="true">
+                63501-01-0000000</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#no_63501-11-0000000" role="tab" aria-controls="messages"
+                aria-selected="false">
+                63501-11-0000000</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active show" id="basic_info" role="tabpanel">
+            <!-- 基本資料 -->
+            <table class="table table-responsive-sm noborder">
+                <tbody>
+                    <tr>
+                        <td class="width21">
+                            <div class="person_info">
+                                <img class="person_img" src="https://placem.at/people?w=180&random=some_seed" alt="">
+                            </div>
+                        </td>
+                        <td class="width50">
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">身分證字號</label>
+                                <div class="">
+                                    A123456789
+                                </div>
+                            </div>
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">客戶名稱</label>
+                                <div>
+                                    王大發
+                                </div>
+                            </div>
+                            <div class="form-group bigtext">
+                                <label class="col-form-label" for="text-input">客戶類別</label>
+                                <div>
+                                    本國成年人
+                                </div>
+                            </div>
+
+
+                        </td>
+                </tbody>
+            </table>
+            <div class="form-group bigtext remarks">
+                <label class="col-form-label" for="text-input">狀態備註</label>
+                <div>
+                    <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4" placeholder="備註欄位....."></textarea>
+                </div>
+            </div>            
+            <div class="id_detail margintop-50">
+                    <h5 class="underline marginbottom-30">基本資料明細</h5>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">出生年月日</label>
+                    <div> 88年 12月 12日
+                    </div> 
+                </div>
+                <!-- 性別 -->
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">性別</label>
+                    <div>
+                        男
+                    </div>
+                </div>
+                <!-- 電話 -->
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">電話</label>
+                    <div>
+                        02-22456432
+                    </div>
+                </div>
+                <!-- 手機 -->
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">手機</label>
+                    <div>
+                        0975459678
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">Email</label>
+                    <div>
+                        djimages@djimages.com
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">通訊地郵遞區號</label>
+                    <div>
+                        200
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">出生地</label>
+                    <div>
+                        台北市民權東路三段234巷一弄45號4樓
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶籍地郵遞區號</label>
+                    <div>
+                        200
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶籍地</label>
+                    <div>
+                        新竹市公道5路6巷一弄3號1樓
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">名地檔戶名</label>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="card margintop-80">
+                <div class="card-header">
+                    證件影像
+                    <small>身份證正反面</small>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_top.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="iduser">
+                                    <img src="img/id_bottom.jpg" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="tab-pane " id="no_63501-01-0000000" role="tabpanel">
+            <!-- 帳號 -->
+            <div class="id_detail">
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">科目</label>
+                    <div> 活期存款01
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶號</label>
+                    <div> 63501-01-0000000
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">開戶日期</label>
+                    <div> 107年 10月31日
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label class="col-form-label" for="text-input">印鑑啟用日期</label>
+                        <div> 108年 1月31日
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-form-label" for="text-input">式憑原則</label>
+                            <div> 印鑑共一式憑一式有效
+                            </div>
+                        </div>
+            </div>
+            <div class="card margintop-50">
+                <div class="card-header">
+                    印鑑
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="idbamp">
+                                    <img src="img/idbamp_01.gif" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="idbamp">
+                                    <img src="img/idbamp.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+            <div class="card margintop-30">
+                <div class="card-header">
+                    印鑑卡正面
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+
+                                <img src="img/bampcard.jpg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+            <div class="card margintop-30">
+                <div class="card-header">
+                    印鑑卡反面
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td>
+
+                                <img src="img/bampcard.jpg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="no_63501-11-0000000" role="tabpanel">
+            <!-- 帳號資料 -->
+            <div class="id_detail">
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">科目</label>
+                    <div> 活期儲蓄存款 11
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">戶號</label>
+                    <div> 63501-11-0000000
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="text-input">開戶日期</label>
+                    <div> 107年 10月31日
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label class="col-form-label" for="text-input">印鑑啟用日期</label>
+                        <div> 108年 1月31日
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-form-label" for="text-input">式憑原則</label>
+                            <div> 印鑑共一式憑一式有效
+                            </div>
+                        </div>
+            </div>
+            <div class="card margintop-50">
+                    <div class="card-header">
+                        印鑑
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="idbamp">
+                                        <img src="img/idbamp_01.gif" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="idbamp">
+                                        <img src="img/idbamp.png" alt="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+    
+    
+                    </div>
+                </div>
+                <div class="card margintop-30">
+                    <div class="card-header">
+                        印鑑卡正面
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td>
+    
+                                    <img src="img/bampcard.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+    
+    
+                    </div>
+                </div>
+                <div class="card margintop-30">
+                    <div class="card-header">
+                        印鑑卡反面
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td>
+    
+                                    <img src="img/bampcard.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+    
+    
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+<button class="btn btn-block btn-success btn-xxl  margintop-30 marginbottom-50" type="button">確定歸戶</button>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="app-footer">
+        <div>
+            <a href="#">djimage</a>
+            <span>&copy; 2018 All Rights Reserved</span>
+        </div>
+        <div class="ml-auto">
+            <span>Powered by</span>
+            <a href="#">djimage</a>
+        </div>
+    </footer>
+    <!-- necessary plugins-->
+
+
+
+</body>
+<!-- necessary plugins-->
+<script src="js/jquery.min.js" defer></script>
+<script src="js/bootstrap.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/datepicker.min.js" defer></script>
+<script src="js/cropper.min.js" defer></script>
+<!-- <script src="js/scanner.js" defer></script> -->
+
+<script src="js/scripts.js" defer></script>
+</html>

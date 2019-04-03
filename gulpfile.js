@@ -189,8 +189,8 @@ gulp.task('deploy', function () {
             base: './dist3',
             buffer: false
         })
-        // .pipe( conn.newer( '/public_html' ) ) // only upload newer files
-        .pipe(conn.dest('/dist3'));
+        .pipe( conn.newer( './' ) ) // only upload newer files
+        .pipe(conn.dest('./'));
 
 });
 
