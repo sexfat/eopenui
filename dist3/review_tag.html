@@ -85,11 +85,11 @@
             <i class="nav-icon icon-drop"></i>審核新開戶</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  active" href="review_change.html">
+          <a class="nav-link  @@class02" href="review_change.html">
             <i class="nav-icon icon-pencil"></i>審核變更</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  @@class03" href="review_tag.html">
+          <a class="nav-link  active" href="review_tag.html">
             <i class="nav-icon icon-pencil"></i>審核異動註記</a>
         </li>
         <li class="nav-item">
@@ -129,7 +129,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">審核</li>
+                <li class="breadcrumb-item active">審核異動註記</li>
                 <!-- Breadcrumb Menu-->
                  <!-- setup -->
 <li class="breadcrumb-menu d-md-down-none">
@@ -150,82 +150,45 @@
                     <!-- inner-content  -->
                     <!-- 內部結構 -->
                     <div class="row">
-                            <!-- content -->
-<div class="col-sm-12 col-xl-12">
+                            <div class="col-sm-12 col-xl-12">
     <div class="card">
-        <div class="card-header">變更後基本資料
+        <div class="card-header">異動註記
         </div>
-
-    
         <div class="card-body">
+            <div class="list-group">
+                <!-- activ -->
+                <a class="list-group-item list-group-item-action flex-column align-items-start" href="review_tag-page.html">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">帳號：60201-01-32213456</h5>
+                        <small>身份別： <span class="badge badge-primary">個人戶</span></small>
+                    </div>
+                    <p class="mb-1 margintop-3">客戶名稱：王大發</p>
+                    <p class="mb-1">證號：A123456789</p>
 
-            <div class="card">
-                <div class="card-header">
-                    證件影像
-                    <small>身份證正反面</small>
-                </div>
-                <div class="card-body">
-                    <table>
-                        <tr>
-                            <td>
-                                <div class="iduser">
-                                    <img src="img/id_top.jpg" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="iduser">
-                                    <img src="img/id_bottom.jpg" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                </a>
+                <a class="list-group-item list-group-item-action flex-column align-items-start" href="review_tag-company.html">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">帳號：60202-01-34213456</h5>
+                        <small>身份別： <span class="badge badge-primary">公司戶</span></small>
+                    </div>
+                    <p class="mb-1 margintop-3">客戶名稱：王小發</p>
+                    <p class="mb-1">證號：A123456789</p>
 
+                </a>
+                <a class="list-group-item list-group-item-action flex-column align-items-start" href="review_tag-multi.html">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">帳號：60201-02-32213256</h5>
+                        <small>身份別： <span class="badge badge-primary">聯名戶</span></small>
+                    </div>
+                    <p class="mb-1 margintop-3">客戶名稱：李阿一</p>
+                    <p class="mb-1">證號：A123456789</p>
 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-sm-12 col-xl-12">
-    <div class="card">
-        <div class="card-header">原始基本資料
-        </div>
-        <div class="card-body gray_bgcolor">
-            <div class="card">
-                <div class="card-header">
-                    證件影像
-                    <small>身份證正反面</small>
-                </div>
-                <div class="card-body">
-                    <table>
-                        <tr>
-                            <td>
-                                <div class="iduser">
-                                    <img src="img/id_top.jpg" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="iduser">
-                                    <img src="img/id_bottom.jpg" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-
-
-                </div>
+                </a>
             </div>
 
         </div>
     </div>
-    <div class="center margintop-50 marginbottom-30">
-        <button class="btn btn-block btn-outline-secondary btn-xxl inlineBlock" type="button">返回</button>
-        <button class="btn btn-block btn-success btn-xxl inlineBlock" type="button">核可</button>
-        <button class="btn btn-block btn-crop-red btn-xxl inlineBlock" type="button">拒絕受理</button>
-    </div>
 </div>
-<!-- content end -->
                     </div>
                     <!-- end -->
                 </div>

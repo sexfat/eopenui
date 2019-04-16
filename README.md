@@ -127,6 +127,37 @@ https://sexfat.github.io/eopenui/dist3/query_result.html
 
 
 
+***審核作業***
+
+##### 審核新開戶 
+
+- review.html 審核新開戶首頁
+https://sexfat.github.io/eopenui/dist3/review.html
+
+
+##### 審核變更
+
+- review.html 審核變更首頁
+https://sexfat.github.io/eopenui/dist3/review_change.html
+
+
+##### 審核異動註記
+
+- review.html 審核異動註記首頁
+https://sexfat.github.io/eopenui/dist3/review_tag.html
+
+##### 審核結清  （同掛失）
+
+- review.html 審核結清首頁
+https://sexfat.github.io/eopenui/dist3/review_settle.html
+
+##### 審核掛失  （同結清）
+
+- review.html 審核掛失首頁
+https://sexfat.github.io/eopenui/dist3/review_loss.html
+
+
+
 
 # 分支master
 三商版

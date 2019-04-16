@@ -81,7 +81,7 @@
         </li>
         <li class="nav-title">功能列</li>
         <li class="nav-item">
-          <a class="nav-link  active" href="review.html">
+          <a class="nav-link  @@class01" href="review.html">
             <i class="nav-icon icon-drop"></i>審核新開戶</a>
         </li>
         <li class="nav-item">
@@ -89,7 +89,7 @@
             <i class="nav-icon icon-pencil"></i>審核變更</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  @@class03" href="review_tag.html">
+          <a class="nav-link  active" href="review_tag.html">
             <i class="nav-icon icon-pencil"></i>審核異動註記</a>
         </li>
         <li class="nav-item">
@@ -129,7 +129,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">審核</li>
+                <li class="breadcrumb-item active">審核異動註記</li>
                 <!-- Breadcrumb Menu-->
                  <!-- setup -->
 <li class="breadcrumb-menu d-md-down-none">
@@ -154,9 +154,14 @@
 <div class="col-sm-12 col-xl-12">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active show" data-toggle="tab" href="#basic_info" role="tab" aria-controls="home"
+            <a class="nav-link active show" data-toggle="tab" href="#tag" role="tab" aria-controls="home"
                 aria-selected="false">
-                <!-- <i class="icon-calculator"></i> -->基本資料</a>
+                異動註記</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#basic_info" role="tab" aria-controls="home"
+                aria-selected="false">
+                基本資料</a>
         </li>
 
         <li class="nav-item">
@@ -166,7 +171,48 @@
         </li>
     </ul>
     <div class="tab-content">
-        <div class="tab-pane active show" id="basic_info" role="tabpanel">
+        <div class="tab-pane active show" id="tag" role="tabpanel">
+                <div class="form-group bigtext">
+                        <label class="col-form-label" for="text-input">註記項目</label>
+                        <div class="tag-list">
+                            大額提款
+                        </div>
+                    </div>
+                    <!-- 人像 -->
+                    <div class="form-group bigtext">
+                            <label class="col-form-label" for="text-input">人像</label>
+                            <div class="avter">
+                                    <img class="person_img" src="https://placem.at/people?w=180&random=some_seed" alt="">
+                                    <img class="person_img" src="https://placem.at/people?w=180&random=some_seed" alt="">
+                            </div>
+                        </div>
+                    <!-- 影像證件 -->
+                    <div class="card margintop-20">
+                            <div class="card-header">
+                                證件影像
+                                <small>身份證正反面</small>
+                            </div>
+                            <div class="card-body">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="iduser">
+                                                <img src="img/id_top.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="iduser">
+                                                <img src="img/id_bottom.jpg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+            
+            
+                            </div>
+                        </div>
+        </div>
+        <div class="tab-pane" id="basic_info" role="tabpanel">
             <!-- 基本資料 -->
             <table class="table table-responsive-sm noborder">
                 <tbody>
@@ -392,8 +438,8 @@
 
 <!-- btn sumbit -->
 <div class="center margintop-50 marginbottom-30">
+    <button class="btn btn-block btn-outline-secondary btn-xxl inlineBlock" type="button">返回</button>
     <button class="btn btn-block btn-success btn-xxl inlineBlock" type="button">核可</button>
-    <button class="btn btn-secondary btn-block btn-xxl inlineBlock" data-target="#warningModal" type="button">退件</button>
     <button class="btn btn-block btn-crop-red btn-xxl inlineBlock" type="button">拒絕受理</button>
 </div>
 
