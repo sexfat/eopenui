@@ -393,29 +393,53 @@
 <!-- btn sumbit -->
 <div class="center margintop-50 marginbottom-30">
     <button class="btn btn-block btn-success btn-xxl inlineBlock" type="button">核可</button>
-    <button class="btn btn-secondary btn-block btn-xxl inlineBlock" data-target="#warningModal" type="button">退件</button>
-    <button class="btn btn-block btn-crop-red btn-xxl inlineBlock" type="button">拒絕受理</button>
+    <button class="btn btn-secondary btn-block btn-xxl inlineBlock" data-toggle="modal" data-target="#warningModal" type="button">退件</button>
+    <button class="btn btn-block btn-crop-red btn-xxl inlineBlock" data-toggle="modal" data-target="#dangerModal" type="button">拒絕受理</button>
 </div>
 
 
 <!-- 彈出視窗 -->
-
-
+<!-- 退件 -->
 <div class="modal fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-warning" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Modal title</h4>
+                <h4 class="modal-title">退件原因</h4>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>One fine body…</p>
+                <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4" placeholder="原因"></textarea>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-                <button class="btn btn-warning" type="button">Save changes</button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">關閉</button>
+                <button class="btn btn-warning" type="button">儲存</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- 拒絕 -->
+<div class="modal fade" id="dangerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-danger" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">拒絕受理原因</h4>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4" placeholder="原因"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">關閉</button>
+                <button class="btn btn-danger" type="button">儲存</button>
             </div>
         </div>
 
