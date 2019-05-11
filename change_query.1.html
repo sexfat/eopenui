@@ -43,7 +43,7 @@
         <a class="nav-link @@link03" href="review.html">審核作業</a>
       </li>
       <li class="nav-item px-3">
-        <a class="nav-link @@link04" href="change_query.html">異動作業</a>
+        <a class="nav-link hover" href="change_query.html">異動作業</a>
       </li>
       <li class="nav-item px-3">
         <a class="nav-link @@link05" href="queryid.html">查詢作業</a>
@@ -70,67 +70,15 @@
     </button> -->
   </header>
     <div class="app-body">
-        <div class="sidebar">
-    <nav class="sidebar-nav">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="nav-icon icon-speedometer"></i> Dashboard 1.0
-            <span class="badge badge-primary">NEW</span>
-          </a>
-        </li>
-        <li class="nav-title">功能列</li>
-        <li class="nav-item">
-          <a class="nav-link  @@class01" href="review.html">
-            <i class="nav-icon icon-drop"></i>審核新開戶 <span class="badge badge-danger">10</span></a>
-            
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  active" href="review_change.html">
-            <i class="nav-icon icon-pencil"></i>審核變更 <span class="badge badge-danger">10</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  @@class03" href="review_tag.html">
-            <i class="nav-icon icon-pencil"></i>審核異動註記</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  @@class04" href="review_settle.html">
-            <i class="nav-icon icon-pencil"></i>審核結清</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  @@class05" href="review_loss.html">
-            <i class="nav-icon icon-pencil"></i>審核掛失</a>
-        </li>
-          <!-- <li class="divider"></li> -->
-          <!-- <li class="nav-item">
-              <a class="nav-link @@class09" href="#">
-                <i class="nav-icon icon-pencil"></i>開戶中斷
-                <span class="badge badge-danger">STOP</span>
-              </a>
-                 
-            </li> -->
-        <!-- <li class="nav-item mt-auto">
-          <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
-            <i class="nav-icon icon-cloud-download"></i> Download CoreUI</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
-            <i class="nav-icon icon-layers"></i> Try CoreUI
-            <strong>PRO</strong>
-          </a>
-        </li> -->
-      </ul>
-    </nav>
-    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-  </div>;
-        <div class="main">
+       
+        <div class="main full-width_all">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">審核</li>
+                <li class="breadcrumb-item active">異動作業</li>
                 <!-- Breadcrumb Menu-->
                  <!-- setup -->
 <li class="breadcrumb-menu d-md-down-none">
@@ -152,72 +100,89 @@
                     <!-- 內部結構 -->
                     <div class="row">
                             <!-- content -->
-<div class="col-sm-12 col-xl-12">
+
+<div class="col-sm-12 col-xl-12 margintop-60">
+
+    <div class="query_box center">
+        <h4>異動作業查詢 / ID查詢</h4>
+        <div class="query_bar margintop-30">
+            <div class="controls">
+                <div class="input-group">
+                    <input class="form-control outline-d4" id="appendedInputButtons" size="30" type="text"
+                        placeholder="帳號 / ID">
+                    <span class="input-group-append">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-12 margintop-50">
     <div class="card">
-        <div class="card-header">變更後基本資料
+        <div class="card-header">異動查詢結果
         </div>
         <div class="card-body">
-                <div class="form-group">
-                        <label class="width12 col-form-label" for="text-input">帳號</label>
-                        <div class="width25">
-                            <b> 6201-01-331223231</b>
-                        </div>
-        
-                    </div>
-                    <div class="form-group">
-                        <label class="width12 col-form-label" for="text-input">開戶日期</label>
-                        <div class="width25 ">
-                                <b> 2019-04-07</b>
-                          
-                        </div>
-                    </div>
-                    <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose" disabled checked>
-                        <label for="purpose">聯行註記</label></span>
+            <table class="table table-responsive-sm table-bordered table-striped table-responsive-sm">
+                <thead>
+                    <tr>
+                        <th>狀態</th>
+                        <th>帳號</th>
+                        <th>證件號碼</th>
+                        <th>開戶日期</th>
+                        <th>開戶分行</th>
+                        <th>檢視</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <span class="badge badge-danger">掛失</span> <span class="badge badge-success">正常</span>
+                            <span class="badge badge-warning">異動中</span>
+                        </td>
+                        <td>60201-03-34334567</td>
+                        <td>U121167546</td>
+                        <td>
+                            109/10/31
+                        </td>
+                        <td>
+                            201
+                        </td>
+                        <td>
+                            <a class="btn btn-success text-center" href="query_result.html">
+                                <i class="icon-eye"></i> 檢視
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <span class="badge badge-danger">掛失</span> <span class="badge badge-success">正常</span>
+                            <span class="badge badge-warning">異動中</span>
+                        </td>
+                        <td>60201-03-34334567</td>
+                        <td>U121167546</td>
+                        <td>
+                            109/10/31
+                        </td>
+                        <td>
+                            201
+                        </td>
+                        <td>
+                            <a class="btn btn-success text-center" href="query_result.html">
+                                <i class="icon-eye"></i> 檢視
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
 
 
         </div>
-
-
     </div>
 </div>
 
-<div class="col-sm-12 col-xl-12">
-    <div class="card">
-        <div class="card-header">原始基本資料
-        </div>
-        <div class="card-body gray_bgcolor">
 
-
-
-            <!-- content -->
-            <div class="form-group">
-                <label class="width12 col-form-label" for="text-input">帳號</label>
-                <div class="width25">
-                        <b> 6201-01-31423231</b>
-                </div>
-
-            </div>
-            <div class="form-group">
-                <label class="width12 col-form-label" for="text-input">開戶日期</label>
-                <div class="width25 ">
-                        <b>  2019-04-07 </b>
-                  
-                </div>
-            </div>
-            <span class="marginleft-125"> <input type="checkbox" value="purpose" name="purpose" disabled checked>
-                <label for="purpose">聯行註記</label></span>
-            <!-- content end -->
-
-
-
-        </div>
-    </div>
-    <div class="center margintop-50 marginbottom-30">
-        <button class="btn btn-block btn-outline-secondary btn-xxl inlineBlock" type="button">返回</button>
-        <button class="btn btn-block btn-success btn-xxl inlineBlock" type="button">核可</button>
-        <button class="btn btn-block btn-crop-red btn-xxl inlineBlock" type="button">拒絕受理</button>
-    </div>
-</div>
 <!-- content end -->
                     </div>
                     <!-- end -->
@@ -226,7 +191,7 @@
         </div>
         
     </div>
-    <footer class="app-footer">
+    <footer class="app-footer full-width_all">
         <div>
             <a href="#">djimage</a>
             <span>&copy; 2018 All Rights Reserved</span>

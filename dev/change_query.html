@@ -15,20 +15,18 @@
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     @@include('layout/header.html',{
-        "link03": "hover"
+        "link04": "hover"
         })
     <div class="app-body">
-        @@include('layout/review_sidebar.html', {
-        "class01": "active"
-        });
-        <div class="main">
+       
+        <div class="main full-width_all">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item">
                     <a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">審核</li>
+                <li class="breadcrumb-item active">異動作業</li>
                 <!-- Breadcrumb Menu-->
                  @@include('layout/breadcrumb.html')
             </ol>
@@ -38,7 +36,7 @@
                     <!-- inner-content  -->
                     <!-- 內部結構 -->
                     <div class="row">
-                            @@include('body/review_main.html')
+                            @@include('body/change_query.html')
                     </div>
                     <!-- end -->
                 </div>
@@ -46,7 +44,7 @@
         </div>
         @@include('layout/aside.html')
     </div>
-    <footer class="app-footer">
+    <footer class="app-footer full-width_all">
         <div>
             <a href="#">djimage</a>
             <span>&copy; 2018 All Rights Reserved</span>

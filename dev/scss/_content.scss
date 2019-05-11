@@ -111,7 +111,7 @@
 
 //新增印鑑卡
 .sealcut {
-    min-height: 200px;
+    min-height: 300px;
     height: auto;
     position: relative;
 
@@ -203,3 +203,17 @@
 .outline-d4 {
     border: 1px solid #d4d4d4;
 }
+
+//============= header ============
+
+a {
+    &.hover {
+        border-bottom: 1px solid $blue !important;
+        height: 37px;
+        margin-top: 18px;
+        color: $blue !important;
+    }
+}
+
+
+//============= header ============
