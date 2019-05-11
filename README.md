@@ -156,6 +156,15 @@ https://sexfat.github.io/eopenui/dist3/review_settle.html
 - review.html 審核掛失首頁
 https://sexfat.github.io/eopenui/dist3/review_loss.html
 
+##### 異動作業  
+- change_query.html
+https://sexfat.github.io/eopenui/dist3/change_query.html
+
+
+##### 異動作業 內頁
+- change_basicinfo.html
+https://sexfat.github.io/eopenui/dist3/change_basicinfo.html
+
 
 
 
