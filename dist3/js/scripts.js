@@ -400,10 +400,6 @@ function readURL(input) {
 }
 
 
-
-
-
-
 function redirectPage(){
   var wjb51 = screen.width;
   var hjb51 = screen.height;

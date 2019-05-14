@@ -6,8 +6,6 @@
         </div>
         <div class="card-body">
             <!-- 功能列 -->
-
-
             <!-- 個人基本資料 -->
             <div class="basic_info">
                 <div class="form-group bigtext">
@@ -81,6 +79,27 @@
             <!-- 內容 -->
             <div class="tab-content">
                 <div class="tab-pane  active show" id="tab001" role="tabpanel">
+                    <div class="id_detail">
+
+                        <div class="form-group bigtext">
+                            <label class="col-form-label" for="text-input">印鑑啟用日期</label>
+                            <div>
+
+                                <div class="width8"><input class="form-control" type="number" name="text-input"
+                                        value="107"></div> 年
+                                <div class="width8"><input class="form-control" type="number" max="12" min="1"
+                                        name="text-input" value="10"></div> 月
+                                <div class="width8"><input class="form-control" type="number" max="31" min="1"
+                                        name="text-input" value="31"></div> 日
+                            </div>
+                        </div>
+                        <div class="form-group margintop-40">
+                            <label class="col-form-label" for="text-input">式憑原則</label>
+                            <select class="model">
+                                <option>印鑑共一式憑一式有效</option>
+                            </select>
+                        </div>
+                    </div>
                     <!-- 修改印鑑卡 -->
                     <button class="btn btn-block btn-primary btn-l inlineBlock addstamp" type="button">修改印鑑卡</button>
 
@@ -244,16 +263,7 @@
 
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-form-label" for="text-input">印鑑啟用日期</label>
-                            <div> 108年 1月31日
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-form-label" for="text-input">式憑原則</label>
-                            <div> 印鑑共一式憑一式有效
-                            </div>
-                        </div>
+
                     </div>
 
 
@@ -312,7 +322,7 @@
                         <div class="form-group">
                             <label class="col-form-label" for="text-input">性別</label>
                             <div>
-                                 <input type="radio" name="sex"checked>
+                                <input type="radio" name="sex" checked>
                                 <label class="width3" for="">男</label>
                                 <input type="radio" name="sex">
                                 <label class="width3" for="">女</label>
