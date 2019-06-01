@@ -167,6 +167,12 @@ https://sexfat.github.io/eopenui/dist3/change_basicinfo.html
 
 
 
+##### 異動作業 公司戶
+- change_basicinfo.html
+https://sexfat.github.io/eopenui/dist3/change_company_info.html
+
+
+
 
 # 分支master
 三商版
