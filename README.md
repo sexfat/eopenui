@@ -171,7 +171,14 @@ https://sexfat.github.io/eopenui/dist3/change_basicinfo.html
 - change_basicinfo.html
 https://sexfat.github.io/eopenui/dist3/change_company_info.html
 
+##### 異動作業 聯名戶
+- change_multi_info.html
+https://sexfat.github.io/eopenui/dist3/change_multi_info.html
 
+
+##### 異動作業 未成年戶
+- change_over18_info.html
+https://sexfat.github.io/eopenui/dist3/change_over18_info.html
 
 
 # 分支master
