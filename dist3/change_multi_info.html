@@ -100,6 +100,7 @@
                     <!-- 內部結構 -->
                     <div class="row">
                             <!-- content -->
+
 <div class="col-sm-12 col-xl-12">
     <div class="card">
         <div class="card-header">帳戶資訊
@@ -110,7 +111,7 @@
             <div class="basic_info">
                 <div class="form-group bigtext">
                     <label class="col-form-label" for="text-input">科目</label>
-                    <div> 活期存款02
+                    <div> 活期存款01
                     </div>
                 </div>
                 <div class="form-group bigtext">
@@ -121,13 +122,13 @@
                 <div class="form-group bigtext">
                     <label class="col-form-label" for="text-input">身分證字號</label>
                     <div class="">
-                        U211567891
+                        A123456789
                     </div>
                 </div>
                 <div class="form-group bigtext">
                     <label class="col-form-label" for="text-input">客戶名稱</label>
                     <div>
-                        五月天
+                        王大發 / 王小發
                     </div>
                 </div>
                 <div class="form-group bigtext">
@@ -154,19 +155,34 @@
                 <li class="nav-item">
                     <a class="nav-link  show" data-toggle="tab" href="#tab003" role="tab" aria-controls="home"
                         aria-selected="false">
-                        <!-- <i class="icon-calculator"></i> -->3.變更負責人像</a>
+                        <!-- <i class="icon-calculator"></i> -->3-1.變更人像</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  show" data-toggle="tab" href="#tab003-2" role="tab" aria-controls="home"
+                        aria-selected="false">
+                        <!-- <i class="icon-calculator"></i> -->3-2.變更人像</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link  show" data-toggle="tab" href="#tab004" role="tab" aria-controls="home"
                         aria-selected="false">
-                        <!-- <i class="icon-calculator"></i> -->4.變更基本資料</a>
+                        <!-- <i class="icon-calculator"></i> -->4-1.變更基本資料</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  show" data-toggle="tab" href="#tab004-2" role="tab" aria-controls="home"
+                        aria-selected="false">
+                        <!-- <i class="icon-calculator"></i> -->4-2.變更基本資料</a>
                 </li>
 
 
                 <li class="nav-item">
                     <a class="nav-link  show" data-toggle="tab" href="#tab005" role="tab" aria-controls="home"
                         aria-selected="false">
-                        <!-- <i class="icon-calculator"></i> -->5.變更證照</a>
+                        <!-- <i class="icon-calculator"></i> -->5-1.變更證照</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  show" data-toggle="tab" href="#tab005-2" role="tab" aria-controls="home"
+                        aria-selected="false">
+                        <!-- <i class="icon-calculator"></i> -->5-2.變更證照</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link show" data-toggle="tab" href="#tab006" role="tab" aria-controls="profile"
@@ -406,30 +422,67 @@
 
 
                 </div>
+                <div class="tab-pane " id="tab003-2" role="tabpanel">
+                    <!-- 基本資料 -->
+                    <table class="table table-responsive-sm noborder">
+                        <tbody>
+                            <tr>
+                                <td class="width21">
+                                    <div class="person_info">
+                                        <img class="person_img" src="https://placem.at/people?w=180&random=some_seed"
+                                            alt="">
+                                    </div>
+                                </td>
+                                <td class="width50">
+                                    <label class="btn btn-block btn-primary btn-xl inlineBlock uploadfile">更改大頭照
+                                        <input type="file" multiple="" id="imgInp"
+                                            accept="image/gif, image/jpg, image/png">
+                                    </label>
+
+
+                                </td>
+                        </tbody>
+                    </table>
+
+
+
+
+                </div>
                 <div class="tab-pane " id="tab004" role="tabpanel">
-                    <div class="margintop-30 id_detail">
-                        <h5 class="underline marginbottom-20">公司基本資料</h5>
-                        <!-- 核准登記日期 -->
+                    <!-- 基本資料 -->
+                    <div class="id_detail margintop-30">
+                        <h5 class="underline marginbottom-20">基本資料</h5>
                         <div class="form-group">
-                            <label class="col-form-label" for="text-input">核准登記日期</label>
+                            <label class="col-form-label" for="text-input">出生年月日</label>
                             <div>
                                 <div>
 
                                     <div class="width8"><input class="form-control" type="number" name="text-input"
-                                            value="90"></div> 年
+                                            value="88"></div> 年
                                     <div class="width8"><input class="form-control" type="number" max="12" min="1"
-                                            name="text-input" value="10"></div> 月
+                                            name="text-input" value="12"></div> 月
                                     <div class="width8"><input class="form-control" type="number" max="31" min="1"
-                                            name="text-input" value="1"></div> 日
+                                            name="text-input" value="8"></div> 日
 
 
 
                                 </div>
                             </div>
                         </div>
+                        <!-- 性別 -->
+                        <div class="form-group">
+                            <label class="col-form-label" for="text-input">性別</label>
+                            <div>
+                                <input type="radio" name="sex" checked>
+                                <label class="width3" for="">男</label>
+                                <input type="radio" name="sex">
+                                <label class="width3" for="">女</label>
+
+                            </div>
+                        </div>
                         <!-- 電話 -->
                         <div class="form-group">
-                            <label class="col-form-label" for="text-input">公司電話</label>
+                            <label class="col-form-label" for="text-input">電話</label>
                             <div>
                                 <div class="width25">
                                     <input class="form-control" type="text" name="tel" value="02-23454321">
@@ -437,8 +490,17 @@
                             </div>
 
                         </div>
+                        <!-- 手機 -->
                         <div class="form-group">
-                            <label class="col-form-label" for="text-input">公司信箱</label>
+                            <label class="col-form-label" for="text-input">手機</label>
+                            <div>
+                                <div class="width25">
+                                    <input class="form-control" type="tel" name="tel" value="0975654123">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="text-input">Email</label>
                             <div>
                                 <div class="width25">
                                     <input class="form-control" type="email" name="email"
@@ -447,7 +509,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label" for="text-input">公司郵遞區號</label>
+                            <label class="col-form-label" for="text-input">通訊地郵遞區號</label>
                             <div>
                                 <div class="width10">
                                     <input class="form-control" type="text" name="zip" value="220">
@@ -456,19 +518,42 @@
 
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label" for="text-input">公司所在地址</label>
+                            <label class="col-form-label" for="text-input">出生地</label>
+                            <div>
+                                <div class="width45">
+                                    <input class="form-control" type="text" name="address" value="台北市民權東路三段234巷一弄45號4樓">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="text-input">戶籍地郵遞區號</label>
+                            <div>
+                                <div class="width10">
+                                    <input class="form-control" type="text" name="zip" value="220">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="text-input">戶籍地</label>
                             <div>
                                 <div class="width45">
                                     <input class="form-control" type="text" name="address" value="新竹市公道5路6巷一弄3號1樓">
                                 </div>
                             </div>
                         </div>
-
+                        <div class="form-group">
+                            <label class="col-form-label" for="text-input">名地檔戶名</label>
+                            <div>
+                            </div>
+                        </div>
                     </div>
 
+                </div>
+                <div class="tab-pane " id="tab004-2" role="tabpanel">
                     <!-- 基本資料 -->
-                    <div class="id_detail margintop-80">
-                        <h5 class="underline marginbottom-20">負責人基本資料</h5>
+                    <div class="id_detail margintop-30">
+                        <h5 class="underline marginbottom-20">基本資料</h5>
                         <div class="form-group">
                             <label class="col-form-label" for="text-input">出生年月日</label>
                             <div>
@@ -568,10 +653,7 @@
 
                 </div>
                 <div class="tab-pane " id="tab005" role="tabpanel">
-                    <!-- 公司證件 -->
-                    
                     <div class="margintop-30">
-                        <h5 class="underline marginbottom-20">公司證件</h5>
                         <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連結掃描機</button>
                         <!-- 上傳檔案 -->
                         <label class="btn btn-block btn-primary btn-xl inlineBlock uploadfile">上傳檔案
@@ -580,7 +662,7 @@
                         <div class="card margintop-30">
                             <div class="card-header">
                                 證件影像
-                                <small>公司證件</small>
+                                <small>身份證正反面</small>
                             </div>
                             <div class="card-body">
                                 <table>
@@ -602,10 +684,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 負責人證件 -->
-                    
-                    <div class="margintop-80">
-                        <h5 class="underline marginbottom-20">負責人證件</h5>
+                    <!-- 修改證件按鈕 -->
+
+                </div>
+                <div class="tab-pane " id="tab005-2" role="tabpanel">
+                    <div class="margintop-30">
                         <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連結掃描機</button>
                         <!-- 上傳檔案 -->
                         <label class="btn btn-block btn-primary btn-xl inlineBlock uploadfile">上傳檔案
@@ -614,7 +697,7 @@
                         <div class="card margintop-30">
                             <div class="card-header">
                                 證件影像
-                                <small>身份證件正反面</small>
+                                <small>身份證正反面</small>
                             </div>
                             <div class="card-body">
                                 <table>
@@ -636,8 +719,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!-- 修改證件按鈕 -->
 
                 </div>
