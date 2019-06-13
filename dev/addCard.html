@@ -14,7 +14,9 @@
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-    @@include('layout/header.html')
+    @@include('layout/header.html',{
+        "link01": "hover"
+        })
     <div class="app-body">
         @@include('layout/sidebar.html', {
         "class02": "active"
