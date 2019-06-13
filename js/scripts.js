@@ -334,14 +334,19 @@ function processScannedImage(scannedImage) {
 
 
 
-function resize() {
+ function resize() {
 
-  var cutObjs = $('#cutImg img');
+  var cutObjs = $('#imagescut');
   var xps = cutObjs.width();
+  console.log(xps);
   var addWidths = Math.round(xps * 0.4032) + 'px';
   cutObjs.attr("width", addWidths);
 
 }
+
+resize();
+
+
 
 // var cutObjs = $('#cutImg > img');
 //   var xps = cutObjs.width();

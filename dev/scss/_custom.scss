@@ -4,10 +4,6 @@
     font-weight: bold;
 }
 
-@include margin(top, 200);
-@include margin(bottom, 200);
-@include margin(left, 200);
-
 .btn-l {
     width: 100px;
     max-width: 150px;

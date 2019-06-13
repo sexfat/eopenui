@@ -8,7 +8,7 @@
 @mixin margin($direction,$disl,$display:null) {
      @for $i from 1 through $disl{
         .margin#{$direction}-#{$i} {
-            margin-#{$direction}: 1px*$i;
+            margin-#{$direction}: 1px*$i !important;
             display: $display;
         }
         #margin#{$direction}-#{$i} {
