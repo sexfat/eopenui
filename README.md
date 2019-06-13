@@ -99,6 +99,9 @@ https://sexfat.github.io/eopenui/dist3/finish_company.html
 - finish_multi.html 候選人 ，公庫   本國成年人
 https://sexfat.github.io/eopenui/dist3/finish_multi.html
 
+- finish_over18.html 本國未成年人
+https://sexfat.github.io/eopenui/dist3/finish_over18.html
+
 
 ***審核新開戶***
 
