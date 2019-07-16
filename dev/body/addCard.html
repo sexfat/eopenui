@@ -3,9 +3,16 @@
         <div class="card-header">成年人 證件資料
         </div>
         <div class="card-body">
-            @@include('../component/idform.html')
+            <div class="row">
+                <div class="col-xl-6"> @@include('../component/idform.html')</div>
+                <div class="col-xl-6">
+                     <h3 class="marginbottom-30 margintop-20 underline">證件掃描</h3>
+                     @@include('../component/addCard_screen.html')
+                    </div>
+            </div>
+            
             <div class="margintop-50"></div>
-            @@include('../component/addCard_screen.html')
+           
         </div>
     </div>
 </div>

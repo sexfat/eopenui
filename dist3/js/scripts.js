@@ -334,7 +334,7 @@ function processScannedImage(scannedImage) {
 
 
 
- function resize() {
+function resize() {
 
   var cutObjs = $('#imagescut');
   var xps = cutObjs.width();
@@ -405,7 +405,7 @@ function readURL(input) {
 }
 
 
-function redirectPage(){
+function redirectPage() {
   var wjb51 = screen.width;
   var hjb51 = screen.height;
   console.log('經系統檢測，你的螢幕解析度為' + wjb51 + 'x' + hjb51);
@@ -413,6 +413,24 @@ function redirectPage(){
 
 
 redirectPage();
+
+
+// change info 異動註記 
+
+$(function() {
+  $('.others-text').hide(); 
+  $('#changes-mark').change(function(){
+  //   $('.box').hide(); 
+    if ($(this).val() == 'others') {
+        $('.others-text').show();
+    }else{
+      $('.others-text').hide();
+    }
+  })
+  })
+
+
+
 
 
 

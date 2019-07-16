@@ -209,9 +209,22 @@
                     </div>
                     <!-- 修改印鑑卡 -->
                     <button class="btn btn-block btn-primary btn-l inlineBlock addstamp" type="button">修改印鑑卡</button>
+                     <!-- 印鑑卡到期日 -->
+                   
 
                     <!-- 修改工作區 -->
                     <div class="addiconcards section margintop-20 none">
+                            <div class="form-group bigtext margintop-10 marginbottom-20">
+                                    <label class="col-form-label" for="text-input">印鑑到期日期</label>
+                                    <div>
+                                        <div class="width8"><input class="form-control" type="number" name="text-input"
+                                                value=""></div> 年
+                                        <div class="width8"><input class="form-control" type="number" max="12" min="1"
+                                                name="text-input" value=""></div> 月
+                                        <div class="width8"><input class="form-control" type="number" max="31" min="1"
+                                                name="text-input" value=""></div> 日
+                                    </div>
+                                </div>
                         <div class="addCard">
                             <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button"
                                 onclick="scanToJpg();">連接掃描機</button>
@@ -544,16 +557,23 @@
                     <!-- 修改證件按鈕 -->
 
                 </div>
+                
                 <div class="tab-pane " id="tab006" role="tabpanel">
                     <div class="margintop-20">
 
                         <h5 class="underline marginbottom-20">異動註記項目</h5>
-                        <div>
+                        <div class="form-group margintop-40">
+                            <div class="width25">
+                                <select id="changes-mark" class="form-control" name="selects">
+                                    <option value="0">大額提款</option>
+                                    <option value="1">變更印鑑</option>
+                                    <option value="others">其他</option>
+                                </select>
+                            </div>
+                            <div class="width30 others-text">
+                                <input class="form-control" type="text" value="" placeholder="請填原因">
 
-                            <input type="radio" name="gender" id="" checked>
-                            <label class="width10" for="">大額提款</label>
-                            <input type="radio" name="gender" id="">
-                            <label class="width10" for="">變更印鑑</label>
+                            </div>
 
                         </div>
                         <!-- 人像 -->

@@ -123,14 +123,17 @@
 }
 
 .noborder {
-   tr , td ,th {
-    border: none;
-   }
+
+    tr,
+    td,
+    th {
+        border: none;
+    }
 }
 
-.row {
-    display: inherit;
-}
+// .row {
+//     display: inherit;
+// }
 
 .underline {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -139,18 +142,18 @@
 
 
 .center {
-   text-align: center;
+    text-align: center;
 }
 
 
 .gray_bgcolor {
-   background-color: rgb(238, 238, 238);
-   color: rgb(122, 122, 122)
+    background-color: rgb(238, 238, 238);
+    color: rgb(122, 122, 122)
 }
 
 .full-width_all {
     margin-left: initial !important;
-    
+
 }
 
 .query_box {
@@ -159,4 +162,6 @@
 }
 
 
-
+// .others-text {
+//     display: none;
+// }
