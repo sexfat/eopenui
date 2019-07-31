@@ -322,8 +322,8 @@
                 <div class="col-xl-6">
                      <h3 class="marginbottom-30 margintop-20 underline">證件掃描</h3>
                      <style>
-        img#imagescut {
-            height: 100%; /** Sets the display size */
+        img.imagescut {
+            width: 100%; /** Sets the display size */
             margin-right: 12px;
         }
 
@@ -339,7 +339,9 @@
         <!-- 證件匯入處 -->
         <div id="boxprint">
             <!-- 證件匯入處 -->
-            <div id="images"></div>
+            <div id="images">
+                <!-- <img class="imagescut" src="img/front_F.jpg" alt=""> -->
+            </div>
             證件匯入處
         </div>
         <div class="ocr_box">
