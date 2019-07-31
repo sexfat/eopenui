@@ -398,8 +398,6 @@ $(function () {
   });
 });
 
-
-
 function take_snapshot() {
   // take snapshot and get image data
   Webcam.snap(function (data_uri) {
