@@ -167,20 +167,36 @@
         <div class="card-header">成年人 新增人像
         </div>
         <div class="card-body">
-            <span>統編: <span>U123456789</span>  </span>
+            <span>統編: <span>U123456789</span> </span>
             <h3 class="account_title">姓名: <span>王大發</span> </h3>
+            <div class="box_camera">
+                <div class="card">
+                    <div class="card-header">影片出現處</div>
+                    <div class="card-body">
+                        <div class="camera_show">
+                            <!-- 影片出現處 -->
+                        </div>
+                    </div>
+                    <div class="col-xl-6 marginbottom-30"> <button class="btn  btn-pill btn-danger"
+                            type="button" value="Take Snapshot" onClick="take_snapshot()">拍攝人像</button></div>
+
+                </div>
+
+            </div>
 
             <div class="addCard">
-                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
+                <button class="btn btn-block btn-primary btn-xl inlineBlock takepic" type="button">連接人像照相機</button>
                 <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
                 <div class="card-main margintop-20">
                     <!-- 人像匯入處 -->
                     <div id="boxprint">
-                        <!-- 人像匯入處 -->
-                        人像匯入處
+                       
+                        <div id="camera_results"> <!-- 人像匯入處 --></div>
+                       
                     </div>
                     <div class="ocr_box">
-                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary"
+                            type="button">清除文件</button>
                     </div>
                 </div>
             </div>
@@ -194,9 +210,8 @@
         <div class="card-header">成年人 新增人像
         </div>
         <div class="card-body">
-            <span>統編: <span>U123456789</span>  </span>
+            <span>統編: <span>U123456789</span> </span>
             <h3 class="account_title">姓名: <span>王大發</span> </h3>
-
             <div class="addCard">
                 <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
                 <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
@@ -207,7 +222,8 @@
                         人像匯入處
                     </div>
                     <div class="ocr_box">
-                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary"
+                            type="button">清除文件</button>
                     </div>
                 </div>
             </div>
@@ -221,7 +237,7 @@
         <div class="card-header">未年人 新增人像
         </div>
         <div class="card-body">
-            <span>統編: <span>U123456789</span>  </span>
+            <span>統編: <span>U123456789</span> </span>
             <h3 class="account_title">姓名: <span>王大發</span> </h3>
 
             <div class="addCard">
@@ -234,7 +250,8 @@
                         人像匯入處
                     </div>
                     <div class="ocr_box">
-                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary"
+                            type="button">清除文件</button>
                     </div>
                 </div>
             </div>
@@ -244,34 +261,34 @@
 </div>
 
 <div class="col-sm-12 col-xl-12">
-        <div class="card">
-            <div class="card-header">監護人 新增人像
-            </div>
-            <div class="card-body">
-                <span>統編: <span>U123456734</span>  </span>
-                <h3 class="account_title">姓名: <span>王小發</span> </h3>
-    
-                <div class="addCard">
-                    <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
-                    <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
-                    <div class="card-main margintop-20">
+    <div class="card">
+        <div class="card-header">監護人 新增人像
+        </div>
+        <div class="card-body">
+            <span>統編: <span>U123456734</span> </span>
+            <h3 class="account_title">姓名: <span>王小發</span> </h3>
+
+            <div class="addCard">
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接人像照相機</button>
+                <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+                <div class="card-main margintop-20">
+                    <!-- 人像匯入處 -->
+                    <div id="boxprint">
                         <!-- 人像匯入處 -->
-                        <div id="boxprint">
-                            <!-- 人像匯入處 -->
-                            人像匯入處
-                        </div>
-                        <div class="ocr_box">
-                            <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
-                        </div>
+                        人像匯入處
+                    </div>
+                    <div class="ocr_box">
+                        <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary"
+                            type="button">清除文件</button>
                     </div>
                 </div>
-    
             </div>
+
         </div>
     </div>
+</div>
 
-    <button class="btn btn-block btn-success btn-xxl marginbottom-30" type="button">確定</button>
-
+<button class="btn btn-block btn-success btn-xxl marginbottom-30" type="button">確定</button>
                     </div>
                     <!-- end -->
                 </div>
@@ -301,6 +318,7 @@
 <script src="js/datepicker.min.js" defer></script>
 <script src="js/cropper.min.js" defer></script>
 <script src="js/scanner.js" defer></script>
+<script src="js/webcam.min.js" defer></script>
 
 <script src="js/scripts.js" defer></script>
 </html>
