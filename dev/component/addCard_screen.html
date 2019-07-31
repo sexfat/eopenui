@@ -1,15 +1,87 @@
 <div class="addCard">
-        <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">連接掃描器</button>
-        <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
-        <div class="card-main margintop-20">
+    <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button" onclick="scanToJpg();">連接掃描器</button>
+    <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">匯入文件</button>
+    <div class="card-main margintop-20">
+        <!-- 證件匯入處 -->
+        <div id="boxprint">
             <!-- 證件匯入處 -->
-            <div id="boxprint">
-                <!-- 證件匯入處 -->
-                證件匯入處
-            </div>
-            <div class="ocr_box">
-                <button class="btn btn-block btn-primary btn-xl inlineBlock btn-ocr" type="button">OCR辨識</button>
-                <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
-            </div>
+            <div id="images"></div>
+            證件匯入處
+        </div>
+        <div class="ocr_box">
+            <button class="btn btn-block btn-primary btn-xl inlineBlock btn-ocr" type="button">OCR辨識</button>
+            <button class="btn btn-block btn-primary btn-xl inlineBlock btn-secondary" type="button">清除文件</button>
         </div>
     </div>
+</div>
+
+
+<script>
+    // scanner.js  主要程式
+    function scanToJpg() {
+        scanner.scan(displayImagesOnPage, {
+            "output_settings": [{
+                "type": "return-base64",
+                "format": "jpg"
+            }]
+        });
+    }
+
+
+//輸出到某個資料夾的寫法
+    // function scanToJpg() {
+    //     scanner.scan(displayImagesOnPage, {
+    //         "output_settings": [{
+    //             "type": "upload",
+    //             "format": "pdf",
+    //             "upload_target": {
+    //                 "url": "http://asprise.com/scan/applet/upload.php?action=dump"
+    //             }
+    //         }, {
+    //             "type": "return-base64-thumbnail",
+    //             "format": "jpg"
+    //         }]
+    //     });
+    // }
+
+
+
+
+
+    /** Processes the scan result */
+    function displayImagesOnPage(successful, mesg, response) {
+        if (!successful) { // On error
+            console.error('Failed: ' + mesg);
+            return;
+        }
+
+        if (successful && mesg != null && mesg.toLowerCase().indexOf('user cancel') >= 0) { // User cancelled.
+            console.info('User cancelled');
+            return;
+        }
+
+        var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
+        for (var i = 0;
+            (scannedImages instanceof Array) && i < scannedImages.length; i++) {
+            var scannedImage = scannedImages[i];
+            processScannedImage(scannedImage);
+        }
+    }
+
+
+    /** Images scanned so far. */
+    var imagesScanned = [];
+
+    /** Processes a ScannedImage */
+    function processScannedImage(scannedImage) {
+        imagesScanned.push(scannedImage);
+        var elementImg = scanner.createDomElementFromModel({
+            'name': 'img',
+            'attributes': {
+                'id': 'imagescut',
+                'src': scannedImage.src
+            }
+        });
+        $('#images').append(elementImg);
+    }
+</script>
