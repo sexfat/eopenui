@@ -3,10 +3,6 @@ console.log('js load ok');
 // $('.checkeds input').eq(0).prop('checked', true)
 
 
-
-
-
-
 $(".btn_01").on('click', function () {
   $(this).siblings('.active').removeClass('active');
   $(".box01").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
@@ -147,10 +143,10 @@ if (accountId == 'acc01') {
   $('#account11').val('請填入');
 };
 
-
+//====================
 // 新增證件
 //外國監護人
-
+//====================
 
 $(".addlocal").on('click', function () {
   var $this = $(this);
@@ -164,9 +160,9 @@ $(".addfr").on('click', function () {
   $(".addfr_box").addClass("on").fadeIn('slow').siblings('.on').removeClass('on');
 });
 
-
-//截章
-
+//====================
+//截章功能
+//====================
 function cropstamp() {
   var image = document.getElementById('imagescut');
   var start = document.getElementById('StartStmap');
@@ -276,9 +272,9 @@ $(".addstamp").click(function () {
 
 
 
-
-
-
+//====================
+// 1:1 寫法
+//====================
 
 function resize() {
 
@@ -310,14 +306,12 @@ resize();
 
 
 
-// 1:1 寫法
 
 
+//====================
 // upload
-
-
 //上傳圖片，並且預覽
-
+//====================
 
 
 $("#imgInp").change(function () {
@@ -361,19 +355,59 @@ function redirectPage() {
 redirectPage();
 
 
-// change info 異動註記 
 
-$(function() {
-  $('.others-text').hide(); 
-  $('#changes-mark').change(function(){
-  //   $('.box').hide(); 
+//====================
+// change info 異動註記 
+//====================
+$(function () {
+  $('.others-text').hide();
+  $('#changes-mark').change(function () {
+    //   $('.box').hide(); 
     if ($(this).val() == 'others') {
-        $('.others-text').show();
-    }else{
+      $('.others-text').show();
+    } else {
       $('.others-text').hide();
     }
   })
-  })
+})
+
+
+
+
+//====================
+// 人像攝影功能
+//====================
+
+$(function () {
+
+  $('.box_camera').hide();
+
+  $('.takepic').on('click', function () {
+    $('.box_camera').show();
+    Webcam.set({
+      width: 400,
+      height: 320,
+      image_format: 'jpeg',
+      jpeg_quality: 90,
+      constraints: {
+				width: { exact: 400 },
+				height: { exact: 320 }
+			}
+    });
+    Webcam.attach('.camera_show');
+  });
+});
+
+
+
+function take_snapshot() {
+  // take snapshot and get image data
+  Webcam.snap(function (data_uri) {
+    // display results in page
+    document.getElementById('camera_results').innerHTML =
+      '<img src="' + data_uri + '"/>';
+  });
+}
 
 
 

@@ -14,6 +14,8 @@
 
 @import "ocr";
 
+@import "camera"; 
+
 @include margin(top, 200);
 @include margin(bottom, 200);
 @include margin(left, 200);
