@@ -404,6 +404,8 @@ function take_snapshot() {
     // display results in page
     document.getElementById('camera_results').innerHTML =
       '<img src="' + data_uri + '"/>';
+      $('.box_camera').hide();
+      Webcam.reset();
   });
 }
 
