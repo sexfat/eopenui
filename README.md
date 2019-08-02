@@ -190,30 +190,30 @@ https://sexfat.github.io/eopenui/dist3/change_over18_info.html
 
 # 掃描機串接
 
-## 頁面參考
-
-https://sexfat.github.io/eopenui/dist3/addCard.html
+- 參考頁面 https://sexfat.github.io/eopenui/dist3/addCard.html
 
 
-### scanner.js 參考網站
+### 套件網站 scanner.js 
 
 - upload 參考頁面
 
 https://asprise.com/scan/scannerjs/docs/html/scannerjs-sdk-api-request.html#upload-upload-thumbnail
 
 
-### 套件主要程式
+### 主程式
 
-`<script src="js/scanner.js" defer></script>`
+- html
 
+```html
+<script src="js/scanner.js" defer></script>
+```
 
 ```html
  <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button" onclick="scanToJpg();">連接掃描器</button>
 ```
 
 
-
-### js
+- js
 
 ```js
 <script>
