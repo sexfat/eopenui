@@ -184,6 +184,123 @@ https://sexfat.github.io/eopenui/dist3/change_multi_info.html
 https://sexfat.github.io/eopenui/dist3/change_over18_info.html
 
 
+
+
+
+
+# 掃描機串接
+
+## 頁面參考
+
+https://sexfat.github.io/eopenui/dist3/addCard.html
+
+
+### scanner.js 參考網站
+
+- upload 參考頁面
+
+https://asprise.com/scan/scannerjs/docs/html/scannerjs-sdk-api-request.html#upload-upload-thumbnail
+
+
+### 套件主要程式
+
+`<script src="js/scanner.js" defer></script>`
+
+
+```html
+ <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button" onclick="scanToJpg();">連接掃描器</button>
+```
+
+
+
+### js
+
+```js
+<script>
+    // scanner.js  主要程式
+    function scanToJpg() {
+        scanner.scan(displayImagesOnPage, {
+            "output_settings": [{
+                "type": "return-base64",
+                "format": "jpg"
+            }]
+        });
+    }
+
+
+//輸出到某個資料夾的寫法
+    // function scanToJpg() {
+    //     scanner.scan(displayImagesOnPage, {
+    //         "output_settings": [{
+    //             "type": "upload",
+    //             "format": "pdf",
+    //             "upload_target": {
+    //                 "url": "http://asprise.com/scan/applet/upload.php?action=dump"
+    //             }
+    //         }, {
+    //             "type": "return-base64-thumbnail",
+    //             "format": "jpg"
+    //         }]
+    //     });
+    // }
+
+
+    /** Processes the scan result */
+    function displayImagesOnPage(successful, mesg, response) {
+        if (!successful) { // On error
+            console.error('Failed: ' + mesg);
+            return;
+        }
+
+        if (successful && mesg != null && mesg.toLowerCase().indexOf('user cancel') >= 0) { // User cancelled.
+            console.info('User cancelled');
+            return;
+        }
+
+        var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
+        for (var i = 0;
+            (scannedImages instanceof Array) && i < scannedImages.length; i++) {
+            var scannedImage = scannedImages[i];
+            processScannedImage(scannedImage);
+        }
+    }
+
+
+    /** Images scanned so far. */
+    var imagesScanned = [];
+
+    /** Processes a ScannedImage */
+    function processScannedImage(scannedImage) {
+        imagesScanned.push(scannedImage);
+        var elementImg = scanner.createDomElementFromModel({
+            'name': 'img',
+            'attributes': {
+                'class': 'imagescut',
+                'src': scannedImage.src
+            }
+        });
+        $('#images').append(elementImg);
+    }
+</script>
+```
+
+
+
+
+
+
+
+
+
+
+# 人像照相機串接
+
+
+
+
+
+
+
 # 分支master
 三商版
 
