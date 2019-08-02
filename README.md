@@ -287,13 +287,73 @@ https://asprise.com/scan/scannerjs/docs/html/scannerjs-sdk-api-request.html#uplo
 
 
 
-
-
-
-
-
-
 # 人像照相機串接
+
+- 參考頁面
+https://sexfat.github.io/eopenui/dist3/addportrait.html
+
+
+###  套件網站
+
+https://pixlcore.com/read/WebcamJS
+
+
+### 主程式
+
+- html
+
+#### 畫面窗
+
+```html 
+<button class="btn btn-block btn-primary btn-xl inlineBlock takepic" type="button">連接人像照相機</button>
+```
+
+
+#### 拍攝
+```html
+<button class="btn  btn-pill btn-danger"
+                            type="button" value="Take Snapshot" onClick="take_snapshot()">拍攝人像</button>
+```
+
+
+
+
+
+- js
+
+```js
+$(function () {
+  $('.box_camera').hide();
+  $('.takepic').on('click', function () {
+    $('.box_camera').show();
+    Webcam.set({
+      width: 400,
+      height: 320,
+      image_format: 'jpeg',
+      jpeg_quality: 90,
+      constraints: {
+				width: { exact: 400 },
+				height: { exact: 320 }
+			}
+    });
+    Webcam.attach('.camera_show');
+  });
+});
+
+function take_snapshot() {
+  // take snapshot and get image data
+  Webcam.snap(function (data_uri) {
+    // display results in page
+    document.getElementById('camera_results').innerHTML =
+      '<img src="' + data_uri + '"/>';
+      $('.box_camera').hide();
+      Webcam.reset();
+  });
+}
+```
+
+
+
 
 
 
