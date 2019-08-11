@@ -124,7 +124,7 @@
     .seal_box {
         position: relative;
         display: inline-block;
-        float: right;
+        // float: right;
         z-index: 100;
 
 
@@ -216,31 +216,43 @@ a {
 }
 
 
-//============= header ============
 
 
-//總歸戶查詢
 
 
+//=============總歸戶查詢===============
 
 .query_items {
-   list-style: none;
-   padding: 0;
-   padding-top:  10px;
-   min-height:  600px;
-   li {
-    //
-      font-size: .95rem; 
-      padding: 10px 20px 10px;
-      cursor: pointer;
-      &:hover  {
-        background-color: rgb(245, 245, 245); 
-        color: $blue ; 
-      }
-      &.hover  {
-        background-color: rgb(245, 245, 245); 
-        color: $blue ; 
-      }
-       
-   }
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    min-height: 600px;
+
+    li {
+        //
+        font-size: .95rem;
+        padding: 10px 20px 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(245, 245, 245);
+            color: $blue;
+        }
+
+        &.hover {
+            background-color: rgb(245, 245, 245);
+            color: $blue;
+        }
+
+    }
+}
+
+
+
+//=======  報表  ================
+
+.bg-w {
+background-color: #f8f8f8;
+
+
 }

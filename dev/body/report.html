@@ -1,0 +1,198 @@
+<!-- content -->
+
+<div class="col-sm-12 col-xl-12 margintop-60">
+
+    <div class="query_box center">
+        <h4>報表作業</h4>
+        <!-- <div class="query_bar margintop-30">
+            <div class="controls">
+                <div class="input-group">
+                    <input class="form-control outline-d4" id="appendedInputButtons" size="30" type="text"
+                        placeholder="帳號 / ID">
+                    <span class="input-group-append">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </span>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-12 margintop-60">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-12 col-xl-6">
+                    <div class="form-group marginbottom-1 inlineBlock">
+                        <div class="form-check form-check-inline mr-1">
+                            <input class="form-check-input" type="checkbox" value="check1">
+                        </div>
+                        <label class="width6 col-form-label" for="text-input">日期區間</label>
+                        <div class="width15">
+                            <input class="form-control" type="date" name="text-input" placeholder="起始日期">
+                        </div>
+                        ~
+                        <div class="width15">
+                            <input class="form-control" type="date" name="text-input" placeholder="起始日期">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <div class="form-group marginbottom-1 inlineBlock">
+                        <div class="form-check form-check-inline mr-1">
+                            <input class="form-check-input" type="checkbox" value="check1">
+                        </div>
+                        <label class="width4 col-form-label" for="text-input">帳號</label>
+                        <div class="width30">
+                            <input class="form-control" type="text" name="text-input" placeholder="帳號">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-12 col-xl-6">
+                    <div class="form-group marginbottom-1 inlineBlock">
+                        <div class="form-check form-check-inline mr-1">
+                            <input class="form-check-input" type="checkbox" value="check1">
+                        </div>
+                        <label class="width6 col-form-label" for="text-input">統一編號</label>
+                        <div class="width30">
+                            <input class="form-control" type="text" name="text-input" placeholder="A123456789">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <div class="form-group marginbottom-1 inlineBlock">
+                        <div class="form-check form-check-inline mr-1">
+                            <input class="form-check-input" type="checkbox" value="check1">
+                        </div>
+                        <label class="width6 col-form-label" for="text-input">事件查詢</label>
+                        <div class="width30">
+                            <select id="applyReason" name="applyReason" class="form-control">
+                                <option value="0">請選擇</option>
+                                <option value="1">變更前查詢</option>
+                                <option value="2">變更前查詢</option>
+                                <option value="3">變更前查詢</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </li>
+        <li class="list-group-item">
+                <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="form-group marginbottom-1 inlineBlock">
+                                <div class="form-check form-check-inline mr-1">
+                                    <input class="form-check-input" type="checkbox" value="check1">
+                                </div>
+                                <label class="width6 col-form-label" for="text-input">經辦</label>
+                                <!-- <div class="width30">
+                                    <input class="form-control" type="text" name="text-input" placeholder="A123456789">
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="form-group marginbottom-1 inlineBlock">
+                                <div class="form-check form-check-inline mr-1">
+                                    <input class="form-check-input" type="checkbox" value="check1">
+                                </div>
+                                <label class="width6 col-form-label" for="text-input">主管</label>
+                                <div class="width30">
+                                    <select id="applyReason" name="applyReason" class="form-control">
+                                        <option value="0">請選擇</option>
+                                        <option value="1">變更前查詢</option>
+                                        <option value="2">變更前查詢</option>
+                                        <option value="3">變更前查詢</option>
+                                    </select>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        </li>
+        <li class="list-group-item"><button class="btn btn-block btn-primary btn-l"
+                type="button">展開查詢</button></li>
+        <!-- <li class="list-group-item">Dapibus ac facilisis in</li> -->
+    </ul>
+
+</div>
+
+
+
+
+<div class="col-sm-12 col-xl-12 margintop-20">
+    <div class="card">
+        <div class="card-header">查詢結果 共 <span>10</span> 筆 
+        </div>
+        <div class="card-body">
+            <!-- <table class="table table-responsive-sm table-bordered table-striped table-responsive-sm">
+                <thead>
+                    <tr>
+                        <th>狀態</th>
+                        <th>帳號</th>
+                        <th>證件號碼</th>
+                        <th>開戶日期</th>
+                        <th>開戶分行</th>
+                        <th>檢視</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <span class="badge badge-danger">掛失</span> <span class="badge badge-success">正常</span>
+                            <span class="badge badge-warning">異動中</span>
+                        </td>
+                        <td>60201-03-34334567</td>
+                        <td>U121167546</td>
+                        <td>
+                            109/10/31
+                        </td>
+                        <td>
+                            201
+                        </td>
+                        <td>
+                            <a class="btn btn-success text-center" href="query_result.html">
+                                <i class="icon-eye"></i> 檢視
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <span class="badge badge-danger">掛失</span> <span class="badge badge-success">正常</span>
+                            <span class="badge badge-warning">異動中</span>
+                        </td>
+                        <td>60201-03-34334567</td>
+                        <td>U121167546</td>
+                        <td>
+                            109/10/31
+                        </td>
+                        <td>
+                            201
+                        </td>
+                        <td>
+                            <a class="btn btn-success text-center" href="query_result.html">
+                                <i class="icon-eye"></i> 檢視
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table> -->
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- content end -->

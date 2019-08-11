@@ -163,9 +163,12 @@
 
 
 .padding_start {
-    padding: 0 ;
+    padding: 0;
 }
 
+.box-center {
+    @include margin-auto();
+}
 
 // .others-text {
 //     display: none;
