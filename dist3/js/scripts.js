@@ -380,13 +380,13 @@ $(function () {
 //====================
 
 
- // scanner.js  主要程式
- function scanToJpg() {
+// scanner.js  主要程式
+function scanToJpg() {
   scanner.scan(displayImagesOnPage, {
-      "output_settings": [{
-          "type": "return-base64",
-          "format": "jpg"
-      }]
+    "output_settings": [{
+      "type": "return-base64",
+      "format": "jpg"
+    }]
   });
 }
 
@@ -411,20 +411,20 @@ $(function () {
 /** Processes the scan result */
 function displayImagesOnPage(successful, mesg, response) {
   if (!successful) { // On error
-      console.error('Failed: ' + mesg);
-      return;
+    console.error('Failed: ' + mesg);
+    return;
   }
 
   if (successful && mesg != null && mesg.toLowerCase().indexOf('user cancel') >= 0) { // User cancelled.
-      console.info('User cancelled');
-      return;
+    console.info('User cancelled');
+    return;
   }
 
   var scannedImages = scanner.getScannedImages(response, true, false); // returns an array of ScannedImage
   for (var i = 0;
-      (scannedImages instanceof Array) && i < scannedImages.length; i++) {
-      var scannedImage = scannedImages[i];
-      processScannedImage(scannedImage);
+    (scannedImages instanceof Array) && i < scannedImages.length; i++) {
+    var scannedImage = scannedImages[i];
+    processScannedImage(scannedImage);
   }
 }
 
@@ -436,11 +436,11 @@ var imagesScanned = [];
 function processScannedImage(scannedImage) {
   imagesScanned.push(scannedImage);
   var elementImg = scanner.createDomElementFromModel({
-      'name': 'img',
-      'attributes': {
-          'class': 'imagescut',
-          'src': scannedImage.src
-      }
+    'name': 'img',
+    'attributes': {
+      'class': 'imagescut',
+      'src': scannedImage.src
+    }
   });
   $('#images').append(elementImg);
 }
@@ -471,9 +471,13 @@ $(function () {
       image_format: 'jpeg',
       jpeg_quality: 90,
       constraints: {
-				width: { exact: 400 },
-				height: { exact: 320 }
-			}
+        width: {
+          exact: 400
+        },
+        height: {
+          exact: 320
+        }
+      }
     });
     Webcam.attach('.camera_show');
   });
@@ -485,12 +489,41 @@ function take_snapshot() {
     // display results in page
     document.getElementById('camera_results').innerHTML =
       '<img src="' + data_uri + '"/>';
-      $('.box_camera').hide();
-      Webcam.reset();
+    $('.box_camera').hide();
+    Webcam.reset();
   });
 }
 
 
+//查詢作業
+
+
+
+  $('#modal_person').change(function () {
+    //this is just getting the value that is selected
+    $('.modal_person').modal('show');
+    console.log('modal ok');
+  });
+
+  $('#modal_id').change(function () {
+    //this is just getting the value that is selected
+    $('.modal_id').modal('show');
+    console.log('modal ok');
+  });
+
+  $('#modal_stamp').change(function () {
+    //this is just getting the value that is selected
+    $('.modal_stamp').modal('show');
+    console.log('modal ok');
+  });
+
+  $('#modal_remark').change(function () {
+    //this is just getting the value that is selected
+    $('.modal_remark').modal('show');
+    console.log('modal ok');
+  });
+
+  // $('#changes').on('click' , '#')
 
 
 

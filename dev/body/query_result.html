@@ -57,6 +57,17 @@
                                     <div> 印鑑共一式憑一式有效
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label class="col-form-label bold black-70" for="text-input">歷史印鑑查詢</label>
+                                    <div class="margintop-5">
+                                        <select class="form-control" name="select1" id="modal_stamp">
+                                            <option value="0"> 請選擇 </option>
+                                            <option value="1">108/03/01</option>
+                                            <option value="2">107/03/01</option>
+                                            <option value="3">106/03/01</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-9">
@@ -134,7 +145,7 @@
                                             alt="">
                                     </div>
                                 </td>
-                                <td class="width50">
+                                <td class="width30">
                                     <div class="form-group bigtext">
                                         <label class="col-form-label" for="text-input">身分證字號</label>
                                         <div class="">
@@ -153,18 +164,55 @@
                                             本國成年人
                                         </div>
                                     </div>
+                                </td>
+                                <td class="width50">
 
+                                    <div class="form-group bigtext">
+                                        <label class="col-form-label" for="text-input">歷史人像查詢</label>
+                                        <div class="">
+                                            <select class="form-control" name="select1" id="modal_person">
+                                                <option value="0"> 請選擇 </option>
+                                                <option value="1">108/03/01</option>
+                                                <option value="2">107/03/01</option>
+                                                <option value="3">106/03/01</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group bigtext">
+                                        <label class="col-form-label" for="text-input">歷史身份證查詢</label>
+                                        <div class="">
+                                            <select class="form-control" name="select1" id="modal_id">
+                                                <option value="0"> 請選擇 </option>
+                                                <option value="1">108/03/01</option>
+                                                <option value="2">107/03/01</option>
+                                                <option value="3">106/03/01</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group bigtext">
+                                        <label class="col-form-label" for="text-input">歷史異動註記查詢</label>
+                                        <div class="">
+                                            <select class="form-control" name="select1" id="modal_remark">
+                                                <option value="0"> 請選擇 </option>
+                                                <option value="1">108/03/01 大額提款</option>
+                                                <option value="2">107/03/01 變更印鑑</option>
+                                                <option value="3">106/03/01 其他</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
                                 </td>
                         </tbody>
                     </table>
-                    <div class="form-group bigtext remarks">
+
+                    <div>
                         <label class="col-form-label" for="text-input">狀態備註</label>
                         <div>
                             <textarea class="form-control" id="textarea-input" name="textarea-input" rows="4"
                                 placeholder="備註欄位....."></textarea>
                         </div>
                     </div>
+
                     <div class="id_detail margintop-50">
                         <h5 class="underline marginbottom-30">基本資料明細</h5>
                         <div class="form-group">
@@ -274,10 +322,369 @@
 
 </div>
 
-
-
-
-
-
-
 <!-- content end -->
+
+
+<!-- data-toggle="modal" data-target=".all_modal-lg" -->
+<!-- modal start -->
+
+
+<!-- 舊人像 -->
+<div class="modal modal_person fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">歷史人像查詢結果</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- .......歷史人像 -->
+                <div class="col-sm-12 col-xl-12">
+                    <div class="card">
+                        <div class="card-header">歷史人像
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-xl-7">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            大頭照
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="person_info">
+                                                <img class="person_img"
+                                                    src="https://placem.at/people?w=180&amp;random=some_seed" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xl-5">
+                                    <div class="id_detail">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="text-input">身分證字號 / 統一編號</label>
+                                            <div> A123456789
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="text-input">變更日期</label>
+                                            <div> 107年 10月31日
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 舊身份證件 -->
+<div class="modal modal_id fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">歷史證件查詢結果</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- .......test -->
+                <div class="col-sm-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-header">歷史證件
+                            </div>
+                            <div class="card-body">
+                    
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-7">
+                                        <div class="card">
+                                            <div class="card-header">身分證件/公司證件
+                                            </div>
+                                            <div class="card-body">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="iduser">
+                                                                    <img src="img/id_top.jpg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="iduser">
+                                                                    <img src="img/id_bottom.jpg" alt="">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xl-5">
+                                        <div class="id_detail">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="text-input">身分證字號 / 統一編號</label>
+                                                <div> A123456789
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="text-input">變更日期</label>
+                                                <div> 107年 10月31日
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- end -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 舊印鑑 -->
+<div class="modal modal_stamp fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">歷史印鑑查詢結果</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- .......test -->
+                <div class="col-sm-12 col-xl-12">
+                    <div class="card">
+                        <div class="card-header"> 歷史印鑑
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-xl-8">
+                                    <div class="card">
+                                        <div class="card-header">印鑑
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="marginbottom-50">
+                                                <h5>第一式</h5>
+                                                <hr>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="idbamp">
+                                                                    <img src="img/idbamp_01.gif" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="idbamp">
+                                                                    <img src="img/idbamp.png" alt="">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="marginbottom-50">
+                                                <h5>第二式</h5>
+                                                <hr>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="idbamp">
+                                                                    <img src="img/idbamp_01.gif" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="idbamp">
+                                                                    <img src="img/idbamp.png" alt="">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <div class="id_detail">
+                                        <!-- <div class="form-group">
+                                                                            <label class="col-form-label" for="text-input">科目</label>
+                                                                            <div> 活期存款01
+                                                                            </div>
+                                                                        </div> -->
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="text-input">印鑑啟用日期</label>
+                                            <div> 108年 1月31日
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="text-input">式憑原則</label>
+                                            <div> 印鑑共一式憑一式有效
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-xl-12">
+                                    <div class="card margintop-50">
+                                        <div class="card-header">印鑑卡正面
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="img/bampcard.jpg" alt="">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xl-12">
+                                    <div class="card margintop-10">
+                                        <div class="card-header">印鑑卡反面
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="img/bampcard.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 舊 異動註記 -->
+<div class="modal modal_remark fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xxlg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">歷史異動註記查詢結果</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- .......異動註記 -->
+                <div class="col-sm-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-header">歷史異動註記
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-7">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                大頭照
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="person_info">
+                                                    <img class="person_img"
+                                                        src="https://placem.at/people?w=180&amp;random=some_seed" alt="">
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xl-5">
+                                        <div class="id_detail">
+                                            <div class="form-group">
+                                               <label class="col-form-label" for="text-input">異動註記備註</label>
+                                                <div> 大額提款
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="text-input">註記日期</label>
+                                                <div> 107年 10月31日
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xl-12 margintop-30">
+                                            <div class="card">
+                                                <div class="card-header">身分證件/公司證件
+                                                </div>
+                                                <div class="card-body">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="iduser">
+                                                                        <img src="img/id_top.jpg" alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="iduser">
+                                                                        <img src="img/id_bottom.jpg" alt="">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                </div>
+    
+    
+    
+    
+    
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- end -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
