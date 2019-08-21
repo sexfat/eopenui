@@ -126,6 +126,7 @@ https://sexfat.github.io/eopenui/dist3/queryid.html
 
 
 - query_result.html 查詢結果頁
+新增加 歷史查詢區
 https://sexfat.github.io/eopenui/dist3/query_result.html
 
 
@@ -183,6 +184,13 @@ https://sexfat.github.io/eopenui/dist3/change_multi_info.html
 - change_over18_info.html
 https://sexfat.github.io/eopenui/dist3/change_over18_info.html
 
+
+
+##### 報表作業
+- report.html
+https://sexfat.github.io/eopenui/dist3/report.html
+
+這使用print.js 套件，請到 js 資料夾做載入
 
 
 
