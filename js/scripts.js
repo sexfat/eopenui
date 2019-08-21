@@ -499,34 +499,40 @@ function take_snapshot() {
 
 
 
-  $('#modal_person').change(function () {
-    //this is just getting the value that is selected
-    $('.modal_person').modal('show');
-    console.log('modal ok');
-  });
+$('#modal_person').change(function () {
+  //this is just getting the value that is selected
+  $('.modal_person').modal('show');
+  console.log('modal ok');
+});
 
-  $('#modal_id').change(function () {
-    //this is just getting the value that is selected
-    $('.modal_id').modal('show');
-    console.log('modal ok');
-  });
+$('#modal_id').change(function () {
+  //this is just getting the value that is selected
+  $('.modal_id').modal('show');
+  console.log('modal ok');
+});
 
-  $('#modal_stamp').change(function () {
-    //this is just getting the value that is selected
-    $('.modal_stamp').modal('show');
-    console.log('modal ok');
-  });
+$('#modal_stamp').change(function () {
+  //this is just getting the value that is selected
+  $('.modal_stamp').modal('show');
+  console.log('modal ok');
+});
 
-  $('#modal_remark').change(function () {
-    //this is just getting the value that is selected
-    $('.modal_remark').modal('show');
-    console.log('modal ok');
-  });
+$('#modal_remark').change(function () {
+  //this is just getting the value that is selected
+  $('.modal_remark').modal('show');
+  console.log('modal ok');
+});
 
-  // $('#changes').on('click' , '#')
+// $('#changes').on('click' , '#')
 
+// 報表展開
+$(".query_check").click(function () {
+  $(".query_condition").show("slow");
+});
 
-
+$('.report_print').click(function () {
+  $('.report_result').print();
+})
 
 
 console.log('end ok');
