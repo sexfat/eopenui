@@ -532,7 +532,17 @@ $(".query_check").click(function () {
 
 $('.report_print').click(function () {
   $('.report_result').print();
-})
+});
+
+
+
+function printme() {
+  document.getElementById('report_result').innerHTML
+  window.print();
+  window.close();
+}
+
+
 
 
 console.log('end ok');

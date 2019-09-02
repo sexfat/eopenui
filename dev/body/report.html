@@ -1,3 +1,8 @@
+<!-- 列印表單 -->
+<script>
+
+</script>
+
 <!-- content -->
 
 <div class="col-sm-12 col-xl-12 margintop-60">
@@ -17,64 +22,58 @@
         </div> -->
     </div>
 </div>
-
 <div class="col-sm-12 col-xl-12 margintop-60">
     <ul class="list-group report">
-
         <li class="list-group-item"> <button class="btn btn-block btn-outline-primary btn-l inlineBlock query_check"
                 type="button"><i class="icon-list"></i>
                 條件展開</button></li>
         <div class="query_condition none">
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="form-group marginbottom-1 inlineBlock">
-                            <div class="form-check form-check-inline mr-1">
-                                <input class="form-check-input" type="checkbox" value="check1">
+            <form action="">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="form-group marginbottom-1 inlineBlock">
+                                <div class="form-check form-check-inline mr-1">
+                                    <input class="form-check-input" type="checkbox" value="check1">
+                                </div>
+                                <label class="width6 col-form-label" for="text-input">日期區間</label>
+                                <div class="width15">
+                                    <input class="form-control" type="date" name="text-input" placeholder="起始日期">
+                                </div>
+                                ~
+                                <div class="width15">
+                                    <input class="form-control" type="date" name="text-input" placeholder="起始日期">
+                                </div>
                             </div>
-                            <label class="width6 col-form-label" for="text-input">日期區間</label>
-                            <div class="width15">
-                                <input class="form-control" type="date" name="text-input" placeholder="起始日期">
-                            </div>
-                            ~
-                            <div class="width15">
-                                <input class="form-control" type="date" name="text-input" placeholder="起始日期">
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="form-group marginbottom-1 inlineBlock">
+                                <div class="form-check form-check-inline mr-1">
+                                    <input class="form-check-input" type="checkbox" value="check1">
+                                </div>
+                                <label class="width4 col-form-label" for="text-input">帳號</label>
+                                <div class="width30">
+                                    <input class="form-control" type="text" name="text-input" placeholder="帳號">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="form-group marginbottom-1 inlineBlock">
-                            <div class="form-check form-check-inline mr-1">
-                                <input class="form-check-input" type="checkbox" value="check1">
-                            </div>
-                            <label class="width4 col-form-label" for="text-input">帳號</label>
-                            <div class="width30">
-                                <input class="form-control" type="text" name="text-input" placeholder="帳號">
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-            </li>
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="form-group marginbottom-1 inlineBlock">
-                            <div class="form-check form-check-inline mr-1">
-                                <input class="form-check-input" type="checkbox" value="check1">
-                            </div>
-                            <label class="width6 col-form-label" for="text-input">統一編號</label>
-                            <div class="width30">
-                                <input class="form-control" type="text" name="text-input" placeholder="A123456789">
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="form-group marginbottom-1 inlineBlock">
+                                <div class="form-check form-check-inline mr-1">
+                                    <input class="form-check-input" type="checkbox" value="check1">
+                                </div>
+                                <label class="width6 col-form-label" for="text-input">統一編號</label>
+                                <div class="width30">
+                                    <input class="form-control" type="text" name="text-input" placeholder="A123456789">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="form-group marginbottom-1 inlineBlock">
+                        <div class="col-sm-12 col-xl-6">
+                            <!-- <div class="form-group marginbottom-1 inlineBlock">
                             <div class="form-check form-check-inline mr-1">
                                 <input class="form-check-input" type="checkbox" value="check1">
                             </div>
@@ -87,53 +86,52 @@
                                     <option value="3">變更前查詢</option>
                                 </select>
                             </div>
+                        </div> -->
+
                         </div>
 
                     </div>
-
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="form-group marginbottom-1 inlineBlock">
-                            <div class="form-check form-check-inline mr-1">
-                                <input class="form-check-input" type="checkbox" value="check1">
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-4">
+                            <div class="form-group marginbottom-1 inlineBlock">
+                                <div class="form-check form-check-inline mr-1">
+                                    <input class="form-check-input" type="radio" name="manage" value="check1">
+                                </div>
+                                <label class="width4 col-form-label" for="text-input">主管</label>
+                                <div class="width30">
+                                    <select id="applyReason" name="applyReason" class="form-control">
+                                        <option value="0">請選擇</option>
+                                        <option value="1">變更前查詢</option>
+                                        <option value="2">變更前查詢</option>
+                                        <option value="3">變更前查詢</option>
+                                    </select>
+                                </div>
                             </div>
-                            <label class="width6 col-form-label" for="text-input">經辦</label>
-                            <!-- <div class="width30">
+
+                        </div>
+                        <div class="col-sm-12 col-xl-4">
+                            <div class="form-group marginbottom-1 inlineBlock">
+                                <div class="form-check form-check-inline mr-1">
+                                    <input class="form-check-input" type="radio" name="manage" value="check1">
+                                </div>
+                                <label class="width6 col-form-label" for="text-input">經辦</label>
+                                <!-- <div class="width30">
                                                 <input class="form-control" type="text" name="text-input" placeholder="A123456789">
                                             </div> -->
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="form-group marginbottom-1 inlineBlock">
-                            <div class="form-check form-check-inline mr-1">
-                                <input class="form-check-input" type="checkbox" value="check1">
-                            </div>
-                            <label class="width6 col-form-label" for="text-input">主管</label>
-                            <div class="width30">
-                                <select id="applyReason" name="applyReason" class="form-control">
-                                    <option value="0">請選擇</option>
-                                    <option value="1">變更前查詢</option>
-                                    <option value="2">變更前查詢</option>
-                                    <option value="3">變更前查詢</option>
-                                </select>
                             </div>
                         </div>
 
+
                     </div>
-
-                </div>
-            </li>
-            <li class="list-group-item">
-                <button class="btn btn-xl btn-success text-center inlineBlock" href="#">
-                    <i class="icon-eye"></i> 查詢
-                </button>
-
-
-            </li>
+                </li>
+                <li class="list-group-item">
+                    <input class="btn btn-xl btn-success text-center inlineBlock" value="查詢" type="submit">
+                    <input class="btn btn-l btn-light text-center inlineBlock " value="重置" type="reset">
+                </li>
         </div>
+        </form>
 
 
 
@@ -148,8 +146,12 @@
 <div class="col-sm-12 col-xl-12 margintop-20">
     <div class="card">
         <div class="card-header">查詢結果 共 <span>2</span> 筆
-            <button type="button" class="btn btn-info btn-sm float-right"
-                onclick="printJS({ printable: 'report_result', type: 'html', header: '經辦: <span>002c</span>' , documentTitle: '異動表單'})">列印</button>
+            <!-- <button type="button" class="btn btn-info btn-sm float-right"
+                onclick="printJS({ printable: 'report_result', type: 'html', header: '經辦: <span>002c</span>' , documentTitle: '異動紀錄表'})">列印
+            </button> -->
+            <button type="button" class="btn btn-info btn-sm float-right" onclick="window.print();">
+                列印
+            </button>
         </div>
         <div class="card-body">
             <div id="report_result">
@@ -168,6 +170,7 @@
                             <th>審核結果</th>
                             <th>主管編號</th>
                             <th>審核日期</th>
+                            <th>備註</th>
 
                         </tr>
                     </thead>
@@ -205,6 +208,9 @@
                                 <!-- 審核日期 -->
                                 109/11/01
                             </td>
+                            <td>
+                                <!-- 備註 -->
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -239,8 +245,12 @@
                                 <!-- 審核日期 -->
                                 109/10/01
                             </td>
+                            <td>
+                                <!-- 備註 -->
+                            </td>
                         </tr>
-                        
+
+
 
                     </tbody>
                 </table>
