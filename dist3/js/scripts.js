@@ -276,17 +276,61 @@ $(".addstamp").click(function () {
 // 1:1 寫法
 //====================
 
-function resize() {
+var big = $('.imagescut');
+var ww = big.width();
+var ScreenWidth = window.screen.width;
 
-  var cutObjs = $('#imagescut');
-  var xps = cutObjs.width();
-  console.log(xps);
-  var addWidths = Math.round(xps * 0.4032) + 'px';
-  cutObjs.attr("width", addWidths);
 
-}
+//function justwidth() {
+    if (ScreenWidth == '2560') {
+        var scrWidth = ww * 0.41806;
+        big.css('width', scrWidth);
+    } else if (ScreenWidth == '1920') {
+        var scrWidth = ww * 0.27553;
+        big.css('width', scrWidth);
+    } else if (ScreenWidth == '1344') {
+        var scrWidth = ww * 0.19255;
+        big.css('width', scrWidth);
+    } else if (ScreenWidth == '1366') {
+        var scrWidth = ww * 0.19914;
+        big.css('width', scrWidth);
+    } else if (ScreenWidth == '1024') {
+        var scrWidth = ww * 0.15034;
+        big.css('width', scrWidth);
+    } else if (ScreenWidth == '2048') {
+        var scrWidth = ww * 0.33404;
+        big.css('width', scrWidth);
+    } else if (ScreenWidth == '1600') {
+        var scrWidth = ww * 0.26170;
+        big.css('width', scrWidth);
+    } else {
+        alert('熒幕不支援1:1');
+    }
 
-resize();
+//}
+
+
+// window.onload = justwidth;
+
+
+
+
+
+
+
+
+
+// function resize() {
+
+//   var cutObjs = $('#imagescut');
+//   var xps = cutObjs.width();
+//   console.log(xps);
+//   var addWidths = Math.round(xps * 0.4032) + 'px';
+//   cutObjs.attr("width", addWidths);
+
+// }
+
+// resize();
 
 
 
