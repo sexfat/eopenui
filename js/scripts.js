@@ -292,7 +292,7 @@ var ScreenWidth = window.screen.width;
         var scrWidth = ww * 0.19255;
         big.css('width', scrWidth);
     } else if (ScreenWidth == '1366') {
-        var scrWidth = ww * 0.19914;
+        var scrWidth = ww * 0.19680;
         big.css('width', scrWidth);
     } else if (ScreenWidth == '1024') {
         var scrWidth = ww * 0.15034;
