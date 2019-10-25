@@ -283,7 +283,7 @@ var ScreenWidth = window.screen.width;
 
 //function justwidth() {
     if (ScreenWidth == '2560') {
-        var scrWidth = ww * 0.41806;
+        var scrWidth = ww * 0.41808510638297874;
         big.css('width', scrWidth);
     } else if (ScreenWidth == '1920') {
         var scrWidth = ww * 0.27553;
@@ -298,7 +298,7 @@ var ScreenWidth = window.screen.width;
         var scrWidth = ww * 0.15034;
         big.css('width', scrWidth);
     } else if (ScreenWidth == '2048') {
-        var scrWidth = ww * 0.33404;
+        var scrWidth = ww * 0.33617021276595743;
         big.css('width', scrWidth);
     } else if (ScreenWidth == '1600') {
         var scrWidth = ww * 0.26170;

@@ -14,8 +14,24 @@
         background-color: $gray-100;
         padding: 15px;
 
+        img {
+            width: 80%;
+            max-width: 800px;
+        }
+
     }
 }
+
+// 圖片
+.card-body {
+
+    img {
+        width: 80%;
+        max-width: 800px;
+    }
+}
+
+
 
 //========= 身份檢核 =======//
 
@@ -252,7 +268,13 @@ a {
 //=======  報表  ================
 
 .bg-w {
-background-color: #f8f8f8;
+    background-color: #f8f8f8;
 
 
+}
+
+//============= 完成畫面 =========
+
+.iduser {
+    display: inline-block;
 }
