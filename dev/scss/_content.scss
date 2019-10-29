@@ -18,7 +18,12 @@
             width: 80%;
             max-width: 800px;
         }
-
+        .sealcut {
+            img {
+                width: inherit;
+                max-width: inherit;
+            }
+        }
     }
 }
 
@@ -29,7 +34,23 @@
         width: 80%;
         max-width: 800px;
     }
+
+    .img_original {
+        img {
+            width: inherit;
+            max-width: inherit;
+        }
+    }
 }
+
+
+.imgx_origin {
+    position: absolute;
+    top: -1000000px;
+
+}
+
+
 
 
 
