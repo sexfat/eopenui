@@ -26,6 +26,10 @@ https://sexfat.github.io/eopenui/dist3/index.html
 https://sexfat.github.io/eopenui/dist3/index_return.html
 
 
+*** 1:1 頁面 ***
+
+- checkorignal.html 1:1 頁面
+https://sexfat.github.io/eopenui/dist3/checkorignal.html
 
 
 ***身份科目***
