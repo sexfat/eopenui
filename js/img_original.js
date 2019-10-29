@@ -52,4 +52,3 @@ $("#vals").keydown(function (event) {
     };
 });
 console.log('螢幕寬:' + ScreenWidth + '/' + '螢幕高:' + ScreenHeight);
-console.log('width寬比例:' + result_x + '/' + 'height高比例:' + result_y);
