@@ -9,13 +9,24 @@
                     <h2>
                         拿出身分證縮放至實際尺寸，並獲得比例
                     </h2>
-                    <div class="inlineBlock margintop-20 width25"><input type="number" name="" id="vals"
-                            placeholder="請輸入值，並按下enter" class="form-control">
+
+                    <div class="inlineBlock  width25"><input type="number" name="" id="vals_x"
+                            placeholder="請輸入寬度值，並按下enter" class="form-control">
                     </div>
                     <div class="inner-box inlineBlock margintop-20">
-                        <input type="button" value="+ 增加" id="add1" class="btn btn-primary">
-                        <input type="button" value="- 減少" id="reduce1" class="btn btn-primary">
+                        <input type="button" value="+ 增加" id="add_x" class="btn btn-primary">
+                        <input type="button" value="- 減少" id="reduce_x" class="btn btn-primary">
                     </div>
+                    <div>
+                        <div class="margintop-20 width25">
+                            <input type="number" name="" id="vals_y" placeholder="請輸入高度值，並按下enter" class="form-control">
+                        </div>
+                        <div class="inner-box inlineBlock margintop-20">
+                            <input type="button" value="+ 增加" id="add_y" class="btn btn-primary">
+                            <input type="button" value="- 減少" id="reduce_y" class="btn btn-primary">
+                        </div>
+                    </div>
+
                     <div class="text margintop-20">此螢幕 X (width) 比例值 : <span id="result_value_x"></span></div>
                     <div class="text">此螢幕 Y (height) 比例值 : <span id="result_value_y"></span></div>
                     <div class="text">此系統IP: <span id="ip"></span></div>
