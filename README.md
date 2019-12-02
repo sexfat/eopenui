@@ -197,6 +197,11 @@ https://sexfat.github.io/eopenui/dist3/report.html
 這使用print.js 套件，請到 js 資料夾做載入
 
 
+##### 1:1 調整作業
+- checkorignal.html
+https://sexfat.github.io/eopenui/dist3/checkorignal.html
+
+
 
 
 
