@@ -77,7 +77,6 @@ a {
 
         img {
             width: 80%;
-            max-width: 800px;
         }
 
         .sealcut {
@@ -88,22 +87,26 @@ a {
         }
     }
 
-// =========== 新增印鑑卡 ================ //
+    // =========== 新增印鑑卡 ================ //
 
-#cutImg {
-    img {
-        width: 60% !important;
+    #cutImg {
+        img {
+            width: 60% !important;
+        }
     }
-  }
+
+    .sealpic {
+        .card-img {
+            width: 60%;
+        }
+
+
+    }
+
+
 }
 
-.sealpic {
-  .card-img {
-      width: 60%;
-  }
 
-
-}
 
 // 圖片
 .card-body {
@@ -212,6 +215,7 @@ a {
 
 .idbamp {
     display: inline-block;
+
     img {
         max-width: 180px;
     }
@@ -369,6 +373,3 @@ a {
 .iduser {
     display: inline-block;
 }
-
-
-
