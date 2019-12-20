@@ -87,6 +87,15 @@ a {
             }
         }
     }
+
+// =========== 新增印鑑卡 ================ //
+
+#cutImg {
+    img {
+        width: 60% !important;
+        max-width: 800px !important;
+    }
+}
 }
 
 // 圖片
@@ -353,3 +362,6 @@ a {
 .iduser {
     display: inline-block;
 }
+
+
+
