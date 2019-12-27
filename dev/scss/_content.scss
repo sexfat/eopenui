@@ -217,7 +217,8 @@ a {
     display: inline-block;
 
     img {
-        max-width: 180px;
+        width: inherit;
+        max-width: inherit ;
     }
 }
 
@@ -373,3 +374,8 @@ a {
 .iduser {
     display: inline-block;
 }
+
+.row > form {
+  width: 100%;
+}
+
