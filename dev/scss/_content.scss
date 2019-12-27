@@ -81,19 +81,22 @@ a {
 
         .sealcut {
             img {
-                width: inherit;
-                max-width: inherit;
+                width: 60%;
+                max-width: 400px
             }
         }
     }
 
     // =========== 新增印鑑卡 ================ //
 
-    #cutImg {
-        img {
-            width: 60% !important;
-        }
-    }
+    // #cutImg {
+    //     img {
+    //         width: 60% !important;
+    //     }
+    //     .card-bgimg {
+    //         width: 100% !important;
+    //     }
+    // }
 
     .sealpic {
         .card-img {
@@ -181,7 +184,9 @@ a {
 // 作業完成
 
 .person_img {
-    @include boxzone(180px, 210px);
+    // @include boxzone(180px, 210px);
+    width: 180px !important;
+    height: 210px !important;
     border: 1px solid rgb(99, 99, 99);
     padding: 1px;
     margin-bottom: 30px;
@@ -218,7 +223,7 @@ a {
 
     img {
         width: inherit;
-        max-width: inherit ;
+        max-width: inherit;
     }
 }
 
@@ -241,6 +246,9 @@ a {
         z-index: 0;
         // max-width: 46.5%;
     }
+    // .card-bgimg {
+    //     display: inline-block!important;
+    // }
 
     .seal_box {
         position: relative;
@@ -250,7 +258,7 @@ a {
 
 
         width: 120px;
-        height: 35px;
+        // height: 35px;
 
         .btn {
             margin-bottom: 10px;
@@ -375,7 +383,44 @@ a {
     display: inline-block;
 }
 
-.row > form {
-  width: 100%;
+
+// 每頁的form 都要100%
+
+.row>form {
+    width: 100%;
+}
+
+//
+.sealpic {
+    display: inline-block;
+    .card-img {
+        width: 40%;
+        max-width: 150px;
+        display: inline-block;
+    }
+}
+
+
+//新增人像
+
+.boxp {
+    .card-img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+//異動作業的變更證件
+
+
+.card-body {
+    .change_id {
+        img {
+        width: 250px;
+        }
+    }
+
+
 }
 
