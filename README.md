@@ -202,6 +202,46 @@ https://sexfat.github.io/eopenui/dist3/report.html
 https://sexfat.github.io/eopenui/dist3/checkorignal.html
 
 
+##### 放大功能
+
+- query_result.html
+https://sexfat.github.io/eopenui/dist3/query_result.html
+
+
+- 使用情境  
+
+- 1 html結構
+```html
+ <a href="img/idbamp_01.gif" data-fancybox="images"> 
+   <img src="img/idbamp_01.gif">
+  </a>
+```
+- 2 js
+```js
+$('[data-fancybox="images"]').fancybox({
+	thumbs : {
+		autoStart : false
+  },
+  loop: false,
+  // animationEffect: "zoom-in-out",
+  buttons: [
+    "zoom",
+    //"share",
+    //"slideShow",
+    "fullScreen",
+    //"download",
+    "thumbs",
+    "close"
+  ],
+});
+
+``` 
+
+- 3 js  <script src="js/jquery.fancybox.min.js" defer></script>
+- 4 css   置換掉 style.css
+
+
+
 
 
 
