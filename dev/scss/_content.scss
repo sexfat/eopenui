@@ -219,11 +219,11 @@ a {
 }
 
 .idbamp {
-    display: inline-block;
+    display: inline;
 
     img {
-        width: inherit;
-        max-width: inherit;
+        width: 120px;
+        // max-width: 100px;
     }
 }
 

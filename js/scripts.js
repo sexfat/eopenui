@@ -580,11 +580,18 @@ $('.report_print').click(function () {
 
 
 
-function printme() {
-  document.getElementById('report_result').innerHTML
-  window.print();
-  window.close();
-}
+
+//印章放大縮小寫法
+
+
+$('[data-fancybox="images"]').fancybox({
+	thumbs : {
+		autoStart : false
+  },
+  loop: false,
+  // animationEffect: "zoom-in-out",
+});
+
 
 
 

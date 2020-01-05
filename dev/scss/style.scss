@@ -4,8 +4,12 @@
 // Import styles
 @import "vendors/coreui/coreui";
 
+@import "vendors/fancybox";
+
 //mixin
 @import "mixin/mixins";
+
+// @import "../../node_modules/fancybox/dist/scss/jquery.fancybox.scss";
 
 // If you want to add something do it here
 @import "custom";
