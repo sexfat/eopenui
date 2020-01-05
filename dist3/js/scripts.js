@@ -583,13 +583,21 @@ $('.report_print').click(function () {
 
 //印章放大縮小寫法
 
-
 $('[data-fancybox="images"]').fancybox({
 	thumbs : {
 		autoStart : false
   },
   loop: false,
   // animationEffect: "zoom-in-out",
+  buttons: [
+    "zoom",
+    //"share",
+    //"slideShow",
+    "fullScreen",
+    //"download",
+    "thumbs",
+    "close"
+  ],
 });
 
 
