@@ -603,12 +603,40 @@ $('[data-fancybox="images"]').fancybox({
 
 //全選function
 
-$(document).ready(function () {
-  $('#allChecked').change(function () {
-    $('.header_function').children(':checkbox').prop('checked', $(this).is(':checked'));
-    alert('ok');
-  });
+
+// function check_all(obj, cName) {
+//   var checkboxs = document.getElementsByClassName(cName);
+//   for (var i = 0; i < checkboxs.length; i++) {
+//     checkboxs[i].checked = obj.checked;
+//   }
+// }
+
+
+$('.btn_click').on('click', function () {
+  $("input[name='reprint_check']").prop("checked", true);
+});
+
+//算有多少組
+var lengthli = $('.reprint-files li').length;
+$('.reprint_num').append(lengthli);
+
+
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 50,
+  nav: true,
+  items: 1,
+  navText: ['<img class="arrow_c-back" src="img/back.png">', '<img class="arrow_c-next" src="img/next.png">']
+
 })
+
+
+
+
+
+
+
 
 
 
