@@ -205,7 +205,6 @@ https://sexfat.github.io/eopenui/dist3/checkorignal.html
 ##### 放大功能
 
 - query_result.htm
-
 https://sexfat.github.io/eopenui/dist3/query_result.html
 
 
@@ -241,6 +240,34 @@ $('[data-fancybox="images"]').fancybox({
 - 3 js  <script src="js/jquery.fancybox.min.js" defer></script>
 - 4 css   置換掉 style.css
 
+
+
+##### 文件回掃
+
+- reprint.html
+https://sexfat.github.io/eopenui/dist3/reprint.html
+
+- reprint_list.html
+https://sexfat.github.io/eopenui/dist3/reprint_list.html
+
+- reprint_doc.html
+https://sexfat.github.io/eopenui/dist3/reprint_doc.html
+
+
+##### 新增檔案
+
+- img
+file.png
+back.png
+next.png
+
+- css
+更新 style.css 
+     vendor.css
+
+- js
+增加`<script src="js/owl.carousel.min.js" defer=""></script>`
+修改 `<script src="js/scripts.js" defer=""></script>`
 
 
 
