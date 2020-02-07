@@ -282,30 +282,30 @@ var ScreenWidth = window.screen.width;
 
 
 //function justwidth() {
-    // if (ScreenWidth == '2560') {
-    //     var scrWidth = ww * 0.41808510638297874;
-    //     big.css('width', scrWidth);
-    // } else if (ScreenWidth == '1920') {
-    //     var scrWidth = ww * 0.27553;
-    //     big.css('width', scrWidth);
-    // } else if (ScreenWidth == '1344') {
-    //     var scrWidth = ww * 0.19255;
-    //     big.css('width', scrWidth);
-    // } else if (ScreenWidth == '1366') {
-    //     var scrWidth = ww * 0.19680;
-    //     big.css('width', scrWidth);
-    // } else if (ScreenWidth == '1024') {
-    //     var scrWidth = ww * 0.15034;
-    //     big.css('width', scrWidth);
-    // } else if (ScreenWidth == '2048') {
-    //     var scrWidth = ww * 0.33617021276595743;
-    //     big.css('width', scrWidth);
-    // } else if (ScreenWidth == '1600') {
-    //     var scrWidth = ww * 0.26170;
-    //     big.css('width', scrWidth);
-    // } else {
-    //     alert('熒幕不支援1:1');
-    // }
+// if (ScreenWidth == '2560') {
+//     var scrWidth = ww * 0.41808510638297874;
+//     big.css('width', scrWidth);
+// } else if (ScreenWidth == '1920') {
+//     var scrWidth = ww * 0.27553;
+//     big.css('width', scrWidth);
+// } else if (ScreenWidth == '1344') {
+//     var scrWidth = ww * 0.19255;
+//     big.css('width', scrWidth);
+// } else if (ScreenWidth == '1366') {
+//     var scrWidth = ww * 0.19680;
+//     big.css('width', scrWidth);
+// } else if (ScreenWidth == '1024') {
+//     var scrWidth = ww * 0.15034;
+//     big.css('width', scrWidth);
+// } else if (ScreenWidth == '2048') {
+//     var scrWidth = ww * 0.33617021276595743;
+//     big.css('width', scrWidth);
+// } else if (ScreenWidth == '1600') {
+//     var scrWidth = ww * 0.26170;
+//     big.css('width', scrWidth);
+// } else {
+//     alert('熒幕不支援1:1');
+// }
 
 //}
 
@@ -584,8 +584,8 @@ $('.report_print').click(function () {
 //印章放大縮小寫法
 
 $('[data-fancybox="images"]').fancybox({
-	thumbs : {
-		autoStart : false
+  thumbs: {
+    autoStart: false
   },
   loop: false,
   // animationEffect: "zoom-in-out",
@@ -599,6 +599,17 @@ $('[data-fancybox="images"]').fancybox({
     "close"
   ],
 });
+
+
+//全選function
+
+$(document).ready(function () {
+  $('#allChecked').change(function () {
+    $('.header_function').children(':checkbox').prop('checked', $(this).is(':checked'));
+    alert('ok');
+  });
+})
+
 
 
 

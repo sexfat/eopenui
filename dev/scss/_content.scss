@@ -246,6 +246,7 @@ a {
         z-index: 0;
         // max-width: 46.5%;
     }
+
     // .card-bgimg {
     //     display: inline-block!important;
     // }
@@ -393,6 +394,7 @@ a {
 //
 .sealpic {
     display: inline-block;
+
     .card-img {
         width: 40%;
         max-width: 150px;
@@ -417,10 +419,95 @@ a {
 .card-body {
     .change_id {
         img {
-        width: 250px;
+            width: 250px;
         }
     }
 
 
 }
 
+// 文件回掃
+
+.reprint-files {
+    margin: 0;
+    padding: 0;
+    &.d {
+        height: 78%;
+        text-align: center;
+        overflow-y: auto;
+        max-height: 600px;
+        .svg {
+             width: 100px;
+        }
+        li {
+            display: inline-block;
+            margin: 0 10px 40px;
+        }
+    }
+
+
+    li {
+        display: inline-block;
+        margin: 0 20px 50px;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+
+        .header_function {
+            margin: 15px 14px;
+
+
+        }
+
+        .svg {
+            width: 130px;
+        }
+    }
+}
+
+
+.reprint {
+    label {
+        margin: 0;
+    }
+
+    .content {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .owl-item {
+        img {
+            max-width: inherit;
+        }
+    }
+
+    .owl-nav {
+        position: absolute;
+        top: 46%;
+        width: 100%;
+
+        .owl-prev {
+            position: absolute;
+            left: 0px;
+            .arrow_c-back {
+               width:50px; 
+               &:hover{
+                   outline: none;
+               }
+
+            } 
+        }
+
+        .owl-next {
+            position: absolute;
+            right: 0px;
+            .arrow_c-next {
+                width:50px; 
+                outline: none;
+             } 
+
+        }
+
+    }
+}

@@ -204,7 +204,8 @@ https://sexfat.github.io/eopenui/dist3/checkorignal.html
 
 ##### 放大功能
 
-- query_result.html
+- query_result.htm
+
 https://sexfat.github.io/eopenui/dist3/query_result.html
 
 

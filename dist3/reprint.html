@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="admin">
+    <meta name="author" content="">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Eopen 電子開戶系統 Web3.0版</title>
+    <!-- Icons-->
+    
+<link href="css/vendor.css" rel="stylesheet">
+<!-- Main styles for this application-->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+<!-- <script src="https://asprise.azureedge.net/scannerjs/scanner.js" type="text/javascript"></!--> -->
+
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+    <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+      Eopen電子開戶系統Web3.0
+      <!-- <img class="navbar-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo"> -->
+      <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+    </a>
+    <!-- <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <ul class="nav navbar-nav d-md-down-none">
+      <li class="nav-item px-3">
+        <a class="nav-link @@link01" href="id.html">開戶建檔</a>
+      </li>
+      <!-- <li class="nav-item px-3">
+        <a class="nav-link @@link02" href="#">印鑑建檔</a>
+      </li> -->
+      <li class="nav-item px-3">
+        <a class="nav-link @@link03" href="review.html">審核作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link @@link04" href="change_query.html">異動作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link @@link05" href="queryid.html">查詢作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link @@link06" href="report.html">報表作業</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link hover" href="reprint.html">文件回掃</a>
+      </li>
+      <!-- <li class="nav-item px-3">
+        <a class="nav-link @@link08" href="#">空白表單列印</a>
+      </li> -->
+      <!-- <li class="nav-item px-3">
+        <a class="nav-link @@link09" href="#">外網查詢</a>
+      </li> -->
+    </ul>
+    
+    <!-- <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+  </header>
+    <div class="app-body">
+        <div class="main full-width_all">
+            <!-- Breadcrumb-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">
+                    <a href="#">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">文件回掃</li>
+                <!-- Breadcrumb Menu-->
+                 <!-- setup -->
+<li class="breadcrumb-menu d-md-down-none">
+    <div class="btn-group" role="group" aria-label="Button group">
+        <!-- <a class="btn" href="#">
+            <i class="icon-speech"></i>
+        </a> -->
+        <a class="btn" href="./">
+            <i class="icon-graph"></i> 系統維護</a>
+        <a class="btn" href="#">
+            <i class="icon-settings"></i>  離開系統</a>
+    </div>
+</li>
+            </ol>
+            <div class="container-fluid">
+                <!-- content -->
+                <div class="animated fadeIn">
+                    <!-- inner-content  -->
+                    <!-- 內部結構 -->
+                    <div class="row">
+                            <div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">文件回掃
+        </div>
+        <div class="card-body">
+            <button class="btn btn-block btn-primary btn-xl inlineBlock" type="button">掃描
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="col-sm-12 col-xl-12">
+    <div class="card">
+        <div class="card-header">文件
+            <span class="float-right">共
+                <span class="badge badge-pill badge-primary">3</span> 組
+            </span>
+
+
+        </div>
+        <div class="card-body">
+            <button class="btn btn-block btn-l btn-primary inlineBlock" id="allChecked" type="button">全選</button>
+            <ul class="reprint-files">
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="header_function">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="check3">H221322432</label>
+                            </div>
+                        </div>
+                        <img class="svg" src="img/file.svg" alt="">
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="app-footer full-width_all">
+        <div>
+            <a href="#">djimage</a>
+            <span>&copy; 2018 All Rights Reserved</span>
+        </div>
+        <div class="ml-auto">
+            <span>Powered by</span>
+            <a href="#">djimage</a>
+        </div>
+    </footer>
+    <!-- necessary plugins-->
+
+
+
+</body>
+<!-- necessary plugins-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+<!-- <script src="js/jquery.min.js" defer></script> -->
+<script src="js/bootstrap.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/datepicker.min.js" defer></script>
+<script src="js/jquery.fancybox.min.js" defer></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script> -->
+<!-- <script src="js/cropper.min.js" defer></script> -->
+<!-- <script src="js/scanner.js" defer></script> -->
+<!-- <script src="js/iv-viewer.min.js" defer></script> -->
+<script src="js/webcam.min.js" defer></script>
+<script src="js/img_original.js" defer></script>
+<!-- <script src="js/print.js" defer></script> -->
+
+
+<script src="js/scripts.js" defer></script>
+</html>

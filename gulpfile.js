@@ -122,7 +122,7 @@ gulp.task('browser', ['sass'], function () {
 
 //打包用
 gulp.task('clean', function () {
-    return gulp.src(['dist/*'], {
+    return gulp.src(['dist3'], {
             read: false
         })
         .pipe(clean());
