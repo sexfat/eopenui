@@ -271,6 +271,16 @@ next.png
 
 
 
+#### 文件查詢
+
+- doc_query.html
+https://sexfat.github.io/eopenui/dist3/doc_query.html
+
+- 增加owl-carousel 套件寫法
+scripts.js
+
+
+
 
 
 # 掃描機串接
