@@ -621,10 +621,12 @@ var lengthli = $('.reprint-files li').length;
 $('.reprint_num').append(lengthli);
 
 
+
+// 文件查詢
+
+
+
 $(function () {
-
-
-
   $('.owl-carousel').on('initialized.owl.carousel changed.owl.carousel', function(e) {
     if (!e.namespace)  {
       return;
