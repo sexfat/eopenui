@@ -621,15 +621,91 @@ var lengthli = $('.reprint-files li').length;
 $('.reprint_num').append(lengthli);
 
 
+$(function () {
 
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 50,
-  nav: true,
-  items: 1,
-  navText: ['<img class="arrow_c-back" src="img/back.png">', '<img class="arrow_c-next" src="img/next.png">']
 
-})
+
+  $('.owl-carousel').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+    if (!e.namespace)  {
+      return;
+    }
+    var carousel = e.relatedTarget;
+    $('.counter_current').text(carousel.relative(carousel.current()) + 1 );
+    $('.counter_total').text(carousel.items().length);
+
+  }).owlCarousel({
+    loop: true,
+    margin: 50,
+    nav: true,
+    items: 1,
+    navText: ['<img class="arrow_c-back" src="img/back.png">', '<img class="arrow_c-next" src="img/next.png">']
+  });
+
+  // $('.owl-carousel').owlCarousel({
+  //   loop: true,
+  //   margin: 50,
+  //   nav: true,
+  //   items: 1,
+  //   navText: ['<img class="arrow_c-back" src="img/back.png">', '<img class="arrow_c-next" src="img/next.png">'],
+  //   onInitialized: counter, //When the plugin has initialized.
+  //   onTranslated: counter //When the translation of the stage has finished.
+  // });
+
+  // function counter(event) {
+
+  //   var element = event.target; // DOM element, in this example .owl-carousel
+  //   var items = event.item.count; // Number of items
+  //   var item = event.item.index + 1; // Position of the current item
+  //   $('.counter').html(" 頁數 " + item)
+  //   // it loop is true then reset counter from 1
+  //   // if (item > items) {
+  //   //   item = item - items
+     
+  //   // }
+
+  // }
+
+
+});
+
+
+
+//  js 新增文件查詢 placeholder
+
+$('#doc_select').change(function () {
+  if ($(this).val() == 'account') {
+    $('#doc_query_input').attr('placeholder', '帳號')
+  } else if ($(this).val() == 'esn') {
+    $('#doc_query_input').attr('placeholder', '統編')
+  } else {
+    $('#doc_query_input').attr('placeholder', '必填')
+
+  }
+});
+//日期
+$(function () {
+  var $startDate = $('.start-date');
+  var $endDate = $('.end-date');
+
+  $startDate.datepicker({
+    autoHide: true,
+  });
+  $endDate.datepicker({
+    autoHide: true,
+    startDate: $startDate.datepicker('getDate'),
+  });
+
+  $startDate.on('change', function () {
+    $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+  });
+});
+
+
+
+
+// if place_names == 
+
+
 
 
 

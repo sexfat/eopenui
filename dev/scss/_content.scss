@@ -431,14 +431,17 @@ a {
 .reprint-files {
     margin: 0;
     padding: 0;
+
     &.d {
         height: 78%;
         text-align: center;
         overflow-y: auto;
         max-height: 600px;
+
         .svg {
-             width: 100px;
+            width: 100px;
         }
+
         li {
             display: inline-block;
             margin: 0 10px 40px;
@@ -476,6 +479,7 @@ a {
         border-left: 1px solid rgba(0, 0, 0, 0.1);
         border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
+
     .owl-item {
         img {
             max-width: inherit;
@@ -490,24 +494,45 @@ a {
         .owl-prev {
             position: absolute;
             left: 0px;
-            .arrow_c-back {
-               width:50px; 
-               &:hover{
-                   outline: none;
-               }
 
-            } 
+            .arrow_c-back {
+                width: 50px;
+
+                &:hover {
+                    outline: none;
+                }
+
+            }
         }
 
         .owl-next {
             position: absolute;
             right: 0px;
+
             .arrow_c-next {
-                width:50px; 
+                width: 50px;
                 outline: none;
-             } 
+            }
 
         }
 
     }
+}
+
+
+//文件查詢
+
+.input-group-prepend {
+
+    select {
+        background-color: $header_bgc;
+        color: #fff;
+        margin-right: 2px;
+    }
+
+
+
+
+
+
 }
