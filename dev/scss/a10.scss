@@ -1,0 +1,75 @@
+@import "variables";
+
+// Import styles
+@import "vendors/coreui/coreui";
+
+@import "vendors/fancybox";
+
+//mixin
+@import "mixin/mixins";
+
+
+
+.margintop0 {
+    margin: 0 !important;
+}
+
+@for $i from 1 through 80 {
+    .width#{$i} {
+        min-width: $i * 10px;
+        display: inline-block;
+        width: $i * 10px;
+    }
+}
+
+
+.btn-l {
+    width: 100px;
+    max-width: 150px;
+    margin-top: 0 !important;
+    margin-right: 10px;
+}
+
+.btn-xl {
+    width: 150px;
+    max-width: 150px;
+    margin-top: 0 !important;
+    // margin-right: 10px;
+}
+
+.btn-xxl {
+    width: 200px;
+    max-width: 200px;
+    margin-top: 0 !important;
+    @include margin-auto();
+    display: inline-block;
+}
+
+.btn-50 {
+    width: 49.7%;
+    max-width: 49.7%;
+}
+
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.center {
+
+    @include margin-auto();
+    margin-bottom: 50px;
+}
+
+form {
+    width: 100%;
+}
+
+.cardbox {
+    position: absolute;
+}
+
+
+#msform .cardbox:not(:first-of-type) {
+	display: none;
+}
