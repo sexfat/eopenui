@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="admin">
+    <meta name="author" content="">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>a10 介面</title>
+    <!-- Icons-->
+    
+    <link href="css/vendor.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/a10.css"> 
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    
+    <div class="app-body margintop0">
+        <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <div class="nav-item center">
+         
+            <h3>兆豐銀行</h3>
+            <!-- <span class="badge badge-primary">NEW</span> -->
+         
+        </div>
+        <div class="nav-title"><h5>資料填寫</h5></div>
+        <li class="nav-item ">
+          <a class="nav-link active" href="#">
+            <i class="nav-icon icon-user-following"></i>個人資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class02" href="#">
+            <i class="nav-icon icon-picture"></i>申請項目</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class03" href="#">
+            <i class="nav-icon icon-bell"></i>確認資料</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+  </div>;
+        <div class="main">
+            <!-- Breadcrumb-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">
+                    <a href="#">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">帳戶資料</li>
+                <!-- Breadcrumb Menu-->
+                 <!-- setup -->
+<li class="breadcrumb-menu d-md-down-none">
+    <div class="btn-group" role="group" aria-label="Button group">
+        <!-- <a class="btn" href="#">
+            <i class="icon-speech"></i>
+        </a> -->
+        <a class="btn" href="./">
+            <i class="icon-graph"></i> 系統維護</a>
+        <a class="btn" href="#">
+            <i class="icon-settings"></i>  離開系統</a>
+    </div>
+</li>
+            </ol>
+            <div class="container-fluid">
+                <!-- content -->
+                <div class="animated fadeIn">
+                    <!-- inner-content  -->
+                    <!-- 內部結構 -->
+                    <div class="row">
+                        
+                            <form id="msform" >
+
+    <div class="col-sm-12 col-xl-12 cardbox">
+        <div class="card">
+            <div class="card-header">個人資料
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">戶籍地址</label>
+                            <div class="width50">
+                                <input id="address" class="form-control" type="text" name="text-input"
+                                    placeholder="戶籍地址">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">通訊地址</label>
+                            <div class="width50">
+                                <input id="contactAdr" class="form-control" type="text" name="text-input"
+                                    placeholder="通訊地址">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">電子信箱</label>
+                            <div class="width50">
+                                <input id="email" class="form-control" type="email" name="text-input"
+                                    placeholder="電子信箱">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">身分證號碼</label>
+                            <div class="width50">
+                                <input id="personId" class="form-control" type="text" name="text-input"
+                                    placeholder="身分證號碼">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- btn -->
+        <div class="center">
+           
+            <button onclick="Clickbankobj();" class="btn btn-block btn-success btn-xxl next" type="button">下一步</button>
+
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-xl-12 cardbox">
+        <div class="card">
+            <div class="card-header">申請項目
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">機構性質</label>
+                            <div class="width50">
+                                <select id="applyReason" name="applyReason" class="form-control">
+                                    <option value="0">請選擇</option>
+                                    <option value="股份有限公司">股份有限公司</option>
+                                    <option value="有限公司">有限公司</option>
+                                    <option value="行號">行號</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">年收入</label>
+                            <div class="width50">
+                                <select id="income" name="applyReason" class="form-control">
+                                    <option value="0">請選擇</option>
+                                    <option value="50萬">50萬以下</option>
+                                    <option value="100-50萬">100萬 ~50萬</option>
+                                    <option value="200萬以上">200萬以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">行業別</label>
+                            <div class="width50">
+                                <select id="category" name="applyReason" class="form-control">
+                                    <option value="0">請選擇</option>
+                                    <option value="電子業">電子業</option>
+                                    <option value="農業">農業</option>
+                                    <option value="金融業">金融業</option>
+                                </select>
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- btn -->
+        <div class="center">
+            <button class="btn btn-secondary btn-block btn-xxl previous" type="button">上一步</button>
+            <button class="btn btn-block btn-success btn-xxl next" type="button">下一步</button>
+
+        </div>
+    </div>
+
+
+    <div class="col-sm-12 col-xl-12 cardbox">
+        <div class="card">
+            <div class="card-header">確認資料
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">資金來源</label>
+                            <div class="width25">
+                                <input type="radio" name="come" id="company">
+                                <label class="width3" for="">公司</label>
+                                <input type="radio" name="come" id="home">
+                                <label class="width3" for="">家裏</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">開卡數量</label>
+                            <div class="width50">
+                                <input id="numbers" class="form-control" type="text" name="text-input"
+                                    placeholder="開卡數量">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">帳單地址</label>
+                            <div class="width50">
+                                <input id="pay_address" class="form-control" type="text" name="text-input"
+                                    placeholder="帳單地址">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- btn -->
+        <div class="center">
+            <button class="btn btn-secondary btn-block btn-xxl previous" type="button">上一步</button>
+            <button class="btn btn-block btn-success btn-xxl submit" onclick="IBankSTMGetData()"
+                type="button">確認</button>
+
+        </div>
+
+
+    </div>
+
+
+
+
+</form>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="app-footer">
+        <div>
+            <a href="#">djimage</a>
+            <span>&copy; 2020 All Rights Reserved</span>
+        </div>
+        <div class="ml-auto">
+            <span>Powered by</span>
+            <a href="#">djimage</a>
+        </div>
+    </footer>
+    <!-- necessary plugins-->
+
+
+
+</body>
+<!-- <script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/a10_animation.js"></script> -->
+<script src="js/a10.js"></script>
+</html>
