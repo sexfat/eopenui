@@ -1,48 +1,3 @@
-// function IBankSTMGetData()
-// { 
-//     var vName = document.getElementById("name").value;
-// 	var vSex = document.getElementById("sex").value;
-// 	var vID = document.getElementById("idcard").value;
-// 	var vAGE = document.getElementById("age").value;
-// 	var vNation = document.getElementById("nation").value;
-// 	var vwechat = document.getElementById("wechat").value;
-// 	var vemail = document.getElementById("email").value;
-// 	var vphone = document.getElementById("phone").value;
-
-// 	var vadd = document.getElementById("address").value;
-// 	var vcardnum = document.getElementById("cardnum").value;
-// 	var vcardadd = document.getElementById("cardpageadd").value;
-// 	var vworkadd = document.getElementById("workadd").value;
-
-// 	var json_obj={"vName":vName,"sex":vSex,"idcard":vID,"age":vAGE,"nation":vNation,"wechat":vwechat,"email":vemail,"phone":vphone,"address":vadd,"cardnum":vcardnum,"cardpageadd":vcardadd,"workadd":vworkadd};
-//     var json_str=JSON.stringify(json_obj);
-
-//     alert(json_str);
-// }
-
-
-// const data = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem('todoList')):{
-// 	todo: []
-//   };
-
-//   data.todo.push('task 1');
-// localStorage.setItem('todoList', JSON.stringify(data));
-
-// function extend(des, src, override) {
-//   if (src instanceof Array) {
-//     for (var i = 0, len = src.length; i < len; i)
-//       extend(des, src[i], override);
-//   }
-//   for (var i in src) {
-//     if (override || !(i in des)) {
-//       des[i] = src[i];
-//     }
-//   }
-//   return des;
-// }
-
-
-
 function Clickbankobj() {
   const address = document.getElementById('address').value;
   const contactAdr = document.getElementById('contactAdr').value;
@@ -91,12 +46,6 @@ function Clickbankobj_2() {
   var objects = $.extend({}, objs1, objs2,objs3);
   alert(JSON.stringify(objects));
 };
-
-
-
-
-
-//  json合併
 
 
 
