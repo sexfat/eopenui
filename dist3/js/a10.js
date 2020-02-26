@@ -44,7 +44,9 @@ function Clickbankobj_2() {
   const objs2 = JSON.parse(open_info_1);
   const objs3 = JSON.parse(open_info_2);
   var objects = $.extend({}, objs1, objs2,objs3);
-  alert(JSON.stringify(objects));
+  const allinfo =  JSON.stringify(objects);
+  alert(allinfo);
+  
 };
 
 
