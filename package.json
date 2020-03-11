@@ -12,6 +12,7 @@
     "fancybox": "^3.0.1",
     "flag-icon-css": "^3.2.1",
     "font-awesome": "^4.7.0",
+    "gsap": "^2.1.3",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.9.0",

@@ -19,37 +19,31 @@
     
     <div class="app-body margintop0">
         <div class="sidebar">
-  <nav class="sidebar-nav">
-    <ul class="nav">
-      <div class="nav-title center">
-
-        <h3 style="margin: 10px; text-align: center;">兆豐銀行</h3>
-        <!-- <span class="badge badge-primary">NEW</span> -->
-
-      </div>
-      <div class="nav-title">
-        <h5>資料填寫</h5>
-      </div>
-      <li class="nav-item">
-        <div class="nav-link active">
-          <i class="nav-icon icon-user-following"></i>個人資料</div>
-        <div class="nav-link">
-          <i class="nav-icon icon-picture"></i>申請項目</div>
-        <div class="nav-link">
-          <i class="nav-icon icon-bell"></i>確認資料</div>
-      </li>
-      <!-- <li class="nav-item">
-          <a class="nav-link " href="#">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <div class="nav-item center">
+         
+            <h3 style="margin: 10px; text-align: center;">兆豐銀行</h3>
+            <!-- <span class="badge badge-primary">NEW</span> -->
+         
+        </div>
+        <div class="nav-title"><h5>資料填寫</h5></div>
+        <li class="nav-item ">
+          <a class="nav-link @@class01" href="a10.html">
+            <i class="nav-icon icon-user-following"></i>個人資料</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @@class02" href="a10_1.html">
             <i class="nav-icon icon-picture"></i>申請項目</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">
+          <a class="nav-link active" href="a10_2.html">
             <i class="nav-icon icon-bell"></i>確認資料</a>
-        </li> -->
-    </ul>
-  </nav>
-  <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-</div>;
+        </li>
+      </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+  </div>;
         <div class="main">
             <!-- Breadcrumb-->
             <ol class="breadcrumb">
@@ -82,59 +76,51 @@
                             <form id="msform" >
     <div class="col-sm-12 col-xl-12 cardbox">
         <div class="card">
-            <div class="card-header">申請項目
+            <div class="card-header">確認資料
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="form-group">
-                            <label class="width10 col-form-label" for="text-input">機構性質</label>
-                            <div class="width50">
-                                <select id="applyReason" name="applyReason" class="form-control">
-                                    <option value="0">請選擇</option>
-                                    <option value="股份有限公司">股份有限公司</option>
-                                    <option value="有限公司">有限公司</option>
-                                    <option value="行號">行號</option>
-                                </select>
+                            <label class="width10 col-form-label" for="text-input">資金來源</label>
+                            <div class="width25">
+                                <input type="radio" name="come" value="公司" >
+                                <label class="width3" for="">公司</label>
+                                <input type="radio" name="come" value="家裡">
+                                <label class="width3" for="">家裏</label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="width10 col-form-label" for="text-input">年收入</label>
+                            <label class="width10 col-form-label" for="text-input">開卡數量</label>
                             <div class="width50">
-                                <select id="income" name="income" class="form-control">
-                                    <option value="0">請選擇</option>
-                                    <option value="50萬">50萬以下</option>
-                                    <option value="100-50萬">100萬 ~50萬</option>
-                                    <option value="200萬以上">200萬以上</option>
-                                </select>
+                                <input id="numbers" class="form-control" type="text" name="text-input"
+                                    placeholder="開卡數量">
+                                <!-- <span class="help-block">This is a help text</span> -->
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="width10 col-form-label" for="text-input">行業別</label>
+                            <label class="width10 col-form-label" for="text-input">帳單地址</label>
                             <div class="width50">
-                                <select id="category" name="category" class="form-control">
-                                    <option value="0">請選擇</option>
-                                    <option value="電子業">電子業</option>
-                                    <option value="農業">農業</option>
-                                    <option value="金融業">金融業</option>
-                                </select>
+                                <input id="pay_address" class="form-control" type="text" name="text-input"
+                                    placeholder="帳單地址">
                                 <!-- <span class="help-block">This is a help text</span> -->
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
         <!-- btn -->
         <div class="center">
-            <a href="a10.html" class="btn btn-secondary btn-block btn-xxl previous" type="button">上一步</a>
-            <a href="a10_2.html" onclick="Clickbankobj_1();" class="btn btn-block btn-success btn-xxl next" >下一步</a>
+            <a href="a10_1.html" class="btn btn-secondary btn-block btn-xxl previous">上一步</a>
+            <a class="btn btn-block btn-success btn-xxl submit" onclick="Clickbankobj_2();">確認</a>
 
         </div>
+
+
     </div>
-
-
-
 </form>
                     </div>
                     <!-- end -->
@@ -158,8 +144,8 @@
 
 
 </body>
-<!-- <script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/a10_animation.js"></script> -->
 <script src="js/a10.js"></script>
 </html>

@@ -1,0 +1,153 @@
+<form action="">
+    <!-- 001 -->
+    <div class="col-sm-12 col-xl-12 a10contents block">
+        <div class="card">
+            <div class="card-header">個人資料
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">戶籍地址</label>
+                            <div class="width50">
+                                <input id="address" class="form-control" type="text" name="text-input"
+                                    placeholder="戶籍地址">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">通訊地址</label>
+                            <div class="width50">
+                                <input id="contactAdr" class="form-control" type="text" name="text-input"
+                                    placeholder="通訊地址">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">電子信箱</label>
+                            <div class="width50">
+                                <input id="email" class="form-control" type="email" name="text-input"
+                                    placeholder="電子信箱">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">身分證號碼</label>
+                            <div class="width50">
+                                <input id="personId" class="form-control" type="text" name="text-input"
+                                    placeholder="身分證號碼">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- btn -->
+        <input class="btn btn-block btn-success btn-xxl next" value="下一步">
+
+    </div>
+    <!-- 002 -->
+    <div class="col-sm-12 col-xl-12 a10contents">
+        <div class="card">
+            <div class="card-header">申請項目
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">機構性質</label>
+                            <div class="width50">
+                                <select id="applyReason" name="applyReason" class="form-control">
+                                    <option value="0">請選擇</option>
+                                    <option value="股份有限公司">股份有限公司</option>
+                                    <option value="有限公司">有限公司</option>
+                                    <option value="行號">行號</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">年收入</label>
+                            <div class="width50">
+                                <select id="income" name="income" class="form-control">
+                                    <option value="0">請選擇</option>
+                                    <option value="50萬">50萬以下</option>
+                                    <option value="100-50萬">100萬 ~50萬</option>
+                                    <option value="200萬以上">200萬以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">行業別</label>
+                            <div class="width50">
+                                <select id="category" name="category" class="form-control">
+                                    <option value="0">請選擇</option>
+                                    <option value="電子業">電子業</option>
+                                    <option value="農業">農業</option>
+                                    <option value="金融業">金融業</option>
+                                </select>
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- btn -->
+
+        <input class="btn btn-secondary btn-block btn-xxl previous" type="button" value="上一步">
+        <input class="btn btn-block btn-success btn-xxl next" type="button" value="下一步">
+
+
+    </div>
+    <!-- 003 -->
+    <div class="col-sm-12 col-xl-12 a10contents">
+        <div class="card">
+            <div class="card-header">確認資料
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">資金來源</label>
+                            <div class="width25">
+                                <input type="radio" name="come" value="公司">
+                                <label class="width3" for="">公司</label>
+                                <input type="radio" name="come" value="家裡">
+                                <label class="width3" for="">家裏</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">開卡數量</label>
+                            <div class="width50">
+                                <input id="numbers" class="form-control" type="text" name="text-input"
+                                    placeholder="開卡數量">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="width10 col-form-label" for="text-input">帳單地址</label>
+                            <div class="width50">
+                                <input id="pay_address" class="form-control" type="text" name="text-input"
+                                    placeholder="帳單地址">
+                                <!-- <span class="help-block">This is a help text</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- btn -->
+
+        <input class="btn btn-secondary btn-block btn-xxl previous" type="button" value="上一步">
+        <button  class="btn btn-block btn-success btn-xxl submit" onclick="IBankSTMGetData();" type="button">確認</button>
+
+
+
+
+    </div>
+
+</form>

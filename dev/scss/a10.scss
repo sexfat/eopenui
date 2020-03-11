@@ -3,7 +3,7 @@
 // Import styles
 @import "vendors/coreui/coreui";
 
-@import "vendors/fancybox";
+// @import "vendors/fancybox";
 
 //mixin
 @import "mixin/mixins";
@@ -72,4 +72,25 @@ form {
 
 #msform .cardbox:not(:first-of-type) {
 	display: none;
+}
+
+.a10contents {
+    display: none;
+  
+}
+
+.block {
+    display: block;
+  
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background: initial;
+}
+
+
+
+.sidebar .nav-link {
+    transition: all .3s ease-out;
 }
