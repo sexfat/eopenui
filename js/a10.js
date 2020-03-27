@@ -80,6 +80,46 @@
 //以上是用 localStorage
 
 
+//拷貝
+function copyOmit() {
+    const content = document.getElementById('address').value;
+    document.getElementById("contactAdr").value = content;
+}
+
+
+
+//監聽  最多選三項
+
+function mostCheck(theObject) {
+    var sportSelect = document.getElementsByName(theObject),
+        maxNums = 3;
+    for (var i in sportSelect) {
+        sportSelect[i].onclick = function () {
+            var _sportSelect = document.getElementsByName(theObject),
+                cNums = 0;
+            for (var i in _sportSelect) {
+                if (i == 'length') break;
+                if (_sportSelect[i].checked) {
+                    cNums++;
+                }
+            }
+            if (cNums > maxNums) {
+                this.checked = false;
+                alert('最多只能選擇三項');
+            }
+        }
+    }
+}
+
+
+mostCheck('comein');
+mostCheck('comesource');
+
+
+
+var json_obj = '';
+
+//資料 function
 function IBankSTMGetData() {
     const address = document.getElementById('address').value;
     const contactAdr = document.getElementById('contactAdr').value;
@@ -106,7 +146,7 @@ function IBankSTMGetData() {
     };
 
 
-    var json_str=JSON.stringify(json_obj);
+    var json_str = JSON.stringify(json_obj);
     alert(json_str);
 }
 
@@ -121,4 +161,5 @@ function IBankSTMGetData() {
 
 
 
-console.log(data)
+
+// console.log(data)
