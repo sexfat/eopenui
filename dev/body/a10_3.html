@@ -15,7 +15,7 @@
                                 <!-- <span class="help-block">This is a help text</span> -->
                             </div>
                         </div>
-                        <div class="marginleft-110"> <input type="checkbox" value="sameAddr"" name=" purpose"
+                        <div class="marginleft-110"> <input type="checkbox" value="sameAddr"" name="purpose"
                                 onclick="copyOmit();">
                             <label for="purpose">同戶籍地址</label></div>
                         <div class="form-group">
@@ -30,7 +30,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">住家電話</label>
                             <div class="width50">
-                                <input id="email" class="form-control" type="email" name="text-input"
+                                <input id="h_tel" class="form-control" type="email" name="text-input"
                                     placeholder="公司電話">
                                 <!-- <span class="help-block">This is a help text</span> -->
                             </div>
@@ -38,7 +38,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">公司電話</label>
                             <div class="width50">
-                                <input id="email" class="form-control" type="email" name="text-input"
+                                <input id="company_tel" class="form-control" type="email" name="text-input"
                                     placeholder="住家電話">
                                 <!-- <span class="help-block">This is a help text</span> -->
                             </div>
@@ -46,16 +46,14 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">傳真號碼</label>
                             <div class="width50">
-                                <input id="email" class="form-control" type="email" name="text-input"
-                                    placeholder="住家電話">
+                                <input id="fax" class="form-control" type="email" name="text-input" placeholder="傳真號碼">
                                 <!-- <span class="help-block">This is a help text</span> -->
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">行動電話</label>
                             <div class="width50">
-                                <input id="email" class="form-control" type="email" name="text-input"
-                                    placeholder="住家電話">
+                                <input id="cell" class="form-control" type="email" name="text-input" placeholder="住家電話">
                                 <!-- <span class="help-block">This is a help text</span> -->
                             </div>
                         </div>
@@ -71,9 +69,9 @@
                             <label class="width10 col-form-label" for="text-input"><span
                                     class="markstar">*</span>對帳單</label>
                             <div class="width50">
-                                <select id="income" name="income" class="form-control">
+                                <select id="statement" name="income" class="form-control">
                                     <option value="0">請選擇</option>
-                                    <option value="50萬">不寄</option>
+                                    <option value="nosend">不寄</option>
                                     <option value="100-50萬">100萬 ~50萬</option>
                                     <option value="200萬以上">200萬以上</option>
                                 </select>
@@ -109,7 +107,7 @@
                             <label class="width10 col-form-label" for="text-input"><span
                                     class="markstar">*</span>就業情況</label>
                             <div class="width50">
-                                <select id="applyReason" name="applyReason" class="form-control">
+                                <select id="employstatus" name="applyReason" class="form-control">
                                     <option value="0">- 請選擇 -</option>
                                     <option value="學齡前兒童">學齡前兒童</option>
                                     <option value="有限公司">有限公司</option>
@@ -120,7 +118,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">服務機構</label>
                             <div class="width50">
-                                <input id="personId" class="form-control" type="text" name="text-input"
+                                <input id="agency" class="form-control" type="text" name="text-input"
                                     placeholder="服務機構">
 
                             </div>
@@ -128,7 +126,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">機構性質</label>
                             <div class="width50">
-                                <select id="income" name="income" class="form-control">
+                                <select id="institutional" name="institutional" class="form-control">
                                     <option value="0">- 請選擇 -</option>
                                     <option value="公司">公司</option>
                                     <option value="100-50萬">100萬 ~50萬</option>
@@ -151,7 +149,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">行業子分類</label>
                             <div class="width50">
-                                <select id="category" name="category" class="form-control">
+                                <select id="sub_category" name="category" class="form-control">
                                     <option value="0">請選擇</option>
                                     <option value="電子業">電子業</option>
                                     <option value="農業">農業</option>
@@ -164,7 +162,7 @@
                             <label class="width10 col-form-label" for="text-input"> <span class="markstar">*</span>職
                                 稱</label>
                             <div class="width50">
-                                <select id="category" name="category" class="form-control">
+                                <select id="job_title" name="category" class="form-control">
                                     <option value="0">請選擇</option>
                                     <option value="學生">學生（含學齡前兒童）</option>
                                     <option value="農業">農業</option>
@@ -176,7 +174,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">年收入</label>
                             <div class="width50">
-                                <select id="category" name="category" class="form-control">
+                                <select id="income" name="income" class="form-control">
                                     <option value="0">- 請選擇 -</option>
                                     <option value="電子業">1億以上</option>
                                     <option value="農業">農業</option>
@@ -188,7 +186,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">預期月平均<br>交易金額</label>
                             <div class="width50 vcenter">
-                                <select id="category" name="category" class="form-control">
+                                <select id="amount" name="amount" class="form-control">
                                     <option value="0">- 請選擇 -</option>
                                     <option value="電子業">1億以上</option>
                                     <option value="農業">農業</option>
@@ -200,8 +198,7 @@
                         <div class="form-group">
                             <label class="width10 col-form-label" for="text-input">開戶目的</label>
                             <div class="width50">
-                                <input id="personId" class="form-control" type="text" name="text-input"
-                                    placeholder="開戶目的">
+                                <input id="purpose" class="form-control" type="text" name="text-input" placeholder="開戶目的">
                             </div>
                         </div>
                     </div>
@@ -228,28 +225,56 @@
                                     class="help-block">(可複選至多三項)</span>
                             </label>
                             <div class="width58 checkboxli">
-                                <input type="checkbox" name="comein" value="公司">
-                                <label class="width5" for="">公司</label>
-                                <input type="checkbox" name="comein" value="visa 小金剛卡面">
-                                <label class="width5" for="">家裏</label>
-                                <input type="checkbox" name="comein" value="投資孳利/紅利">
-                                <label class="width10" for="">投資孳利/紅利</label>
-                                <input type="checkbox" name="comein" value="退休金">
-                                <label class="width5" for="">退休金</label>
-                                <input type="checkbox" name="comein" value="遺產">
-                                <label class="width5" for="">遺產</label>
-                                <input type="checkbox" name="comein" value="保險金所得">
-                                <label class="width10" for="">保險金所得</label>
-                                <input type="checkbox" name="comein" value="房租或物業出售">
-                                <label class="width12" for="">房租或物業出售</label>
-                                <input type="checkbox" name="comein" value="信託收入">
-                                <label class="width6" for="">信託收入</label>
-                                <input type="checkbox" name="comein" value="投資收入">
-                                <label class="width6" for="">投資收入</label>
-                                <input type="checkbox" name="comein" value="營業收入">
-                                <label class="width6" for="">營業收入</label>
-                                <input type="checkbox" name="comein" value="其他">
-                                <label class="width5" for="">其他</label>
+                                <div> <input type="checkbox" name="comein" value="公司">
+                                    <label class="width5" for="">公司</label>
+                                </div>
+                                <div> <input type="checkbox" name="comein" value="visa 小金剛卡面">
+                                    <label class="width5" for="">家裏</label></div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="投資孳利/紅利">
+                                    <label class="width10" for="">投資孳利/紅利</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="退休金">
+                                    <label class="width5" for="">退休金</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="遺產">
+                                    <label class="width5" for="">遺產</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="保險金所得">
+                                    <label class="width10" for="">保險金所得</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="房租或物業出售">
+                                    <label class="width12" for="">房租或物業出售</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="信託收入">
+                                    <label class="width6" for="">信託收入</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="投資收入">
+                                    <label class="width6" for="">投資收入</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="營業收入">
+                                    <label class="width6" for="">營業收入</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="comein" value="其他">
+                                    <label class="width5" for="">其他</label>
+                                </div>
+
+
+
+
+
+
+
+
+
                             </div>
                         </div>
                         <hr>
@@ -258,20 +283,22 @@
                                     class="help-block">(可複選至多三項)</span>
                             </label>
                             <div class="width58 checkboxli">
-                                <div><input type="checkbox" name="comesource" value="就業所得">
+                                <div><input type="checkbox" name="incomesource" value="就業所得">
                                     <label class="width8" for="">就業所得</label></div>
-                                <div><input type="checkbox" name="comesource" value="投資孳息">
+                                <div><input type="checkbox" name="incomesource" value="投資孳息">
                                     <label class="width8" for="">投資孳息</label></div>
-                                <div><input type="checkbox" name="comesource" value="出售">
+                                <div><input type="checkbox" name="incomesource" value="出售">
                                     <label class="width8" for="">出售</label></div>
-                                <div><input type="checkbox" name="comesource" value="退休金">
+                                <div><input type="checkbox" name="incomesource" value="退休金">
                                     <label class="width8" for="">退休金</label></div>
-                                <div><input type="checkbox" name="comesource" value="繼承/家庭贈與">
+                                <div><input type="checkbox" name="incomesource" value="繼承/家庭贈與">
                                     <label class="width10" for="">繼承/家庭贈與</label></div>
-                                <div><input type="checkbox" name="comesource" value="其他">
+                                <div><input type="checkbox" name="incomesource" value="其他">
                                     <label class="width5" for="">其他</label></div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -293,23 +320,25 @@
                     <div class="col-xl-12">
                         <div class="form-group">
                             <div class="vtop width15 col-form-label" style="padding-top: 0;"> <input
-                                    type="checkbox"" name=" come" value="申請金融卡">
+                                    type="checkbox"" name="
+                                    Applycard" value="申請金融卡">
                                 <label for="text-input">申請金融卡</label></div>
 
-                            <div class="width37">
-                                <div> <input type="radio" name="come" value="晶片金融卡">
-                                    <label class="width10" for="">晶片金融卡</label></div>
-                               
-                                <input type="radio" name="come" value="visa 小金剛卡面">
-                                <label class="width10" for="">visa 小金剛卡面</label>
-                                <input type="radio" name="come" value="visa 荷花卡面">
-                                <label class="width10" for="">visa 荷花卡面</label>
-                                <input type="checkbox" name="come" value="非約定轉帳">
-                                <label class="width10" for="">非約定轉帳</label>
-                                <input type="checkbox" name="come" value="國內消費扣款">
-                                <label class="width10" for="">國內消費扣款</label>
-                                <input type="checkbox" name="come" value="跨國交易">
-                                <label class="width10" for="">跨國交易</label>
+                            <div class="width50">
+                                <input type="radio" name="cardkind" value="晶片金融卡">
+                                <label class="width10" for="">晶片金融卡</label>
+                                <input type="radio" name="cardkind" value="visa 小金剛卡面">
+                                <label class="width14" for="">visa 小金剛卡面</label>
+                                <input type="radio" name="cardkind" value="visa 荷花卡面"> 
+                                <label class="width14" for="">visa 荷花卡面</label>
+                                <hr>
+                                <div> <input type="checkbox" name="Applycardkind" value="非約定轉帳">
+                                    <label class="width10" for="">非約定轉帳</label></div>
+                                <div> <input type="checkbox" name="Applycardkind" value="國內消費扣款">
+                                    <label class="width10" for="">國內消費扣款</label></div>
+                                <div> <input type="checkbox" name="Applycardkind" value="跨國交易">
+                                    <label class="width10" for="">跨國交易</label></div>
+
                             </div>
 
                         </div>
@@ -317,14 +346,14 @@
                         <!-- 申請 -->
                         <div class="form-group">
                             <div class="vtop width15 col-form-label" style="padding-top: 0;"> <input
-                                    type="checkbox"" name=" come" value="申請銀行代收代付">
+                                    type="checkbox"" name="bankfirst" value="申請銀行代收代付">
                                 <label for="text-input">申請銀行代收代付</label></div>
                             <div class="width37">
-                                <div>  <input type="checkbox" name="come" value="台幣帳戶通提密碼">
+                                <div> <input type="checkbox" name="bankfirstkind" value="台幣帳戶通提密碼">
                                     <label class="width13" for="">台幣帳戶通提密碼</label></div>
-                               <div>  <input type="checkbox" name="come" value="外幣帳戶通提密碼">
-                                <label class="width13" for="">外幣帳戶通提密碼</label></div>
-                              
+                                <div> <input type="checkbox" name="bankfirstkind" value="外幣帳戶通提密碼">
+                                    <label class="width13" for="">外幣帳戶通提密碼</label></div>
+
                             </div>
 
                         </div>
@@ -351,7 +380,7 @@
                     <div class="col-xl-12">
                         <div class="form-group">
                             <div class="vtop width20 col-form-label" style="padding-top: 0;"> <input
-                                    type="checkbox"" name=" come" value="申請個人網路銀行">
+                                    type="checkbox" id="applyforwebbank" name="come" value="申請個人網路銀行">
                                 <label for="text-input">申請個人網路銀行</label></div>
 
                             <div class="width50">
@@ -375,8 +404,10 @@
                                 <div>
                                     <input type="checkbox" name="come" value="行動e碼">
                                     <label class="width5 inlineblock " for="">行動e碼</label>
-                                    <span class="marginleft-20"> 行動電話號碼：</span> <div class="inlineblock width30"> <input id="numbers" class="form-control inlineblock" type="text" name="text-input"
-                                        placeholder="09xx-xxxxxx"></div>
+                                    <span class="marginleft-20"> 行動電話號碼：</span>
+                                    <div class="inlineblock width30"> <input id="numbers"
+                                            class="form-control inlineblock" type="text" name="text-input"
+                                            placeholder="09xx-xxxxxx"></div>
                                 </div>
 
                             </div>
@@ -404,9 +435,9 @@
                     <div class="col-xl-12">
                         <div class="form-group">
                             <div class="width37">
-                                <input type="radio" name="yes" value="同意">
+                                <input type="radio" name="sure" value="同意">
                                 <label class="width10" for="">同意</label>
-                                <input type="radio" name="not" value="不同意">
+                                <input type="radio" name="sure" value="不同意">
                                 <label class="width10" for="">不同意</label>
                             </div>
 
@@ -418,12 +449,12 @@
                         <hr>
                         <!-- 申請 -->
                         <div class="form-group">
-                            <input type="checkbox"" name=" come" value="同意">
+                            <input type="checkbox"" name="yes" value="同意">
                             <label class="width10" for="text-input">本人同意下述</label>
 
                         </div>
 
-                   
+
                     </div>
                 </div>
 
